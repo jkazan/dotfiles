@@ -1,0 +1,13 @@
+rofi.lines: 3
+rofi.columns: 1
+rofi.width: 15
+rofi.padding: 2
+rofi.scrollbar-width: 0
+
+! State:           'bg',       'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: #00000000,  #729fcf,  #00000000,  #00000000,  #4e9a06
+rofi.color-urgent: #fdf6e3,    #dc322f,  #eee8d5,  #dc322f,  #fdf6e3
+rofi.color-active: #fdf6e3,    #268bd2,  #eee8d5,  #268bd2,  #fdf6e3
+
+!                  'background', 'border',  'separator'
+rofi.color-window: #aa000000,    #aa333333, #00000000

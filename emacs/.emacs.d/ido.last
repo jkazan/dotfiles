@@ -1,0 +1,379 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/etc/udev/" . "rules.d/")
+ ("/home/jkazan/.config/" . "rofi/")
+ ("/home/jkazan/wetch/" . "accuweather-icons/")
+ ("/home/jkazan/ess/" . "Time reports/")
+ ("/home/jkazan/.local/share/themes/Paper/" . "gtk-3.0/")
+ ("/home/jkazan/.local/share/themes/" . "Paper/")
+ ("/home/jkazan/.local/share/" . "themes/")
+ ("/home/jkazan/.local/" . "share/")
+ ("/usr/share/themes/Paper/" . "gtk-3.20/")
+ ("/etc/" . "udev/")
+ ("/home/jkazan/.cache/" . "wetch/")
+ ("/usr/share/themes/Mint-Y/" . "metacity-1/")
+ ("/home/jkazan/cvcl/" . "Current/")
+ ("/home/jkazan/" . "wetch/")
+ ("/usr/include/boost/" . "spirit/")
+ ("/usr/include/" . "boost/")
+ ("/home/jckaz/csum/" . "src/")
+ ("/usr/share/themes/ministic/gtk-3.0/" . "assets/")
+ ("/usr/share/themes/Mint-Y-Dark/gtk-2.0/" . "menubar-toolbar/")
+ ("/usr/share/themes/Mint-Y-Dark/" . "gtk-2.0/")
+ ("/home/jckaz/protom/" . "sci/")
+ ("/home/jckaz/conky/.conky-vision-icons/" . "accuweathericons/")
+ ("/home/jckaz/conky/" . ".conky-vision-icons/")
+ ("/home/jckaz/.cache/" . "spotify/")
+ ("/home/jckaz/.themes/Windows-10/" . "gtk-3.0/")
+ ("/usr/share/themes/Vertex/" . "gtk-3.0/")
+ ("/usr/share/themes/Adwaita/gtk-2.0/" . "Menu-Menubar/")
+ ("/usr/share/themes/Adwaita/" . "gtk-3.0/")
+ ("/home/jckaz/.themes/Cinnamox-Kashmir-Blue/gtk-3.20/" . "assets/")
+ ("/home/jckaz/.themes/Jet-Gray/" . "gtk-3.0/")
+ ("/home/jckaz/.themes/Cinnamox-Kashmir-Blue/" . "gtk-3.0/")
+ ("/home/jckaz/.themes/" . "Windows-10/")
+ ("/home/jckaz/.themes/ChromeOS/gtk-3.20/" . "assets/")
+ ("/home/jckaz/.themes/ChromeOS/gtk-3.0/" . "assets/")
+ ("/home/jckaz/.themes/ChromeOS/gtk-2.0/" . "Apps/")
+ ("/home/jckaz/.themes/ChromeOS/" . "gtk-3.0/")
+ ("/home/jckaz/SLAC/undulator/iocBoot/" . "sioc-und1-uc01/")
+ ("/home/jckaz/SLAC/undulator/simMotorApp/" . "src/")
+ ("/home/jckaz/.local/share/" . "applications/")
+ ("/home/jckaz/stram3.0/" . "src/")
+ ("/usr/share/themes/ministic/" . "cinnamon/")
+ ("/usr/share/themes/" . "Paper/")
+ ("/usr/share/" . "themes/")
+ ("/home/jckaz/.local/" . "share/")
+ ("/home/jckaz/stram2.0/" . "src/")
+ ("/home/jckaz/cvcl/" . "Current/")
+ ("/home/jckaz/SLAC/FACET-TM/app/Temperature/bkhfApp/Db/" . "facet/")
+ ("/home/jckaz/SLAC/FACET-TM/app/Temperature/bkhfApp/" . "Db/")
+ ("/home/jckaz/SLAC/FACET-TM/app/Temperature/" . "bkhfApp/")
+ ("/home/jckaz/SLAC/FACET-TM/app/" . "Temperature/")
+ ("/home/jckaz/SLAC/FACET-TM/" . "app/")
+ ("/home/jckaz/stram/" . "src/")
+ ("/home/jckaz/stram-software/" . "src/")
+ ("/opt/root/" . "root-6.10.08/")
+ ("/home/jckaz/SLAC/undulator/ucmApp/Db/" . "undulator/")
+ ("/home/jckaz/SLAC/undulator/ucmApp/" . "src/")
+ ("/home/jckaz/SLAC/undulator/" . "iocBoot/")
+ ("/home/jckaz/SLAC/" . "SRFGun/")
+ ("/home/jckaz/" . ".cache/")
+ ("/home/" . "jkazan/")
+ ("/usr/lib/python2.7/dist-packages/pymodbus/examples/" . "common/")
+ ("/opt/qt5/qtbase/" . "examples/")
+ ("/opt/qt5/" . "qtbase/")
+ ("/opt/" . "root/")
+ ("/home/jkazantzidis/psychlic/" . "src/")
+ ("/usr/lib/python2.7/dist-packages/pymodbus/build/lib.linux-x86_64-2.7/pymodbus/" . "server/")
+ ("/usr/lib/python2.7/dist-packages/pymodbus/build/lib.linux-x86_64-2.7/" . "pymodbus/")
+ ("/usr/lib/python2.7/dist-packages/pymodbus/build/" . "lib.linux-x86_64-2.7/")
+ ("/usr/lib/python2.7/dist-packages/pymodbus/pymodbus/" . "server/")
+ ("/usr/lib/python2.7/dist-packages/pymodbus/" . "build/")
+ ("/usr/lib/python2.7/dist-packages/" . "pymodbus/")
+ ("/usr/lib/python2.7/" . "dist-packages/")
+ ("/usr/lib/" . "python2.7/")
+ ("/usr/local/lib/python2.7/" . "dist-packages/")
+ ("/usr/local/lib/" . "python2.7/")
+ ("/usr/local/" . "share/")
+ ("/usr/" . "share/")
+ ("/" . "etc/")
+ ("/home/jkazantzidis/pymodbus/examples/gui/" . "gtk/")
+ ("/home/jkazantzidis/pymodbus/examples/" . "gui/")
+ ("/home/jkazantzidis/pymodbus/" . "examples/")
+ ("/home/jkazantzidis/" . "Templates/")
+ ("/home/jkazantzidis/pymodbus3/examples/" . "common/")
+ ("/home/jkazantzidis/pymodbus3/" . "test/")
+ ("c:/Users/sekazantzidj/Desktop/" . "w/")
+ ("c:/" . "Documents and Settings/")
+ ("C:/Users/sekazantzidj/Documents/birdeye/" . "src/")
+ ("C:/Users/sekazantzidj/" . "Documents/")
+ ("c:/Users/sekazantzidj/Documents/birdeye/" . "src/")
+ ("C:/Users/sekazantzidj/Documents/vision/" . "matlab/")
+ ("C:/Users/sekazantzidj/Documents/" . "birdeye/")
+ ("c:/Users/sekazantzidj/AppData/Roaming/.emacs.d/snippets/" . "latex-mode/")
+ ("c:/Users/sekazantzidj/AppData/Roaming/.emacs.d/elpa/yasnippet-0.11.0/snippets/" . "latex-mode/")
+ ("c:/Users/sekazantzidj/AppData/Roaming/.emacs.d/elpa/yasnippet-0.11.0/" . "snippets/")
+ ("c:/Users/sekazantzidj/AppData/Roaming/.emacs.d/elpa/" . "yasnippet-0.11.0/")
+ ("c:/Users/sekazantzidj/AppData/Roaming/.emacs.d/" . "snippets/")
+ ("c:/Users/sekazantzidj/AppData/Roaming/" . ".emacs.d/")
+ ("c:/Users/sekazantzidj/Documents/TCD/" . "TestSpec/")
+ ("c:/Users/sekazantzidj/Documents/" . "pulka/")
+ ("c:/Users/sekazantzidj/" . "Desktop/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jkazan/wetch/"
+ "/home/jkazan/wetch.test/"
+ "/home/jkazan/"
+ "/home/jkazan/wetch/accuweather-icons/"
+ "/home/jkazan/bashscripts/"
+ "/home/jkazan/.config/rofi/"
+ "/home/jkazan/.config/i3/"
+ "/home/jkazan/ess/"
+ "/home/jkazan/stocki/"
+ "/home/jkazan/Twil/"
+ "/home/jkazan/cs229/"
+ "/usr/share/themes/ministic/cinnamon/"
+ "/usr/share/themes/ministic/metacity-1/"
+ "/home/jkazan/wetchbb/"
+ "/home/jkazan/.cache/wetch/"
+ "/home/jkazan/conky/"
+ "/home/jkazan/.cache/conky/"
+ "/usr/share/themes/Paper/gtk-3.0/"
+ "/etc/default/"
+ "/home/jkazan/cvcl/Current/"
+ "/home/jckaz/.cache/"
+ "/home/jckaz/"
+ "/home/jckaz/conky/"
+ "/home/jckaz/aoc/"
+ "/home/jckaz/stram3.0/src/"
+ "/home/jckaz/cs229/"
+ "/home/jckaz/SLAC/SRFGun/"
+ "/home/jckaz/Downloads/"
+ "/home/jckaz/stram-article/"
+ "/home/jckaz/cvcl/Current/"
+ "/home/jckaz/csum/"
+ "/home/jckaz/csum/src/"
+ "/home/jckaz/bashscripts/"
+ "/home/jckaz/stram/"
+ "/home/jckaz/stram3.0/"
+ "/usr/include/boost/spirit/"
+ "/home/jckaz/birdeye/"
+ "/home/jckaz/protom/cli/"
+ "/home/jckaz/protom/sci/"
+ "/home/jckaz/Documents/"
+ "/usr/share/themes/ministic/gtk-3.0/"
+ "/usr/share/themes/Mint-Y-Dark/cinnamon/"
+ "/usr/share/themes/Mint-Y-Dark/gtk-2.0/"
+ "/usr/share/themes/Mint-Y-Dark/gtk-3.0/"
+ "/usr/share/themes/Adwaita/gtk-3.0/"
+ "/home/jckaz/toptal/"
+ "/home/jckaz/conky-lua/"
+ "/home/jckaz/conky/.conky-vision-icons/accuweathericons/"
+ "/home/jckaz/desktop-apps/"
+ "/home/jckaz/tmux/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "wetch"
+ "luascript.lua"
+ ".conkyrc"
+ ".emacs"
+ "1.jpg"
+ "startup_work.sh"
+ "config"
+ ".compton.conf"
+ "config.bkp"
+ "netflix-install.sh"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/etc/udev/rules.d/" (23429 2220 418625 945000) "./" "60-vboxdrv.rules" "../")
+
+ ("/etc/udev/" (23423 51560 508284 863000) "./" "hwdb.d/" "udev.conf" "../" "rules.d/")
+
+ ("/etc/" (23438 11916 52025 168000) "selinux/" "updatedb.conf" "modules-load.d/" "udev/" "init.d/" "rc0.d/" "locale.alias" "UPower/" "apparmor.d/" "dkms/" "logrotate.d/" "ld.so.conf.d/" "gdb/" "systemd/" "inputrc" "mtab" "grub.d/" "ssl/" "vtrgb" "libpaper.d/" "console-setup/" "subgid-" "dictionaries-common/" "alternatives/" "adduser.conf" "usb_modeswitch.d/" "netplan/" "logrotate.conf" "profile" "networks" "pam.conf" "lintianrc" "skel/" "hosts.allow" "samba/" "casper.conf" "python/" "passwd-" "cryptsetup-initramfs/" "NetworkManager/" "modprobe.d/" "sysstat/" "emacs25/" "brltty/" "pulse/" "glvnd/" "wgetrc" "mailcap" "oracle-java9-jdk/" "python3/" "cracklib/" "modules" "kernel-img.conf" "obex-data-server/" "network/" "passwd" "apparmor/" "init/" "libao.conf" "binfmt.d/" "rc6.d/" "mtools.conf" "wpa_supplicant/" "emacs/" "deluser.conf" "iproute2/" "fuse.conf" "hosts" "bindresvport.blacklist" "manpath.config" "dbus-1/" "cron.monthly/" "mailcap.order" "acpi/" "doc-base/" "PackageKit/" "logcheck/" "calendar/" "sudoers.d/" "ldap/" ".pwd.lock" "depmod.d/" "anacrontab" "drirc" "vdpau_wrapper.cfg" "debconf.conf" "subgid" "sensors3.conf" "newt/" "issue.net" "pki/" "linuxmint/" "appstream.conf" "machine-id" "cron.hourly/" "mke2fs.conf" "gai.conf" "lsb-release" "group-" "tmpfiles.d/" "terminfo/" ".java/" "rc4.d/" "shadow-" "apt/" "gtk-3.0/" "nanorc" "mime.types" "kernel/" "papersize" "request-key.conf" "resolvconf/" "rc2.d/" "cron.weekly/" "bluetooth/" "bash_completion.d/" "pm/" "sysctl.d/" "ifplugd/" "security/" "dhcp/" "sensors.d/" "rc1.d/" "apport/" "debian_version" "request-key.d/" "gnome-vfs-2.0/" "pnm2ppa.conf" "gnome-app-install/" "resolv.conf" "crontab" "magic" "apg.conf" "locale.gen" "printcap" "gnome/" "bash_completion" "sudoers" "libblockdev/" "lightdm/" "guest-session/" "cups/" "ppp/" "neofetch/" "usb_modeswitch.conf" "rsyslog.d/" "localtime" "issue" "vim/" "pam.d/" "opt/" "kerneloops.conf" "java-11-openjdk/" "groff/" "vbox/" "sane.d/" "apm/" "hostname" "host.conf" "ld.so.conf" "conky/" "fstab" "gufw/" "sysctl.conf" "default/" "fonts/" "menu-methods/" "mono/" "subuid-" "cron.daily/" "services" "python3.6/" "zsh_command_not_found" "upstream-release/" "speech-dispatcher/" "gss/" "libreoffice/" "parallel/" "udisks2/" "fwupd/" "openal/" "pcmcia/" "shells" "nsswitch.conf" "gconf/" "initramfs-tools/" "bash.bashrc" "i3status.conf" "gshadow-" "rpc" "ImageMagick-6/" "rc3.d/" "rc5.d/" "avahi/" "ld.so.cache" "gshadow" "os-release" "matplotlibrc" "rsyslog.conf" "gtk-2.0/" "lvm/" "ufw/" "update-motd.d/" "brlapi.key" "chromium-browser/" "brltty.conf" "gimp/" "cifs-utils/" "xml/" "chatscripts/" "inxi.conf" "openvpn/" "X11/" "ranger/" "login.defs" "securetty" "ghostscript/" "rmt" "subuid" "group" "python2.7/" "ssh/" "wildmidi/" "hp/" "i3/" "environment" "profile.d/" "ca-certificates/" "libaudit.conf" "sgml/" "hdparm.conf" "thunderbird/" "geoclue/" "adjtime" "xdg/" "cupshelpers/" "firefox/" "ucf.conf" "cron.d/" "timeshift.json" "hosts.deny" "ca-certificates.conf" "thermald/" "rcS.d/" "perl/" "libnl-3/" "shadow" "ltrace.conf" "hddtemp.db" "polkit-1/" "timezone" "legal" "protocols" "magic.mime" "dpkg/" "../" "./")
+
+ ("/home/jkazan/.config/i3/" (23439 31871 463793 235000) "config" "./" "../" "#config#")
+
+ ("/home/jkazan/wetch/" (23438 11401 666749 87000) "accuweather-icons/" "README.md" "#wetch#" "./" "wetch" "LICENSE" "luascript.lua" ".git/" "spotify-title.sh" "../" "poiret-one/" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "wetch.config" "slack-web.png" ".conkyrc" "slack.sh" "wetch.png" ".gitignore" "batlow.svg" "install.sh")
+
+ ("/home/jkazan/wetch.test/" (23438 43106 235771 634000) "accuweather-icons/" "README.md" "#wetch#" "./" "wetch" "LICENSE" "luascript.lua" ".git/" "spotify-title.sh" "../" "poiret-one/" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "wetch.config" "slack-web.png" ".conkyrc" "#.conkyrc#" "slack.sh" "wetch.png" ".gitignore" "batlow.svg" "install.sh")
+
+ ("/home/jkazan/" (23438 39469 896745 979000) "pywal/" ".local/" ".fonts/" "tmux/" ".pki/" ".cache/" "bashscripts/" ".linuxmint/" ".gimp-2.8/" ".xsession-errors" ".dmrc" ".gitconfig" "emacs/" ".gnupg/" ".xscreensaver" "Templates/" "wetch.test/" "Twil/" ".xsession-errors.old" ".gconf/" ".gem/" ".git-credentials" ".gtkrc-2.0" "./" "i3-gaps/" ".Xresources" ".fehbg" "cs229/" "wetch/" "paper-gtk-theme/" ".themes/" ".profile" "core" ".emacs" "Desktop/" ".bash_logout" ".bash_history" ".mozilla/" ".aptitude/" "../" ".compton.conf" ".Xauthority" ".gtkrc-xfce" ".tmux.conf" "Documents/" "dotfiles/" ".ICEauthority" ".thumbnails/" "devenv-ess/" ".openvpn/" ".gvfs/" ".sudo_as_admin_successful" ".emacs.d/" "Downloads/" "Music/" "Videos/" "stocki/" ".selected_editor" ".cinnamon/" ".bashrc" "Pictures/" ".wget-hsts" ".xinputrc" "VirtualBox VMs/" "ess/" ".config/" ".vagrant.d/" ".icons/" "Public/" ".dbus/" ".lesshst")
+
+ ("/home/jkazan/.cache/wetch/" (23437 15971 201814 36000) "weather.jpg" "forecast-11.png" "forecast-3.png" "forecast-3.jpg" "forecast-4.png" "forecast-10.png" "forecast-8.jpg" "forecast-9.png" "forecast-2.jpg" "tempforecast.json" "forecast-0.jpg" "forecast-7.png" "forecast-5.jpg" "forecast-2.png" "forecast-5.png" "./" "forecast.json" "forecast-11.jpg" "forecast-0.png" "forecast-6.jpg" "forecast-9.jpg" "slack_flag" "weather.json" "../" "tempweather.json" "forecast-1.png" "forecast-12.png" "forecast-8.png" "last_weather_update.txt" "forecast-10.jpg" "weather.png" "forecast-7.jpg" "monitor_flag" "forecast-4.jpg" "forecast-1.jpg" "slack.unread" "slac_flag" "weather_flag" "forecast-6.png")
+
+ ("/home/jkazan/wetch/accuweather-icons/" (23437 14474 556223 379000) "33.jpg" "26.jpg" "21.jpg" "7.jpg" "37.jpg" "3.png" "42.png" "40.png" "11.png" "7.png" "1.png" "31.png" "8.jpg" "11.jpg" "17.png" "34.png" "29.png" "13.png" "16.jpg" "23.png" "38.png" "42.jpg" "22.jpg" "./" "31.jpg" "30.png" "35.png" "26.png" "18.jpg" "20.jpg" "25.jpg" "3.jpg" "44.jpg" "36.png" "15.png" "8.png" "41.png" "38.jpg" "16.png" "25.png" "19.jpg" "4.jpg" "43.jpg" "22.png" "35.jpg" "30.jpg" "17.jpg" "../" "36.jpg" "5.png" "15.jpg" "32.png" "24.png" "5.jpg" "44.png" "18.png" "12.jpg" "13.jpg" "41.jpg" "14.jpg" "1.jpg" "21.png" "19.png" "39.jpg" "24.jpg" "23.jpg" "43.png" "34.jpg" "33.png" "29.jpg" "20.png" "6.png" "4.png" "39.png" "37.png" "2.png" "12.png" "6.jpg" "40.jpg" "2.jpg" "14.png" "32.jpg")
+
+ ("/home/jkazan/bashscripts/" (23437 6766 549261 236000) "netflix.png" "whatsapp.png" "shadow-snap-right.sh" "./" "startup_work.sh" "brightness" ".git/" "ess.png" "../" "tile.sh" "desktopApps.sh" "slack.sh" "shadow-snap-left.sh" "closeall.sh" "netflix-install.sh" "install.sh")
+
+ ("/home/jkazan/ess/" (23433 4766 477102 879000) "mrf.org" "css/" "plcfactory.org" "mike_meeting.org" "site_visit.org" "timereport.org" "he-cooling/" "./" "Time reports/" "bob.org" ".#timereport.org" "architecture.org" "epics_wayne.org" ".git/" "../" "tss/" "#timereport.org#" "ICD interface tables.xlsx" "Garoby_2018_Phys._Scr._93_014001.pdf" ".gitignore" "hwi.org")
+
+ ("/home/jkazan/.config/rofi/" (23434 17166 105521 249000) "config" "./" "../")
+
+ ("/home/jkazan/.config/" (23432 57183 280061 591000) "cinnamon-session/" "mimeapps.list" "pulse/" "autostart/" "dconf/" "monitors.xml" "goa-1.0/" "./" "enchant/" "menus/" "hexchat/" "spotify/" "qt5ct/" "caja/" "gtk-3.0/" "rofi/" "xviewer/" "wal/" "user-dirs.dirs" "../" "neofetch/" "pix/" "nemo/" "xed/" "evolution/" "libreoffice/" "VirtualBox/" "gtk-2.0/" "user-dirs.locale" "ranger/" "matplotlib/" "chromium/" "i3/")
+
+ ("/etc/default/" (23429 1658 833123 27000) "cron" "add-apt-key" "grub.ucf-dist" "grub.d/" "console-setup" "cacerts" "networking" "anacron" "rsyslog" "dbus" "sysstat" "avahi-daemon" "hddtemp" "locale" "crda" "cryptdisks" "./" "acpid" "im-config" "irqbalance" "motd-news" "apport" "grub" "rsync" "../" "virtualbox" "amd64-microcode" "intel-microcode" "useradd" "nss" "tlp" "saned" "networkd-dispatcher" "acpi-support" "speech-dispatcher" "keyboard" "bsdmainutils" "ufw" "alsa" "openvpn" "timeshift.json" "kerneloops")
+
+ ("/home/jkazan/Twil/" (23415 64377 573626 422000) "credentials.pyc" "reminder.py" "credentials.py" "D" "./" "local/" "reminder.pyc" "twiliotest.py" "../" "bin/" "lib/" "share/")
+
+ ("/home/jkazan/stocki/" (23405 29787 876770 716000) "include/" "GCOR.ST.csv" "./" "../" "bin/" "lib/" "share/" "stock.sh" "stocki.py")
+
+ ("/usr/share/themes/Paper/gtk-3.20/" (23363 12762 217429 155000) "_widgets.scss" "widgets/" "_drawing.scss" "gtk-dark.css" "./" "gtk-dark.scss" "_apps.scss" "../" "gtk.scss" "_colors-public.scss" "gtk.css" "_common.scss" "_colors.scss" "apps/")
+
+ ("/usr/share/themes/Paper/metacity-1/" (23363 12762 217429 155000) "maximize_focused_pressed.png" "unshade_focused_normal.png" "shade_unfocused_prelight.png" "minimize_focused_normal.png" "maximize_focused_normal.png" "menu_unfocused_prelight.png" "unshade_focused.png" "unshade_unfocused_pressed.png" "close_focused_pressed.png" "menu.png" "unshade_focused_prelight.png" "close_unfocused_pressed.png" "unmaximize_focused_pressed.png" "minimize_focused_prelight.png" "minimize_unfocused.png" "shade_focused_normal.png" "menu_unfocused_pressed.png" "menu_focused.png" "close_focused_normal.png" "shade_focused_prelight.png" "unmaximize_focused.png" "menu_unfocused.png" "close.png" "./" "menu_focused_normal.png" "maximize_focused_prelight.png" "unmaximize_unfocused.png" "minimize_unfocused_prelight.png" "unmaximize_focused_prelight.png" "metacity-theme-1.xml" "maximize.png" "close_focused.png" "unmaximize_unfocused_prelight.png" "minimize.png" "metacity-theme.xml" "maximize_focused.png" "../" "metacity-theme-3.xml" "unshade_unfocused.png" "unshade_unfocused_prelight.png" "close_unfocused_prelight.png" "maximize_unfocused_pressed.png" "unmaximize_focused_normal.png" "menu_focused_pressed.png" "close_unfocused.png" "shade_focused.png" "unmaximize_unfocused_pressed.png" "close_focused_prelight.png" "shade_focused_pressed.png" "shade_unfocused_pressed.png" "shade.png" "maximize_unfocused_prelight.png" "minimize_focused.png" "metacity-theme-2.xml" "unmaximize.png" "unshade_focused_pressed.png" "minimize_focused_pressed.png" "shade_unfocused.png" "unshade.png" "menu_focused_prelight.png" "minimize_unfocused_pressed.png" "maximize_unfocused.png")
+
+ ("/usr/share/themes/ministic/cinnamon/" (23401 39282 958069 251000) "thumbnail.png" "./" "dark-assets/" "common-assets/" "../" "cinnamon.css")
+
+ ("/usr/share/themes/ministic/gtk-2.0/" (23360 36052 196506 832000) "apps.rc" "gtkrc" "panel.rc" "./" "../" "menubar-toolbar/" "main.rc" "assets/")
+
+ ("/usr/share/themes/ministic/gtk-3.0/" (23401 39218 407041 11000) "thumbnail.png" "./" "../" "gtk.css" "assets/")
+
+ ("/home/jkazan/wetchbb/" (23394 45326 357877 668000) "accuweather-icons/" "README.md" "wetch.sh" "./" "LICENSE" "luascript.lua" ".git/" "spotify-title.sh" "../" "poiret-one/" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "wetch.config" "slack-web.png" ".conkyrc" "slack.sh" "wetch.png" ".gitignore" "batlow.svg")
+
+ ("/home/jkazan/.cache/" (23393 45943 448548 457000) "wallpaper/" "blueman-applet-1000" "xreader/" "gnome-screenshot/" "dconf/" "cinnamon-screensaver-albumart-temp" "./" "spotify/" "wetch/" "babl/" "gegl-0.3/" "pip/" "../" "flatpak/" "gstreamer-1.0/" "cs_backgrounds/" "mozilla/" "matplotlib/" "chromium/" "mintinstall/" "qt_compose_cache_little_endian_4095cb9d62054733b651d895c996ea84" "thumbnails/" "obexd/" "fontconfig/" "gnome-calculator/")
+
+ ("/home/jkazan/cs229/" (23393 23000 51597 795000) "logistic_x.txt" "cs229_hw_sol.zip" "./" "logistic_y.txt" ".git/" "../" "newton.py" "cs229-notes1.pdf" "newton.m")
+
+ ("/home/jkazan/conky/" (23377 54307 994271 214000) "accuweather-icons/" "README.md" "wetch.sh" "./" "LICENSE" "luascript.lua" ".git/" "spotify-title.sh" "../" "poiret-one/" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "slack-web.png" ".conkyrc" "slack.sh" "wetch.png" "batlow.svg")
+
+ ("/usr/share/themes/Mint-Y-Dark/gtk-3.0/" (23373 42090 250498 258000) "thumbnail.png" "./" "../" "gtk.css" "assets/")
+
+ ("/usr/share/themes/Mint-Y-Dark/gtk-2.0/" (23373 42090 246498 258000) "apps.rc" "gtkrc" "panel.rc" "./" "../" "menubar-toolbar/" "main.rc" "assets/")
+
+ ("/usr/share/themes/Mint-Y-Dark/cinnamon/" (23373 42090 246498 258000) "thumbnail.png" "./" "dark-assets/" "common-assets/" "../" "cinnamon.css")
+
+ ("/home/jkazan/ess/Time reports/" (23364 22514 229420 805000) "./" "johannes time report March.xlsx" "../" "johannes time report June.xlsx" "johannes time report May.xlsx" "johannes time report April.xlsx")
+
+ ("/home/jkazan/.cache/conky/" (23363 39791 203205 689000) "forecast-11.png" "forecast-3.png" "forecast-4.png" "forecast-10.png" "forecast-9.png" "tempforecast.json" "forecast-7.png" "forecast-2.png" "forecast-5.png" "./" "forecast.json" "weather.json" "../" "tempweather.json" "forecast-1.png" "forecast-12.png" "forecast-8.png" "lastConkyUpdate.txt" "weather.png" "forecast-6.png")
+
+ ("/home/jkazan/.local/share/themes/Paper/gtk-3.0/" (23363 12893 121632 61000) "gtk-widgets-assets.css" "widgets/" "settings.ini" "gtk-dark.css" "./" "../" "gtk-widgets-assets-dark.css" "gtk.css" "gtk-common.css" "apps.css" "gtk-widgets.css" "granite-widgets.css" "apps/" "assets/")
+
+ ("/home/jkazan/.local/share/themes/Paper/" (23363 12893 129632 74000) "README.md" "gtk-3.16/" "unity/" "gtk-3.18/" "metacity-1/" "./" "index.theme" "gtk-3.0/" "xfwm4/" "gnome-shell/" "../" "gtk-3.20/" "gtk-2.0/" "assets/" "xfce-notify-4.0/" "plank/")
+
+ ("/home/jkazan/.local/share/themes/" (23363 12893 101632 28000) "./" "../" "Paper/")
+
+ ("/home/jkazan/.local/share/" (23363 9991 415174 902000) "icc/" "gnome-do/" "gvfs-metadata/" "./" "keyrings/" "gsettings-data-convert" "gegl-0.3/" "../" "pix/" "flatpak/" "nemo/" "recently-used.xbel" "applications/" "cinnamon/" "themes/")
+
+ ("/home/jkazan/.local/" (23360 41236 439023 998000) "./" "../" "share/")
+
+ ("/usr/share/themes/Paper/gtk-3.0/" (23363 12762 209429 144000) "gtk-widgets-assets.css" "widgets/" "settings.ini" "gtk-dark.css" "./" "../" "gtk-widgets-assets-dark.css" "gtk.css" "gtk-common.css" "apps.css" "gtk-widgets.css" "granite-widgets.css" "apps/" "assets/")
+
+ ("/usr/share/themes/Paper/" (23363 12762 221429 162000) "README.md" "gtk-3.16/" "unity/" "gtk-3.18/" "metacity-1/" "./" "index.theme" "gtk-3.0/" "xfwm4/" "gnome-shell/" "../" "gtk-3.20/" "gtk-2.0/" "assets/" "xfce-notify-4.0/" "plank/")
+
+ ("/usr/share/themes/" (23363 12762 161429 72000) "Linux Mint/" "Industrial/" "Mint-X-Blue/" "ministic/" "Mint-X-Sand/" "Mint-Y-Darker/" "Mint-Y/" "Mint-X-Grey/" "./" "Crux/" "Mint-X-Teal/" "Adwaita-dark/" "ThinIce/" "HighContrast/" "../" "Mist/" "Mint-X-Brown/" "Mint-X-Red/" "Emacs/" "Clearlooks/" "Default/" "Mint-X-Orange/" "Raleigh/" "Adwaita/" "Mint-X-Purple/" "Mint-X-Pink/" "Mint-X/" "Paper/" "Mint-X-Aqua/" "Mint-Y-Dark/" "Mint-X-compact/" "Redmond/")
+
+ ("/usr/share/" (23363 11150 430389 643000) "iso-codes/" "indicators/" "ubuntu-drivers-common/" "webkitgtk-3.0/" "xml-core/" "icons/" "libthai/" "metainfo/" "GeoIP/" "mint-upgrade-info/" "intltool/" "timeshift/" "rhythmbox/" "gdb/" "systemd/" "iptables/" "libc-bin/" "console-setup/" "dictionaries-common/" "autoconf/" "linux-sound-base/" "gtk-engines/" "netplan/" "qt4/" "cmake-3.10/" "publicsuffix/" "doc/" "onboard/" "cinnamon-session/" "aspell/" "pkgconfig/" "perl5/" "pkg-config-dpkghook" "alsa-base/" "samba/" "locale-langpack/" "sgml-base/" "common-licenses/" "plymouth/" "gvfs/" "cinnamon-settings-daemon/" "dnsmasq-base/" "liblangtag/" "mint-artwork/" "python/" "rsyslog/" "muffin/" "casper/" "gtksourceview-3.0/" "sgml-data/" "foo2qpdl/" "debhelper/" "gettext-0.19.8/" "nano/" "automake-1.15/" "libtool/" "emacs25/" "usb_modeswitch/" "brltty/" "gtk-doc/" "glvnd/" "adduser/" "awk/" "gnome-background-properties/" "xreader/" "fonts-sil-padauk/" "python3/" "appdata/" "mozo/" "libmateweather/" "ssl-cert/" "snmp/" "unity/" "glib-2.0/" "emacs/" "gst-plugins-base/" "mate-background-properties/" "poppler/" "systemtap/" "language-tools/" "qtchooser/" "mint-mirrors/" "localechooser/" "mime-info/" "menu/" "locale/" "readline/" "zenity/" "libtimezonemap/" "dbus-1/" "xdg-desktop-portal/" "doc-base/" "system-tools-backends-2.0/" "PackageKit/" "mimelnk/" "goa-1.0/" "calendar/" "mythes/" "binfmts/" "cmake/" "foo2zjs/" "enchant/" "rubygems-integration/" "mime/" "libgweather/" "file/" "cli-common/" "libvisual-plugins-0.4/" "aclocal/" "linuxmint/" "librevenge/" "hal/" "spotify/" "color/" "xawtv/" "terminfo/" "sensible-utils/" "mdm/" "gnome-settings-daemon/" "zoneinfo/" "vlc/" "im-config/" "hplip/" "m17n/" "liblouis/" "gdebi/" "xgreeters/" "keyrings/" "gitweb/" "hunspell/" "wallpapers/" "file-roller/" "mate/" "secureboot/" "maven-repo/" "keyutils/" "info/" "ubuntu-advantage-tools/" "help-langpack/" "netpbm/" "iso-flag-png/" "mono-2.0/" "woeusb/" "apport/" "cinnamon-control-center/" "xviewer/" "gcc-8/" "dotnet/" "libgphoto2/" "grub/" "gnome-shell/" "qt5/" "aclocal-1.15/" "colord/" "gtksourceview-2.0/" "hfsprogs/" "cinnamon-background-properties/" "desktop-directories/" "software-center/" "pulseaudio/" "debianutils/" "xscreensaver/" "metacity/" "lintian/" "sounds/" "caribou/" "gnome/" "libparse-debianchangelog-perl/" "lightdm/" "dict/" "defaults/" ".mono/" "caja-python/" "ca-certificates-java/" "yelp/" "application-registry/" "media-player-info/" "cups/" "ppp/" "pix/" "flatpak/" "vim/" "seahorse/" "consolefonts/" "nemo/" "accountsservice/" "meson/" "groff/" "gstreamer-1.0/" "xplayer/" "omf/" "cryptsetup/" "hwdata/" "mobile-broadband-provider-info/" "libsensors4/" "cinnamon-screensaver/" "gdm/" "perl-openssl-defaults/" "consoletrans/" "yelp-xsl/" "libmate-desktop/" "apturl/" "nemo-python/" "ubuntu-system-adjustments/" "transmission/" "pam-configs/" "gufw/" "mintsources/" "xed/" "p11-kit/" "thumbnailers/" "fonts/" "pnm2ppa/" "intltool-debian/" "upstart/" "debconf/" "gnupg/" "gnome-system-monitor/" "gettext/" "acpi-support/" "mono/" "kde4/" "pyshared/" "misc/" "speech-dispatcher/" "slick-greeter/" "python-apt/" "mintstick/" "libreoffice/" "xsessions/" "fwupd/" "xfce4/" "openal/" "man-db/" "libgnomekbd/" "synaptic/" "command-not-found/" "gconf/" "ldm/" "myspell/" "initramfs-tools/" "cogl/" "ImageMagick-6/" "bug/" "i18n/" "man/" "avahi/" "aptitude/" "ecryptfs-utils/" "libaudio2/" "dns/" "tomboy/" "GConf/" "orca/" "nemo-share/" "applications/" "ufw/" "os-prober/" "chromium-browser/" "apps/" "system-config-printer/" "locales/" "java/" "gimp/" "help/" "alsa/" "xml/" "openvpn/" "X11/" "mate-about/" "ghostscript/" "gnome-bluetooth/" "pkg-config-crosswrapper" "base-passwd/" "libexttextcat/" "bash-completion/" "pam/" "base-files/" "zsh/" "bison/" "ca-certificates/" "hyphen/" "tabset/" "sgml/" "mate-menus/" "liblouisutdml/" "djvu/" "solid/" "m2300w/" "gir-1.0/" "librarian/" "backgrounds/" "gst-plugins-bad/" "mousetweaks/" "guile/" "libdrm/" "perl/" "fontconfig/" "app-install/" "fonts-droid-fallback/" "simple-scan/" "cinnamon/" "git-core/" "pixmaps/" "distro-info/" "polkit-1/" "themes/" "libwacom/" "gnome-control-center/" "evolution-data-server/" "gnome-session/" "nemo-preview/" "gutenprint/" "javascript/" "ppd/" "mate-panel/" "dpkg/" "../" "./")
+
+ ("/home/" (23360 41236 877576 700000) "./" "../" "jkazan/")
+
+ ("/usr/share/themes/ministic/metacity-1/" (23360 38191 85160 165000) "shade-icon.svg" "unshade-icon.svg" "thumbnail.png" "menu-icon.svg" "close-icon.svg" "./" "max-icon.svg" "button-bg.svg" "unstick-icon.svg" "button-border.svg" "../" "metacity-theme-3.xml" "stick-icon.svg" "metacity-theme-2.xml" "min-icon.svg")
+
+ ("/usr/share/themes/Mint-Y/metacity-1/" (23346 22797 0 0) "shade-icon.svg" "unshade-icon.svg" "thumbnail.png" "menu-icon.svg" "close-icon.svg" "./" "max-icon.svg" "button-bg.svg" "unstick-icon.svg" "button-border.svg" "../" "metacity-theme-3.xml" "stick-icon.svg" "metacity-theme-2.xml" "min-icon.svg")
+
+ ("/usr/share/themes/Mint-Y/" (23346 22797 0 0) "metacity-1/" "./" "index.theme" "gtk-3.0/" "xfwm4/" "../" "gtk-2.0/" "xfce-notify-4.0/" "cinnamon/")
+
+ ("/usr/share/themes/ministic/" (23360 36052 204506 834000) "metacity-1/" "./" "index.theme" "gtk-3.0/" "xfwm4/" "../" "gtk-2.0/" "xfce-notify-4.0/" "cinnamon/")
+
+ ("/usr/local/share/" (23346 23089 0 0) "emacs/" "./" "../" "fonts/" "man/" "xml/" "ca-certificates/" "sgml/")
+
+ ("/usr/local/" (23346 21788 0 0) "include/" "games/" "etc/" "./" "src/" "../" "bin/" "lib/" "sbin/" "man/" "share/")
+
+ ("/usr/" (23346 21765 0 0) "include/" "games/" "./" "local/" "src/" "../" "bin/" "lib/" "sbin/" "share/")
+
+ ("/usr/share/themes/Adwaita/gtk-2.0/" (23346 22610 0 0) "apps.rc" "gtkrc" "./" "../" "main.rc" "hacks.rc" "assets/")
+
+ ("/usr/share/themes/Adwaita/gtk-3.0/" (23346 22610 0 0) "./" "../" "gtk.css")
+
+ ("/home/jkazan/cvcl/Current/" (23237 53872 65489 403000) "signature.pdf" "./" "CV Johannes Kazantzidis.tex" "signature.jpg" ".DS_Store" "CV Johannes Kazantzidis.pdf" "../")
+
+ ("/home/jkazan/cvcl/" (23237 51531 58012 965000) "./" ".git/" "cosyLab/" "Current/" "ESS/" "YouSee/" ".DS_Store" "Chalmers/" ".gitignore" "../" "michelle.tex")
+
+ ("/home/jckaz/" (23210 59323 18349 823000) ".linuxmint/" "conky/" ".ICEauthority" ".gksu.lock" ".conkyrc" ".gphoto/" ".aptitude/" "./" "jkazan@iris.slac.stanford.edu" "bashscripts/" "stram-software/" "aoc/" ".gimp-2.8/" ".mozilla/" "openssh-server_1%3a7.2p2-4ubuntu2.4_amd64.deb" "Desktop/" "test.sh" ".subversion/" ".bash_logout" ".local/" ".sudo_as_admin_successful" "cs229/" ".cisco/" "Pictures/" "emacs/" "Downloads/" ".xscreensaver" ".gconf/" ".pki/" ".dbus/" ".profile" "csum/" ".var/" "protom/" "#.bashrc#" "conky-lua/" ".xsession-errors.old" ".gnupg/" ".conkyrc_dual" ".thumbnails/" "Documents/" "Public/" "temp" ".Xauthority" "Music/" "emacsbb/" ".matlab/" ".gitconfig" ".cinnamon/" "SLAC/" "stram/" ".themes/" "timereport.org" ".xsession-errors" ".config/" ".bash_history" ".emacs.d/" "VirtualBox VMs/" "cvcl/" ".ssh/" ".tmux.conf" "Qt/" ".cache/" "stram2.0/" "birdeye/" ".bashrc" "stram3.0/" "datenumjck.m" ".dmrc" "desktop-apps/" ".root_hist" "../" ".java/" ".icons/" ".thunderbird/" "tmux/" "jkazan@rhel6-64.slac.stanford.edu" "stram-article/" "Videos/" "Templates/" ".oracle_jre_usage/" "albert/" ".anyconnect" ".emacs")
+
+ ("/home/jckaz/aoc/" (23209 51798 255893 935000) "day7.py" "day4.txt" "day5.txt" "./" "ex1.py" "toptal.txt" "day1.py" "day9.txt" "day8.py" "day3.py" "day8.txt" "day2.txt" "triplebyte.py" "day6.py" "demo-test.py" "day9.py" "../" "day5.py" "day7.txt" "day2.py" "day4.py" "#ex1.py#")
+
+ ("/home/jckaz/conky/" (23209 55420 99500 661000) ".conky-vision-icons/" ".conkyrc" "accuweather.sh" ".git/" ".#accuweather.sh" "spotify-title.sh" "./" ".conky/" "#accuweather.sh#" "clock2.png" "clock.png" ".conkyrc_dual" "luascript.lua" "longpointer.png" "resetconky.sh" ".conkyrc_dual_external" "../" "spotify-artist.sh" "pointers.png" ".conkyrc_clock" "conky-lua-ss.png" "README.md")
+
+ ("/home/jckaz/.cache/" (23201 58407 288795 217000) "spotify-nowplaying-elapsed" "obexd/" "cinnamon-screensaver-albumart-temp" "cs_backgrounds/" "tempforecast.json" "./" "forecast-6.png" "mozilla/" "forecast-4.png" "flatpak/" "spotify-length" "motd.legal-displayed" "forecast-10.png" "forecast-8.png" "xreader/" "spotify-nowplaying" "matplotlib/" "tempweather.json" "lastConkyUpdate.txt" "forecast-5.png" "chromium/" "spotify/" "forecast-1.png" "wallpaper/" "thunderbird/" "forecast-7.png" "weather.png" "forecast-2.png" "mintinstall/" "forecast-9.png" "gstreamer-1.0/" "gegl-0.3/" "pip/" "forecast.json" "thumbnails/" "forecast-3.png" "../" "blueman-applet-1000" "xscreensaver/" "apt-file/" "forecast-11.png" "fontconfig/" "dconf/" "weather.json" "gnome-screenshot/" "forecast-12.png" "event-sound-cache.tdb.6a4e92f40a6e4d7e8a650c6c44d79ab2.x86_64-pc-linux-gnu")
+
+ ("/home/jckaz/birdeye/" (23200 15628 167147 768000) "spreadfigures.m" "plotTime.m" "createToolbar.m" "media/" "./" "updateSystem.m" "dndFcn.m" "subPlotMaster.m" "testdata.csv" "ttt.csv" "checkRange.m" "patchIt.m" "plotMaster.m" "new-file.csv" "subPlotTime.m" "setIcon.m" "startup.m" "loadFile.m" "subtightplot.m" "load.gif" ".#readjck.m" "readme.md" "matlab.mat" "subPlotPlay.m" "#readjck.m#" "test2.txt" "read_pv_log.m" "sampleByChange.m" "vertLine.m" "loading.m" "plotjck.m" "birdeye.m" "loadFileDaD.m" "getExeDir.m" "MLDropTarget.class" "mergeTrends.m" "readjck.m" "normSignals.m" "MLDropTarget.java" "pvlog_03022018_101040.txt" "#testdata.csv#" "plot_pv.m" "../" "composeGUI.m" "datetickjck.m" "dndcontrol.m" "pvlog_02282018_181029.txt" "histjck.m" "subPlot3D.m")
+
+ ("/home/jckaz/Downloads/" (23200 14992 72106 627000) "Final Report ESS.bbl" "SRF_Gun_Controls_Initial_Support_Status (1).docx" "Final Report ESS.pdf" "./" "thesis.pdf" "LCLS-GeneralOpsSupportFY18_Weekly_Report_12_1_2017.docx" "boost_1_66_0.tar.gz" "Exjobbreport.pdf" "be.zip" "image-99840f61-1014-4ac4-85f9-fc31887f3e0a.jpg" "Book_IntroductiontoMatrixComputations_2017Edition.pdf" "cs229_hw_sol.zip" "termination of employment contract_jkazantzids.doc" "CME200_AnswerBook_evennumbered.pdf" "anyconnect-linux64-4.4.02034-core-vpn-webdeploy-k9 (1).sh" ".~lock.SRF_Gun_Controls_Initial_Support_Cosylab_FY18 (1).docx#" "Accelerator-Facility-Node-request2 (1).xlsx" "lxi-discovery_tool.zip" "CS200pdf" "F2TEMP2.xls" "root_v6.10.08.source.tar.gz" "Win10_1709_English_x64.iso" "emacs-24.5.tar.gz" "srf_arch_pvlist.txt" "F2TEMP2 (1).xls" "ActivationKey.txt" "20171127 SRF Gun Project Scope of Controls Work.pptx" "anyconnect-linux64-4.4.02034-core-vpn-webdeploy-k9.sh" "Accelerator-Facility-Node-request2.xlsx" "../" "gui.fig" "scripting.zip" "virtualbox-5.2_5.2.6-120293_Ubuntu_zesty_amd64.deb" "Final Report ESS.tex" "SRF_Gun_Controls_Initial_Support_Cosylab_FY18.docx")
+
+ ("/home/jckaz/SLAC/SRFGun/" (23207 20657 761635 760000) "ngui.png" "./" "oxygengui.png" "slac.png" "user_guide.tex" "ttt.csv" "launcher_dialog.png" "vacuumgui.png" "user_guide.spl" "mcode.sty" "user_guide.auxlock" "magnetgui.png" "Notes.txt" "user_guide.lot" "user_guide.pdf" "plot.png" "user_guide.lof" "user_guide.aux" "user_guide.toc" "user_guide.log" "srfgun.png" "../" "user_guide.out" "parse.py" "hegui.png")
+
+ ("/home/jckaz/cs229/" (23206 53382 55467 646000) "./" "newton.m" "logistic_y.txt" "logistic_x.txt" "../" "newton.py")
+
+ ("/home/jckaz/bashscripts/" (23198 61786 66955 987000) ".git/" "./" "desktopApps.sh" "#startup.sh#" "exec.sh" "startup.sh" "install.sh" "vertex.sh" "../")
+
+ ("/home/jckaz/csum/src/" (23197 31382 490780 83000) "./" "temp.cc" "main.cc" "../")
+
+ ("/home/jckaz/cvcl/Current/" (23198 59388 281629 320000) "./" "CV Johannes Kazantzidis.out" ".DS_Store" "signature.jpg" "CV Johannes Kazantzidis.log" "CV Johannes Kazantzidis.tex" "CV Johannes Kazantzidis.aux" "CV Johannes Kazantzidis.pdf" "../" "signature.pdf")
+
+ ("/home/jckaz/SLAC/" (23161 58095 793662 859000) "./" "srfgun.txt" "SRFGun/" "undulator/" "FACET-TM/" "../")
+
+ ("/home/jckaz/csum/" (23196 56936 962302 235000) "test.txt" "src/" "./" "test3.txt" "csum" "test2.txt" "Makefile" "../" "pvlog_02282018_181029.txt")
+
+ ("/home/jckaz/emacs/" (23192 33378 304351 84000) ".git/" "./" "#.emacs#" "timereport.org" ".emacs.d/" "../" ".emacs" ".gitignore")
+
+ ("/usr/include/boost/spirit/" (23193 55566 491864 975000) "./" "version.hpp" "include/" "repository/" "home/" "../")
+
+ ("/usr/include/boost/" (23193 55567 539836 590000) "ratio.hpp" "tti/" "cstdint.hpp" "function/" "multi_array/" "concept/" "dynamic_bitset_fwd.hpp" "mpl/" "bimap.hpp" "current_function.hpp" "thread/" "static_assert.hpp" "assign/" "atomic/" "local_function/" "foreach.hpp" "call_traits.hpp" "mpi.hpp" "graph/" "program_options.hpp" "python/" "concept_archetype.hpp" "xpressive/" "atomic.hpp" "intrusive/" "function_equal.hpp" "lexical_cast/" "intrusive_ptr.hpp" "multi_index/" "config/" "spirit.hpp" "swap.hpp" "lexical_cast.hpp" "uuid/" "core/" "cxx11_char_types.hpp" "smart_ptr.hpp" "tuple/" "numeric/" "locale/" "locale.hpp" "signals.hpp" "filesystem.hpp" "statechart/" "generator_iterator.hpp" "sort/" "program_options/" "signal.hpp" "get_pointer.hpp" "pointee.hpp" "cast.hpp" "utility/" "property_map/" "circular_buffer_fwd.hpp" "mem_fn.hpp" "asio/" "typeof/" "exception_ptr.hpp" "regex_fwd.hpp" "units/" "any.hpp" "type_index.hpp" "type.hpp" "ptr_container/" "operators.hpp" "compressed_pair.hpp" "ref.hpp" "multi_array.hpp" "signals2.hpp" "version.hpp" "tokenizer.hpp" "align.hpp" "preprocessor.hpp" "python.hpp" "regex/" "shared_ptr.hpp" "checked_delete.hpp" "property_tree/" "polymorphic_pointer_cast.hpp" "variant.hpp" "concept_check/" "unordered/" "random.hpp" "detail/" "container/" "type_traits.hpp" "chrono.hpp" "wave/" "polygon/" "scope_exit.hpp" "scoped_array.hpp" "functional/" "thread.hpp" "cerrno.hpp" "regex.hpp" "proto/" "smart_ptr/" "system/" "heap/" "type_erasure/" "memory_order.hpp" "aligned_storage.hpp" "pending/" "shared_array.hpp" "phoenix/" "token_iterator.hpp" "math_fwd.hpp" "assert.hpp" "functional.hpp" "local_function.hpp" "non_type.hpp" "preprocessor/" "geometry/" "regex.h" "shared_container_iterator.hpp" "io_fwd.hpp" "test/" "multiprecision/" "multi_index_container_fwd.hpp" "phoenix.hpp" "utility.hpp" "signals/" "function_types/" "lockfree/" "coroutine/" "circular_buffer/" "rational.hpp" "algorithm/" "iterator.hpp" "foreach_fwd.hpp" "move/" "integer_traits.hpp" "exception/" "timer.hpp" "fusion/" "lambda/" "type_index/" "format/" "wave.hpp" "circular_buffer.hpp" "cstdlib.hpp" "asio.hpp" "concept_check.hpp" "logic/" "timer/" "cregex.hpp" "indirect_reference.hpp" "blank.hpp" "pool/" "scoped_ptr.hpp" "assign.hpp" "archive/" "pointer_to_other.hpp" "iterator_adaptors.hpp" "noncopyable.hpp" "compatibility/" "config.hpp" "optional/" "integer/" "predef.h" "context/" "icl/" "serialization/" "flyweight/" "blank_fwd.hpp" "polymorphic_cast.hpp" "log/" "dynamic_bitset/" "parameter.hpp" "unordered_map.hpp" "spirit/" "gil/" "msm/" "visit_each.hpp" "none.hpp" "geometry.hpp" "flyweight.hpp" "enable_shared_from_this.hpp" "implicit_cast.hpp" "throw_exception.hpp" "format.hpp" "chrono/" "optional.hpp" "next_prior.hpp" "date_time/" "dynamic_bitset.hpp" "last_value.hpp" "align/" "iterator/" "accumulators/" "iostreams/" "predef/" "variant/" "integer.hpp" "progress.hpp" "nondet_random.hpp" "interprocess/" "is_placeholder.hpp" "array.hpp" "bind.hpp" "parameter/" "make_shared.hpp" "weak_ptr.hpp" "tr1/" "date_time.hpp" "bind/" "ratio/" "none_t.hpp" "math/" "filesystem/" "io/" "mpi/" "function.hpp" "signals2/" "token_functions.hpp" "make_unique.hpp" "bimap/" "pointer_cast.hpp" "type_traits/" "random/" "limits.hpp" "crc.hpp" "endian/" "multi_index_container.hpp" "range.hpp" "range/" "function_output_iterator.hpp" "unordered_set.hpp" "cstdfloat.hpp" "integer_fwd.hpp" "../" "./")
+
+ ("/usr/include/" (23193 55554 904178 846000) "sudo_plugin.h" "xf86drm.h" "nl_types.h" "glib-2.0/" "wchar.h" "cairo/" "valgrind/" "elf.h" "protocols/" "gdk-pixbuf-2.0/" "stropts.h" "resolv.h" "sysexits.h" "getopt.h" "paths.h" "gshadow.h" "libgen.h" "fmtmsg.h" "expat.h" "ctype.h" "video/" "xlocale.h" "GL/" "malloc.h" "X11/" "fstab.h" "lastlog.h" "jmorecfg.h" "hexchat-plugin.h" "xorg/" "rdma/" "errno.h" "pcre.h" "assert.h" "endian.h" "execinfo.h" "jerror.h" "mqueue.h" "stdio_ext.h" "error.h" "stdio.h" "pcrecpp.h" "gconv.h" "values.h" "wctype.h" "features.h" "string.h" "langinfo.h" "x86_64-linux-gnu/" "link.h" "search.h" "wayland-version.h" "pngconf.h" "nfs/" "pcrecpparg.h" "tar.h" "netpacket/" "atk-1.0/" "limits.h" "sgtty.h" "fts.h" "xfs/" "gawkapi.h" "time.h" "netax25/" "FlexLexer.h" "semaphore.h" "gnumake.h" "mcheck.h" "google/" "argz.h" "netash/" "EGL/" "glob.h" "dialog.h" "misc/" "libpng/" "obstack.h" "fcntl.h" "harfbuzz/" "vpx/" "crypt.h" "xcb/" "locale.h" "uapi/" "pcre_stringpiece.h" "cpio.h" "mirclient/" "ttyent.h" "net/" "at-spi-2.0/" "poll.h" "stdint.h" "freetype2/" "stab.h" "gnu-versions.h" "wayland-server-protocol.h" "arpa/" "nss.h" "wayland-client.h" "thread_db.h" "_G_config.h" "inttypes.h" "netinet/" "dlg_keys.h" "pango-1.0/" "regex.h" "wayland-cursor.h" "sched.h" "math.h" "jpeglib.h" "pwd.h" "dirent.h" "aliases.h" "argp.h" "xf86drmMode.h" "fnmatch.h" "gettext-po.h" "ucontext.h" "tgmath.h" "zconf.h" "mtd/" "libsync.h" "alloca.h" "c++/" "turbojpeg.h" "KHR/" "ar.h" "reglib/" "pcreposix.h" "strings.h" "libintl.h" "epoxy/" "wayland-egl-core.h" "setjmp.h" "dbus-1.0/" "ulimit.h" "cifsidmap.h" "shadow.h" "aio.h" "rpc/" "signal.h" "stdc-predef.h" "xen/" "re_comp.h" "ustat.h" "nettle/" "gio-unix-2.0/" "wayland-client-core.h" "pty.h" "linux/" "pcre_scanner.h" "grp.h" "termios.h" "complex.h" "syslog.h" "byteswap.h" "scsi/" "png.h" "gmpxx.h" "stdlib.h" "mircore/" "expat_external.h" "syscall.h" "dlg_config.h" "at-spi2-atk/" "dlfcn.h" "neteconet/" "err.h" "utmp.h" "jpegint.h" "monetary.h" "wait.h" "mircommon/" "dlg_colors.h" "fenv.h" "netrose/" "termio.h" "wayland-server.h" "zlib.h" "openvpn/" "mntent.h" "utmpx.h" "xkbcommon/" "autosprintf.h" "rpcsvc/" "netrom/" "libio.h" "netipx/" "wayland-server-core.h" "envz.h" "iconv.h" "netatalk/" "drm/" "wayland-client-protocol.h" "regexp.h" "ifaddrs.h" "libpng12/" "ftw.h" "wordexp.h" "spawn.h" "wayland-util.h" "libdrm/" "python2.7/" "unistd.h" "pthread.h" "memory.h" "gtk-3.0/" "fontconfig/" "mircookie/" "sound/" "netiucv/" "python3.5m/" "uchar.h" "wayland-egl.h" "pixman-1/" "boost/" "netdb.h" "utime.h" "btrfs/" "asm-generic/" "printf.h" "../" "./")
+
+ ("/home/jckaz/Pictures/" (23189 38913 2892 933000) "E-TICKET JOHANNES SFO-CPH.pdf" "LN22.png" "debian.jpg" "conky.png" "./" "ubuntu1.jpg" "S.png" "SRFGun3.png" "deb.png" "magnets.png" "Screenshot from 2018-01-18 13-40-02.png" "ubuntu2.png" "LHEBottom.jpg" "srfguntemp.png" "vacuumoriginal.png" "debianPortrait.jpg" "LHEFront.jpg" "Niklas_Claesson.jpg" "Screenshot from 2018-01-13 18-51-24.png" "imgpsh_fullsize.png" "Screenshot from 2018-01-26 11-31-43.png" "LN2.png" "Screenshot from 2018-01-13 18-30-17.png" "4d7.png" "vacuum.png" "moon.png" "Johannes_Kazantzidis.jpg" "earth.png" "SRFGun2.png" "Screenshot from 2017-11-29 19-25-21.png" "SRFGun.png" "../" "conky.jpeg" "ada5c4cd-b1f1-4595-a105-c05c01a12860.jpg")
+
+ ("/home/jckaz/protom/cli/" (23186 5197 875132 658000) ".git/" "./" "__init__.py" "terminal_colors.py" "../" "cli.py" "command_parsing.py" ".gitignore" "README.md")
+
+ ("/home/jckaz/SLAC/undulator/ucmApp/Db/undulator/" (23073 56155 479996 645000) "HGVPU_virt_motor.db" "./" "HGVPU_SSI_SLACLatched_v2.hexout" "HGVPU_masterMotorStatus.db" "FagorEncoders.db" "IDcommon_NewPower.db" "HGVPU_readCalc.db" "HGVPU_real_motor.db" "st_new.template" "IDLimitSwitches.db" "firmware_rev.db" "ucmAccessControl.acf" "HGVPUmotors.db" "#IDcommon_NewPower.db#" "HGVPU.db" "CONFIG_SECURITY" "xxCamAsynMotor.vdb" "encoder_test.db" "Makefile" "undulatorCommon.vdb" "smart_extra.db" "HGVPU_coordMotion.substitutions" "xxCamMotion.vdb" "startup.template" "../" "IDerrors.db" "IDmotion.db" "ID_motionComplete.db" "tews_LinearSSI.db" "st.template" "IDMonitors.db")
+
+ ("/home/jckaz/SLAC/undulator/tempFilesForReconstruction/" (23072 39025 913187 280000) "HGVPU.st" "./" "HGVPU.db" "../")
+
+ ("/home/jckaz/stram3.0/" (23175 28255 599013 473000) "stramdict.cc" ".git/" "src/" "./" "rf.root" "test.root" "stram" "stramdict_rdict.pcm" "Makefile" "../" "resources/")
+
+ ("/home/jckaz/conky-lua/" (23175 27864 793472 506000) ".conky-vision-icons/" ".conkyrc" "accuweather.sh" ".git/" "spotify-title.sh" "./" "luascript.lua" "../" "spotify-artist.sh" "LICENSE" ".gitignore" "README.md")
+
+ ("/home/jckaz/Documents/" (23181 50473 326462 436000) "LetterOfResignation.pdf" "LetterOfResignation.log" "./" "LetterOfResignation.out" "SRF_Gun_Controls_Initial_Support_Status.docx" "MatlabSeminar.txt" "MATLAB/" "CPP Primer 5th" "LetterOfResignation.aux" "LetterOfResignation.tex" "../" "signature.pdf")
+
+ ("/home/jckaz/protom/sci/" (23073 42207 658049 410000) "exceptions.py" ".git/" "client.py" "test_SCI.py" "./" "schema_generator.py" "server.py" "__init__.py" "owned_entities.py" "interface.py" "utilities.py" "external_entities.py" "../" "examples.py" "Documentation/" "README.md")
+
+ ("/home/jckaz/Desktop/" (23065 62701 273897 706000) "./" "../")
+
+ ("/home/jckaz/toptal/" (23169 53523 651115 219000) "day7.py" "day4.txt" "day5.txt" "./" "ex1.py" "toptal.txt" "day1.py" "day3.py" "day2.txt" "triplebyte.py" "day6.py" "demo-test.py" "../" "day5.py" "day7.txt" "day2.py" "day4.py" "#ex1.py#")
+
+ ("/home/jckaz/stram-article/" (23170 24531 73522 657000) ".git/" "template.tex" "./" ".DS_Store" "initial.png" "Stram_article.log" "AbsorptionMap_computation_chart.pdf" "MOSFETs.pdf" "test.bib" "Stram_article.auxlock" "Stram_article.spl" "MOSFET_Inv.pdf" "ResponseFunction_Gamma.pdf" "STRAM_GUI.png" "CodeExample.pdf" "Stram_article.pdf" "Latex.gitignore" "Stram_article.aux" "HypotheticIllustrationOfRadiation.pdf" "MOSFET.pdf" "_region_.spl" "_region_.tex" "Stram_article.tex" "MOSFET_NoInv.pdf" "ArticleBibliography.bib" "../" "STRAM_GUI.pdf" "AbsorptionMap_computation_chart.jpg" "radiationMap.pdf" "initial.pdf" ".gitignore" "README.md" "ResponseFunction_Neutron.png")
+
+ ("/usr/share/themes/ministic/gtk-3.0/assets/" (23080 55738 222658 668000) "titlebutton-close-active@2.png" "switch-insensitive-selected.png" "checkbox-checked-dark.png" "titlebutton-min-backdrop.png" "titlebutton-close-dark.png" "checkbox-checked-insensitive-dark@2.png" "switch-insensitive-header.png" "radio-mixed-insensitive-dark.png" "checkbox-mixed-insensitive-dark.png" "titlebutton-min-hover.png" "radio-checked-dark.png" "pane-separator-vertical.png" "titlebutton-max-backdrop.png" "radio-mixed@2.png" "switch-active-header-dark.png" "switch-active-insensitive-selected.png" "radio-unchecked.png" "checkbox-checked-insensitive@2.png" "switch-active-selected@2.png" "checkbox-mixed-dark@2.png" "checkbox-unchecked-selected@2.png" "checkbox-mixed.png" "switch-insensitive@2.png" "titlebutton-max-hover-dark@2.png" "titlebutton-min-backdrop@2.png" "radio-unchecked-dark@2.png" "titlebutton-close.png" "checkbox-checked-dark@2.png" "checkbox-unchecked-insensitive-selected@2.png" "switch-active-insensitive.png" "radio-checked-insensitive@2.png" "titlebutton-close-active-dark.png" "titlebutton-max-active@2.png" "radio-mixed-selected.png" "titlebutton-max-backdrop@2.png" "switch-active-insensitive@2.png" "titlebutton-max-dark@2.png" "checkbox-mixed-insensitive-dark@2.png" "titlebutton-close-backdrop@2.png" "checkbox-checked-insensitive-dark.png" "checkbox-checked-selectionmode-dark@2.png" "titlebutton-min-dark.png" "switch-active-selected.png" "switch-active-header@2.png" "switch-header@2.png" "switch-insensitive-dark.png" "checkbox-mixed-insensitive.png" "radio-unchecked-selected.png" "checkbox-checked-insensitive.png" "switch-active-header.png" "checkbox-checked-insensitive-selected.png" "pane-separator@2.png" "titlebutton-max-active-dark@2.png" "titlebutton-close-dark@2.png" "radio-mixed-dark.png" "checkbox-checked-selectionmode.png" "radio-unchecked-insensitive-dark.png" "titlebutton-min-hover@2.png" "titlebutton-close-backdrop-dark.png" "switch-active@2.png" "radio-checked.png" "checkbox-unchecked-dark.png" "switch-active-dark.png" "titlebutton-min-backdrop-dark.png" "titlebutton-close-hover-dark@2.png" "titlebutton-max-hover@2.png" "radio-unchecked-selected@2.png" "checkbox-unchecked-dark@2.png" "checkbox-unchecked-insensitive.png" "radio-mixed-selected@2.png" "checkbox-unchecked-insensitive-dark.png" "radio-mixed-insensitive-dark@2.png" "switch-insensitive-selected@2.png" "checkbox-mixed-insensitive-selected.png" "titlebutton-min-active.png" "titlebutton-max-active-dark.png" "checkbox-checked-selected.png" "radio-checked@2.png" "titlebutton-close-hover.png" "titlebutton-max@2.png" "checkbox-selectionmode.png" "switch-active.png" "checkbox-mixed@2.png" "switch-active-insensitive-header-dark.png" "pane-separator.png" "switch-selected.png" "checkbox-unchecked-insensitive-dark@2.png" "switch-insensitive.png" "checkbox-unchecked.png" "titlebutton-max-backdrop-dark@2.png" "titlebutton-close-hover@2.png" "titlebutton-close@2.png" "radio-unchecked-insensitive.png" "radio-mixed-insensitive@2.png" "switch-insensitive-header-dark@2.png" "switch-active-dark@2.png" "radio-unchecked-insensitive-selected.png" "switch-header.png" "titlebutton-close-hover-dark.png" "titlebutton-max-hover.png" "switch-active-insensitive-dark.png" "pane-separator-vertical@2.png" "titlebutton-min@2.png" "titlebutton-max-hover-dark.png" "radio-mixed-insensitive-selected.png" "titlebutton-close-active.png" "titlebutton-max-active.png" "titlebutton-min-dark@2.png" "checkbox-selectionmode-dark@2.png" "checkbox-checked-selectionmode-dark.png" "radio-checked-insensitive-selected.png" "titlebutton-min-hover-dark.png" "titlebutton-max.png" "checkbox-unchecked@2.png" "radio-checked-insensitive.png" "checkbox-selectionmode@2.png" "radio-unchecked-insensitive-dark@2.png" "titlebutton-min.png" "titlebutton-min-hover-dark@2.png" "titlebutton-close-backdrop.png" "titlebutton-min-active-dark.png" "checkbox-checked-selectionmode@2.png" "checkbox-unchecked-insensitive@2.png" "switch@2.png" "switch-active-insensitive-header.png" "switch-active-insensitive-dark@2.png" "radio-checked-insensitive-dark.png" "checkbox-mixed-insensitive-selected@2.png" "radio-checked-insensitive-dark@2.png" "radio-unchecked-insensitive@2.png" "radio-mixed-insensitive-selected@2.png" "checkbox-checked-selected@2.png" "radio-unchecked-insensitive-selected@2.png" "titlebutton-min-backdrop-dark@2.png" "radio-checked-insensitive-selected@2.png" "titlebutton-close-active-dark@2.png" "radio-checked-dark@2.png" "radio-mixed.png" "radio-mixed-dark@2.png" "thumbnail-frame.png" "switch-insensitive-dark@2.png" "checkbox-mixed-selected@2.png" "titlebutton-min-active-dark@2.png" "switch-active-header-dark@2.png" "switch-header-dark.png" "switch-active-insensitive-header-dark@2.png" "checkbox-checked-insensitive-selected@2.png" "checkbox-selectionmode-dark.png" "checkbox-mixed-selected.png" "checkbox-mixed-dark.png" "switch-active-insensitive-selected@2.png" "switch-insensitive-header@2.png" "titlebutton-max-dark.png" "checkbox-unchecked-insensitive-selected.png" "checkbox-unchecked-selected.png" "switch-active-insensitive-header@2.png" "switch-insensitive-header-dark.png" "radio-unchecked@2.png" "checkbox-checked.png" "switch-selected@2.png" "checkbox-checked@2.png" "switch-header-dark@2.png" "radio-unchecked-dark.png" "switch-dark.png" "radio-mixed-insensitive.png" "switch-dark@2.png" "titlebutton-close-backdrop-dark@2.png" "radio-checked-selected@2.png" "radio-checked-selected.png" "titlebutton-min-active@2.png" "checkbox-mixed-insensitive@2.png" "titlebutton-max-backdrop-dark.png" "switch.png" "../" "./")
+
+ ("/usr/share/themes/Mint-Y-Dark/gtk-2.0/menubar-toolbar/" (23068 27516 337306 97000) "toolbar-entry-border-active-bg-dark.png" "./" "menubar-dark.png" "button.png" "toolbar-entry-border-bg.png" "toolbar-entry-border-bg-dark.png" "button-insensitive.png" "toolbar-entry-border-active-bg.png" "menubar.png" "button-active.png" "button-hover.png" "menubar-toolbar.rc" "toolbar-entry-border-disabled-bg.png" "../" "toolbar-entry-border-disabled-bg-dark.png" "menubar-toolbar-dark.rc" "menubar_button-dark.png" "menubar_button.png")
+
+ ("/usr/share/themes/Mint-Y-Dark/gtk-2.0/assets/" (23068 27516 337306 97000) "combo-entry-focus.png" "entry-border-fill.png" "frame.png" "combo-entry-insensitive-notebook-rtl.png" "arrow-up-small-prelight.png" "menu-radio-checked-insensitive.png" "entry-border-bg.png" "combo-entry-button-insensitive-rtl.png" "slider-insensitive.png" "arrow-right-insens.png" "slider-vert.png" "trough-vertical.png" "radio-unchecked.png" "notebook-entry-border-disabled-bg.png" "slider.png" "menuitem.png" "arrow-up-small-insens.png" "handle-v.png" "arrow-down-small.png" "arrow-down-small-prelight.png" "tab-top-active.png" "tab-left-active.png" "combo-entry-button-rtl.png" "slider-horiz.png" "plus.png" "frame-gap-start.png" "menu-arrow-prelight.png" "down-background-disable.png" "trough-progressbar.png" "combo-entry-button-active-rtl.png" "handle-h.png" "button.png" "arrow-down-small-insens.png" "up-background-rtl.png" "menu-checkbox-unchecked-insensitive.png" "checkbox-checked-insensitive.png" "tree_header.png" "arrow-left-insens.png" "arrow-right-prelight.png" "null.png" "progressbar.png" "line-v.png" "focus-line.png" "entry-border-active-bg-solid.png" "up-background-disable.png" "combo-entry-rtl.png" "arrow-down.png" "toolbar.png" "combo-entry-button.png" "menu-checkbox-unchecked.png" "radio-checked.png" "combo-entry-focus-rtl.png" "progressbar_v.png" "entry-border-disabled-bg.png" "checkbox-unchecked-insensitive.png" "notebook-entry-border-bg.png" "toolbar-entry-border-bg.png" "arrow-up.png" "trough-progressbar_v.png" "up-background.png" "arrow-down-prelight.png" "combo-entry-button-active.png" "arrow-up-prelight.png" "tab-bottom-active.png" "checkbox-unchecked.png" "arrow-left.png" "button-insensitive.png" "menu-radio-unchecked.png" "radio-unchecked-insensitive.png" "toolbar-entry-border-active-bg.png" "menu-checkbox-checked-insensitive.png" "slider-horiz-insens.png" "entry-border-bg-solid.png" "menubar.png" "frame-gap-end.png" "button-active.png" "menu-radio-unchecked-insensitive.png" "slider-prelight.png" "inline-toolbar.png" "trough-scrollbar-vert.png" "slider-vert-prelight.png" "button-hover.png" "down-background-disable-rtl.png" "combo-entry-button-insensitive.png" "menu-checkbox-checked.png" "radio-checked-insensitive.png" "menu-arrow.png" "down-background-rtl.png" "up-background-disable-rtl.png" "trough-horizontal-active.png" "minus.png" "combo-entry-insensitive.png" "toolbar-entry-border-disabled-bg.png" "slider-horiz-active.png" "notebook.png" "combo-entry-notebook-rtl.png" "tab-right-active.png" "notebook-entry-border-active-bg.png" "trough-vertical-active.png" "combo-entry-insensitive-notebook.png" "combo-entry.png" "arrow-left-prelight.png" "arrow-up-insens.png" "entry-border-active-bg.png" "line-h.png" "menu-radio-checked.png" "down-background.png" "notebook-gap-vert.png" "combo-entry-notebook.png" "checkbox-checked.png" "arrow-down-insens.png" "trough-scrollbar-horiz.png" "notebook-gap-horiz.png" "arrow-right.png" "trough-horizontal.png" "combo-entry-focus-notebook.png" "slider-horiz-prelight.png" "slider-vert-active.png" "slider-vert-insens.png" "arrow-up-small.png" "combo-entry-focus-notebook-rtl.png" "combo-entry-insensitive-rtl.png" "menubar_button.png" "../" "./")
+
+ ("/usr/share/themes/Mint-Y-Dark/metacity-1/" (23068 27516 341305 948000) "./" "button-border.svg" "metacity-theme-3.xml" "button-bg.svg" "close-icon.svg" "thumbnail.png" "min-icon.svg" "metacity-theme-2.xml" "../" "max-icon.svg")
+
+ ("/usr/share/themes/Mint-Y-Dark/" (23068 27516 333306 246000) "./" "xfwm4/" "cinnamon/" "xfce-notify-4.0/" "gtk-2.0/" "index.theme" "../" "metacity-1/" "gtk-3.0/")
+
+ ("/home/jckaz/.local/share/applications/" (23153 63355 814686 681000) "whatsapp.desktop" "./" "skype.desktop" "Qt-MaintenanceTool.desktop" "DigiaQt-qtcreator-community.desktop" "mimeapps.list" "excel.desktop" "matlab.desktop" "linkedin.desktop" "word.desktop" "fbmessenger.desktop" "stanford.desktop" "google-maps.desktop" "../" "TheQtCompany-qtcreator-4.5.0-rc1-community.desktop" "zimbra.desktop" "mattermost.desktop")
+
+ ("/home/jckaz/SLAC/undulator/ucmApp/src/" (23061 47717 370517 567000) "ucmSupport.dbd" "./" "camPosCalc.c" "motorMon.st" "drvIP_EP201.c" "quadBfwCalc.c" "girderRollCalc.c" "ucmIocMain.cpp" "drvIpac.dbd" "bfwMon.st" "recovery.st" "smartMonitorReadme.txt" "ntpProvider.cc" "xyCORrection.c" "drvTip114.c" "camCalibrate.st" "autoOff.st" "camPosRead.c" "Makefile" "FpgaIpSupport.dbd" "autoOff.dbd" "menuScan.dbd" "../" "polynomial.c" "init-epics-ticks.cc")
+
+ ("/home/jckaz/SLAC/undulator/ucmApp/" (23061 47717 370517 567000) "src/" "./" "MotorSimSrc/" "Makefile" "Db/" "../")
+
+ ("/home/jckaz/tmux/" (23151 39730 799964 231000) ".git/" "./" ".tmux.conf" "../")
+
+ ("/home/jckaz/protom/" (23073 42198 970231 509000) "./" "cli/" "sci/" "../")
+
+ ("/home/jckaz/desktop-apps/" (23141 31821 162311 927000) ".git/" "./" "desktopApps.sh" "../")
+
+ ("/home/jckaz/albert/" (23141 30312 795585 953000) ".git/" "./" "jspot.qss" "../")
+
+ ("/home/jckaz/conky/.conky-vision-icons/accuweathericons/" (23060 31675 698438 342000) "4.png" "32.png" "40.png" "./" "35.png" "12.png" "25.png" "22.png" "38.png" "36.png" "39.png" "41.png" "21.png" "19.png" "14.png" "3.png" "8.png" "16.png" "5.png" "44.png" "37.png" "17.png" "11.png" "33.png" "26.png" "29.png" "6.png" "2.png" "24.png" "15.png" "23.png" "1.png" "13.png" "../" "30.png" "34.png" "43.png" "42.png" "31.png" "18.png" "20.png" "7.png")
+
+ ("/home/jckaz/conky/.conky-vision-icons/" (23060 31675 698438 342000) "./" "accuweathericons/" "../")
+
+ ("/home/jckaz/.cache/spotify/" (23139 57343 984558 998000) "mercury.db-wal" "Storage/" "./" "Users/" "offline.bnk" "Data/" "mercury.db" "WidevineCDM/" "../" "Browser/")
+
+ ("/home/jckaz/stram/src/" (23132 63236 939144 357000) "makedoc.C" "./" ".DS_Store" "AbsorptionMap.h" "stram.cpp" "#AbsorptionMap.h#" "LinkDef.h" "../" "AbsorptionMap.cpp")
+
+ ("/home/jckaz/stram3.0/src/" (23133 33600 610084 766000) "stramdict.cc" "fluxexec.cc" "./" "#stram.h#" "map.cc" "stram.h" "map.h" "stramdict_rdict.pcm" "stram.cc" "main.cc" "../")
+
+ ("/home/jckaz/.themes/" (23131 65292 401609 288000) "./" "../")
+
+ ("/usr/share/themes/Vertex/gtk-3.0/" (23131 64051 620430 163000) "gtk-dark.css" "assets/" "./" "thumbnail.png" "gtk.css" "../" "borders/")
+
+ ("/home/jckaz/.themes/Windows-10/gtk-3.0/" (23130 45821 312097 0) "scrollbars/" "gtk-dark.css" "settings.ini" "assets/" "./" "gtk-widgets.css" "gtk-3.20/" "buttons/" "gtk-widgets-assets.css" "panel/" "apps/" "thumbnail.png" "gtk.css" "../" "gtk-widgets-dark.css")
+
+ ("/home/jckaz/.themes/Ubuntu-touch/" (23130 45827 859949 0) "./" "cinnamon/" "metadata.json" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

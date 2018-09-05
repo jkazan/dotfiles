@@ -1,0 +1,12 @@
+ls
+cd Documents/birdeye/src/
+ls
+git status
+cd
+ls
+cd ..
+cd ..
+ls
+cd Desktop/
+ls
+cp TimeSheetSAP.xlsx testcopy.xlsx
