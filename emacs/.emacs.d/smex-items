@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ undo-tree-visualize
  load-file
  load-theme
  package-list-packages
  sh-mode
  python-mode
  matlab-mode
- undo-tree-visualize
 )
 
 ;; ----- smex-data -----
@@ -53,7 +53,7 @@
  (revert-buffer . 7)
  (whitespace-mode . 12)
  (yas-visit-snippet-file . 5)
- (undo-tree-visualize . 21)
+ (undo-tree-visualize . 22)
  (butterfly . 1)
  (forward-sexp . 5)
  (backward-sexp . 1)

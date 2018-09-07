@@ -161,8 +161,8 @@
 ;; ----- ido-work-file-list -----
 (
  "wetch"
- "luascript.lua"
  ".conkyrc"
+ "luascript.lua"
  ".emacs"
  "1.jpg"
  "startup_work.sh"
@@ -174,6 +174,10 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/jkazan/wetch/" (23442 22780 128895 123000) "accuweather-icons/" "wget-log.27" "README.md" "wget-log.6" "wget-log.2" "wget-log.33" "wget-log.3" "wget-log.20" "#wetch#" "wget-log.19" "wget-log.18" "wget-log.14" "./" "wget-log.29" "wget-log.22" "spotify-cover.sh" "wget-log.1" "wget-log.4" "wget-log.5" "wetch" "LICENSE" "luascript.lua" "wget-log.15" ".git/" "wget-log.11" "wget-log.26" "wget-log.10" "wget-log.32" "spotify-title.sh" "wget-log.24" "../" "wget-log.12" "wget-log.16" "poiret-one/" "wget-log" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "wetch.config" "slack-web.png" "wget-log.17" "wget-log.9" ".conkyrc" "wget-log.31" "wget-log.23" "slack.sh" "wetch.png" "wget-log.8" "wget-log.25" "wget-log.30" ".gitignore" "batlow.svg" "wget-log.34" "wget-log.13" "wget-log.28" "wget-log.35" "wget-log.7" "install.sh" "wget-log.21")
+
+ ("/home/jkazan/dotfiles/i3/" (23440 53848 852017 893000) "config" "./" "../")
+
  ("/etc/udev/rules.d/" (23429 2220 418625 945000) "./" "60-vboxdrv.rules" "../")
 
  ("/etc/udev/" (23423 51560 508284 863000) "./" "hwdb.d/" "udev.conf" "../" "rules.d/")
@@ -181,8 +185,6 @@
  ("/etc/" (23438 11916 52025 168000) "selinux/" "updatedb.conf" "modules-load.d/" "udev/" "init.d/" "rc0.d/" "locale.alias" "UPower/" "apparmor.d/" "dkms/" "logrotate.d/" "ld.so.conf.d/" "gdb/" "systemd/" "inputrc" "mtab" "grub.d/" "ssl/" "vtrgb" "libpaper.d/" "console-setup/" "subgid-" "dictionaries-common/" "alternatives/" "adduser.conf" "usb_modeswitch.d/" "netplan/" "logrotate.conf" "profile" "networks" "pam.conf" "lintianrc" "skel/" "hosts.allow" "samba/" "casper.conf" "python/" "passwd-" "cryptsetup-initramfs/" "NetworkManager/" "modprobe.d/" "sysstat/" "emacs25/" "brltty/" "pulse/" "glvnd/" "wgetrc" "mailcap" "oracle-java9-jdk/" "python3/" "cracklib/" "modules" "kernel-img.conf" "obex-data-server/" "network/" "passwd" "apparmor/" "init/" "libao.conf" "binfmt.d/" "rc6.d/" "mtools.conf" "wpa_supplicant/" "emacs/" "deluser.conf" "iproute2/" "fuse.conf" "hosts" "bindresvport.blacklist" "manpath.config" "dbus-1/" "cron.monthly/" "mailcap.order" "acpi/" "doc-base/" "PackageKit/" "logcheck/" "calendar/" "sudoers.d/" "ldap/" ".pwd.lock" "depmod.d/" "anacrontab" "drirc" "vdpau_wrapper.cfg" "debconf.conf" "subgid" "sensors3.conf" "newt/" "issue.net" "pki/" "linuxmint/" "appstream.conf" "machine-id" "cron.hourly/" "mke2fs.conf" "gai.conf" "lsb-release" "group-" "tmpfiles.d/" "terminfo/" ".java/" "rc4.d/" "shadow-" "apt/" "gtk-3.0/" "nanorc" "mime.types" "kernel/" "papersize" "request-key.conf" "resolvconf/" "rc2.d/" "cron.weekly/" "bluetooth/" "bash_completion.d/" "pm/" "sysctl.d/" "ifplugd/" "security/" "dhcp/" "sensors.d/" "rc1.d/" "apport/" "debian_version" "request-key.d/" "gnome-vfs-2.0/" "pnm2ppa.conf" "gnome-app-install/" "resolv.conf" "crontab" "magic" "apg.conf" "locale.gen" "printcap" "gnome/" "bash_completion" "sudoers" "libblockdev/" "lightdm/" "guest-session/" "cups/" "ppp/" "neofetch/" "usb_modeswitch.conf" "rsyslog.d/" "localtime" "issue" "vim/" "pam.d/" "opt/" "kerneloops.conf" "java-11-openjdk/" "groff/" "vbox/" "sane.d/" "apm/" "hostname" "host.conf" "ld.so.conf" "conky/" "fstab" "gufw/" "sysctl.conf" "default/" "fonts/" "menu-methods/" "mono/" "subuid-" "cron.daily/" "services" "python3.6/" "zsh_command_not_found" "upstream-release/" "speech-dispatcher/" "gss/" "libreoffice/" "parallel/" "udisks2/" "fwupd/" "openal/" "pcmcia/" "shells" "nsswitch.conf" "gconf/" "initramfs-tools/" "bash.bashrc" "i3status.conf" "gshadow-" "rpc" "ImageMagick-6/" "rc3.d/" "rc5.d/" "avahi/" "ld.so.cache" "gshadow" "os-release" "matplotlibrc" "rsyslog.conf" "gtk-2.0/" "lvm/" "ufw/" "update-motd.d/" "brlapi.key" "chromium-browser/" "brltty.conf" "gimp/" "cifs-utils/" "xml/" "chatscripts/" "inxi.conf" "openvpn/" "X11/" "ranger/" "login.defs" "securetty" "ghostscript/" "rmt" "subuid" "group" "python2.7/" "ssh/" "wildmidi/" "hp/" "i3/" "environment" "profile.d/" "ca-certificates/" "libaudit.conf" "sgml/" "hdparm.conf" "thunderbird/" "geoclue/" "adjtime" "xdg/" "cupshelpers/" "firefox/" "ucf.conf" "cron.d/" "timeshift.json" "hosts.deny" "ca-certificates.conf" "thermald/" "rcS.d/" "perl/" "libnl-3/" "shadow" "ltrace.conf" "hddtemp.db" "polkit-1/" "timezone" "legal" "protocols" "magic.mime" "dpkg/" "../" "./")
 
  ("/home/jkazan/.config/i3/" (23439 31871 463793 235000) "config" "./" "../" "#config#")
-
- ("/home/jkazan/wetch/" (23438 11401 666749 87000) "accuweather-icons/" "README.md" "#wetch#" "./" "wetch" "LICENSE" "luascript.lua" ".git/" "spotify-title.sh" "../" "poiret-one/" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "wetch.config" "slack-web.png" ".conkyrc" "slack.sh" "wetch.png" ".gitignore" "batlow.svg" "install.sh")
 
  ("/home/jkazan/wetch.test/" (23438 43106 235771 634000) "accuweather-icons/" "README.md" "#wetch#" "./" "wetch" "LICENSE" "luascript.lua" ".git/" "spotify-title.sh" "../" "poiret-one/" "spotify-client.png" "spotify-artist.sh" "batnot.sh" "nointernet.svg" "wetch.config" "slack-web.png" ".conkyrc" "#.conkyrc#" "slack.sh" "wetch.png" ".gitignore" "batlow.svg" "install.sh")
 
@@ -371,8 +373,6 @@
  ("/usr/share/themes/Vertex/gtk-3.0/" (23131 64051 620430 163000) "gtk-dark.css" "assets/" "./" "thumbnail.png" "gtk.css" "../" "borders/")
 
  ("/home/jckaz/.themes/Windows-10/gtk-3.0/" (23130 45821 312097 0) "scrollbars/" "gtk-dark.css" "settings.ini" "assets/" "./" "gtk-widgets.css" "gtk-3.20/" "buttons/" "gtk-widgets-assets.css" "panel/" "apps/" "thumbnail.png" "gtk.css" "../" "gtk-widgets-dark.css")
-
- ("/home/jckaz/.themes/Ubuntu-touch/" (23130 45827 859949 0) "./" "cinnamon/" "metadata.json" "../")
 )
 
 ;; ----- ido-unc-hosts-cache -----

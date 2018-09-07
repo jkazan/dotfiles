@@ -3,3 +3,8 @@
 session.*
 *#*
 *~*
+emacs/.ido.last
+emacs/recentf
+emacs/smex-items
+ranger/history
+ranger/bookmarks
