@@ -1,109 +1,66 @@
+# Set modifier key
 set $mod Mod4
 
 # Set background
 exec_always --no-startup-id feh --bg-fill ~/Pictures/oahu_dark.jpg
 
-# compton
+# Compton
 exec_always --no-startup-id compton # -i 0.6 --active-opacity 0.85
 
-# opacity-rule = [
-# "99:class_g = 'conky' && window_type = 'tooltip'"
-# ];
-
+# Use gaps even for single windows
 for_window [class=" *"] fullscreen disable
 
-# Natural scrolling
-# xinput set-prop 12 311 -73 -73
-
-
-# # Opacity exceptiom
-# menu-opacity = 1;
-# inactive-opacity = 1;
-# frame-opacity = 1;
-# inactive-opacity-override = false;
-
-# #WORKS
-# opacity-rule = [ "85:name *= 'conky'"];
- 
-# Window and bar font
-# font pango: Overpass Light 11
+# Font
 font pango:DejaVu Sans Mono 10
  
-# Direction keybindings
-# set $up i
-# set $down k
-# set $left l
-# set $right semicolon
+# Keybinding for dragging floating windows
+floating_modifier Mod1
  
-# # use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
- 
-# # start a terminal
+# Start terminal
 bindsym $mod+Return exec --no-startup-id i3-sensible-terminal
  
-# kill focused window
+# Kill focused window
 bindsym $mod+w kill
  
-# start dmenu (a program launcher)
+# Start dmenu
 bindsym $mod+d exec --no-startup-id dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# Screenshot entire screen
+bindsym Print exec --no-startup-id "maim /dev/stdout | xclip -selection clipboard -t image/png -i"
+
+Screenshot active window
+bindsym $mod+Print exec --no-startup-id "bash /home/jkazan/bashscripts/capture_window.sh"
+
+# Screenshot area
+bindsym Shift+Print exec --no-startup-id "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
+
+
+
  
-# change focus
-# bindsym $mod+$left focus left
-# bindsym $mod+$down focus down
-# bindsym $mod+$up focus up
-# bindsym $mod+$right focus right
- 
-# alternatively, you can use the cursor keys:
+# Change window focus
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
  
 # move focused window
-# bindsym $mod+Shift+$left move left
-# bindsym $mod+Shift+$down move down
-# bindsym $mod+Shift+$up move up
-# bindsym $mod+Shift+$right move right
- 
-# alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
  
-# # split in horizontal orientation
+# Horizontal window split
 bindsym $mod+h split h
  
-# # split in vertical orientation
+# Vertical window split
 bindsym $mod+v split v
  
-# enter fullscreen mode for the focused container
+# Fullscreen toggle
 bindsym $mod+f fullscreen toggle
- 
-# # change container layout (stacked, tabbed, toggle split)
-# bindsym $mod+s layout stacking
-# bindsym $mod+w layout tabbed
-# bindsym $mod+e layout toggle split
  
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
- 
-# # change focus between tiling / floating windows
-# bindsym $mod+space focus mode_toggle
- 
-# # focus the parent container
-# bindsym $mod+a focus parent
- 
-# # focus the child container
-# #bindsym $mod+d focus child
- 
-# # move the currently focused window to the scratchpad
-# bindsym $mod+Shift+minus move scratchpad
- 
-# # Show the next scratchpad window or hide the focused scratchpad window.
-# # If there are multiple scratchpad windows, this command cycles through them.
-# bindsym $mod+minus scratchpad show
  
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -128,26 +85,18 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
-
-# bindsym $mod+d move container to workspace 10 back_and_forth
  
-# reload the configuration file
+# Reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+
+# Restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit to shell?' -b 'Yes' 'i3-msg exit'"
 bindsym $mod+Shift+e exec i3-msg exit
  
-# resize window (you can also use the mouse for that)
+# Resize window (you can also use the mouse for that)
 mode "resize" {
-        # arrow key bindings
-        bindsym $left       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $right      resize grow width 10 px or 10 ppt
- 
-        # same bindings, but for the arrow keys
         bindsym Left        resize shrink width 10 px or 10 ppt
         bindsym Down        resize grow height 10 px or 10 ppt
         bindsym Up          resize shrink height 10 px or 10 ppt
@@ -159,13 +108,6 @@ mode "resize" {
 }
  
 bindsym $mod+r mode "resize"
- 
-# # Start i3bar to display a workspace bar
-# #bar {
-# #        status_command
-# #        height 40
-# #        position top
-# #}
  
 # class                 border  backgr. text    indicator child_border
 client.focused          #BF4080 #5294e2 #ffffff #2e9ef4   #BF4080
@@ -179,7 +121,7 @@ for_window [class="^.*"] border pixel 0
 new_window pixel 4
 new_float pixel 4
 gaps inner 15
-gaps outer -15
+gaps outer -10
 # smart_gaps off
 # smart_borders off #no_gaps
 floating_maximum_size 2000 x 1125
@@ -190,9 +132,9 @@ popup_during_fullscreen smart
 # bindsym $mod+n exec rofi -show drun -font "Source Code Pro Light 25"
 # bindsym $mod+b exec rofi -show window -font "Source Code Pro Light 25"
 # bindsym $mod+b exec rofi -show drun -icon-theme
-bindsym Mod1+space exec --no-startup-id rofi -show drun -show-icons -drun-icon-theme Paper
+# bindsym Mod1+space exec --no-startup-id rofi -show "window,run" -show-icons -drun-icon-theme Paper
 
-# -show combi -combi-modi "window,run,ssh" -modi combi
+bindsym Mod1+space exec --no-startup-id "rofi -show combi -combi-modi 'window,drun,ssh' -modi combi -show-icons"
 
 # Pulse Audio controls
 # alsactl init
@@ -214,7 +156,7 @@ exec_always --no-startup-id xautolock -detectsleep -time 10 -locker /usr/bin/i3l
  
 # # exec_always killall polybar guake
 # # exec_always polybar bar
-# # exec_always guake
+bindsym Control+Mod1+t exec --no-startup-id guake -t
 
 # cinnamon keybindings
 bindsym Control+Mod1+c exec --no-startup-id /home/$USER/wetch/wetch -wms    # wetch
@@ -238,3 +180,79 @@ bindsym Control+Mod1+Prior exec --no-startup-id qdbus org.mpris.MediaPlayer2.spo
 # conky
 maximize disable # Disable maximize for single window in order to keep conky underneath
 exec_always --no-startup-id ~/wetch/wetch -mws
+
+
+
+
+
+
+
+
+# opacity-rule = [
+# "99:class_g = 'conky' && window_type = 'tooltip'"
+# ];
+
+# Natural scrolling
+# xinput set-prop 12 311 -73 -73
+
+
+# # Opacity exceptiom
+# menu-opacity = 1;
+# inactive-opacity = 1;
+# frame-opacity = 1;
+# inactive-opacity-override = false;
+
+# #WORKS
+# opacity-rule = [ "85:name *= 'conky'"];
+ 
+# Window and bar font
+# font pango: Overpass Light 11
+
+# Direction keybindings
+# set $up i
+# set $down k
+# set $left l
+# set $right semicolon
+
+
+# change focus
+# bindsym $mod+$left focus left
+# bindsym $mod+$down focus down
+# bindsym $mod+$up focus up
+# bindsym $mod+$right focus right
+
+# move focused window
+# bindsym $mod+Shift+$left move left
+# bindsym $mod+Shift+$down move down
+# bindsym $mod+Shift+$up move up
+# bindsym $mod+Shift+$right move right
+
+# # change container layout (stacked, tabbed, toggle split)
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
+
+
+# # change focus between tiling / floating windows
+# bindsym $mod+space focus mode_toggle
+ 
+# # focus the parent container
+# bindsym $mod+a focus parent
+ 
+# # focus the child container
+# #bindsym $mod+d focus child
+ 
+# # move the currently focused window to the scratchpad
+# bindsym $mod+Shift+minus move scratchpad
+ 
+# # Show the next scratchpad window or hide the focused scratchpad window.
+# # If there are multiple scratchpad windows, this command cycles through them.
+# bindsym $mod+minus scratchpad show
+
+
+# # Start i3bar to display a workspace bar
+# #bar {
+# #        status_command
+# #        height 40
+# #        position top
+# #}
