@@ -1,8 +1,10 @@
 rofi.lines: 3
 rofi.columns: 1
-rofi.width: 15
+rofi.width: 18
 rofi.padding: 2
 rofi.scrollbar-width: 0
+rofi.font: DejaVu Sans Mono 12
+rofi.drun-icon-theme: Paper
 
 ! State:           'bg',       'fg',     'bgalt',  'hlbg',   'hlfg'
 rofi.color-normal: #00000000,  #729fcf,  #00000000,  #00000000,  #4e9a06
