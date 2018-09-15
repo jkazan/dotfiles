@@ -1,8 +1,13 @@
+# sudo chmod 666 brightness /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight
+
 # Set modifier key
 set $mod Mod4
 
 # Set background
 exec_always --no-startup-id feh --bg-fill ~/Pictures/oahu_dark.jpg
+
+# Notification
+
 
 # Compton
 exec_always --no-startup-id compton # -i 0.6 --active-opacity 0.85
@@ -34,9 +39,6 @@ bindsym $mod+Print exec --no-startup-id "bash /home/jkazan/bashscripts/capture_w
 
 # Screenshot area
 bindsym Shift+Print exec --no-startup-id "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
-
-
-
  
 # Change window focus
 bindsym $mod+Left focus left
@@ -151,13 +153,6 @@ bindsym Control+Mod1+l exec --no-startup-id i3lock-fancy
 exec_always --no-startup-id xautolock -detectsleep -time 10 -locker /usr/bin/i3lock-fancy
 # xautolock -detectsleep -time 1 -locker "/usr/bin/i3lock-fancy" -killtime 10 -killer "systemctl suspend" &
 
-
-
- 
-# # exec_always killall polybar guake
-# # exec_always polybar bar
-bindsym Control+Mod1+t exec --no-startup-id guake -t
-
 # cinnamon keybindings
 bindsym Control+Mod1+c exec --no-startup-id /home/$USER/wetch/wetch -wms    # wetch
 bindsym Control+Mod1+e exec --no-startup-id emacs25                         # emacs
@@ -181,11 +176,16 @@ bindsym Control+Mod1+Prior exec --no-startup-id qdbus org.mpris.MediaPlayer2.spo
 maximize disable # Disable maximize for single window in order to keep conky underneath
 exec_always --no-startup-id ~/wetch/wetch -mws
 
+# Drop down quake terminal
+bindsym Control+Mod1+t exec --no-startup-id guake -t
 
 
 
 
 
+
+# # # exec_always killall polybar guake
+# # # exec_always polybar bar
 
 
 # opacity-rule = [
