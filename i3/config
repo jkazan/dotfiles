@@ -1,13 +1,8 @@
-# sudo chmod 666 brightness /sys/devices/pci0000:00/0000:00:02.0/drm/card0/card0-eDP-1/intel_backlight
-
 # Set modifier key
 set $mod Mod4
 
 # Set background
 exec_always --no-startup-id feh --bg-fill ~/Pictures/oahu_dark.jpg
-
-# Notification
-
 
 # Compton
 exec_always --no-startup-id compton # -i 0.6 --active-opacity 0.85
@@ -31,14 +26,14 @@ bindsym $mod+w kill
 bindsym $mod+d exec --no-startup-id dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
-# Screenshot entire screen
-bindsym Print exec --no-startup-id "maim /dev/stdout | xclip -selection clipboard -t image/png -i"
+# Screenshot fullscreen
+bindsym Print exec --no-startup-id "/home/jkazan/bashscripts/screenshot -f"
 
-Screenshot active window
-bindsym $mod+Print exec --no-startup-id "bash /home/jkazan/bashscripts/capture_window.sh"
+# Screenshot active window
+bindsym $mod+Print exec --no-startup-id "/home/jkazan/bashscripts/screenshot -a"
 
-# Screenshot area
-bindsym Shift+Print exec --no-startup-id "maim -s --format=png /dev/stdout | xclip -selection clipboard -t image/png -i"
+# Screenshot crop
+bindsym Shift+Print exec --no-startup-id "/home/jkazan/bashscripts/screenshot -c"
  
 # Change window focus
 bindsym $mod+Left focus left
@@ -140,13 +135,13 @@ bindsym Mod1+space exec --no-startup-id "rofi -show combi -combi-modi 'window,dr
 
 # Pulse Audio controls
 # alsactl init
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% 
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% 
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && paplay /usr/share/sounds/LinuxMint/stereo/button-toggle-on.ogg
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && paplay /usr/share/sounds/LinuxMint/stereo/button-toggle-on.ogg
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec --no-startup-id ~/bashscripts/brightness -i
-bindsym XF86MonBrightnessDown exec --no-startup-id ~/bashscripts/brightness -d
+bindsym XF86MonBrightnessUp exec --no-startup-id "~/bashscripts/xbrightness + eDP-1"
+bindsym XF86MonBrightnessDown exec --no-startup-id "~/bashscripts/xbrightness - eDP-1"
 
 # i3lock
 bindsym Control+Mod1+l exec --no-startup-id i3lock-fancy
@@ -189,7 +184,7 @@ bindsym Control+Mod1+t exec --no-startup-id guake -t
 
 
 # opacity-rule = [
-# "99:class_g = 'conky' && window_type = 'tooltip'"
+# "99:window_type = 'tooltip'"
 # ];
 
 # Natural scrolling
