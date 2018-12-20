@@ -65,10 +65,10 @@
 (set-face-attribute 'default nil :height 110)
 
 ;; Alpha
-;; (set-frame-parameter (selected-frame) 'alpha '(85 . 85))
-;; (add-to-list 'default-frame-alist '(alpha . (85 . 85)))
- ;; (set-frame-parameter (selected-frame) 'alpha '(85 . 50))
- ;; (add-to-list 'default-frame-alist '(alpha . (85 . 50)))
+(set-frame-parameter (selected-frame) 'alpha '(85 . 85))
+(add-to-list 'default-frame-alist '(alpha . (85 . 85)))
+ (set-frame-parameter (selected-frame) 'alpha '(85 . 75))
+ (add-to-list 'default-frame-alist '(alpha . (85 . 75)))
 
 ;; (defun incrementAlpha ()
 ;;   (interactive)
@@ -719,6 +719,18 @@ noexcept\\|nullptr\\|static_assert\\|thread_local\\|override\\|final\\)\\>"
                      (not (use-region-p)))
                 (cua-set-mark)))))))
 
+(defun my-clocktable-write (&rest args)
+  "Custom clocktable writer.
+Uses the default writer but shifts the first column right."
+  (apply #'org-clocktable-write-default args)
+  (save-excursion
+    (forward-char) ;; move into the first table field
+    (org-table-move-column-right)
+    (org-table-move-column-right)
+    (org-table-move-column-right)
+    (org-table-move-column-right)
+    ))
+
 ;; Unbind key
 (define-key org-mode-map (kbd "C-S-<left>") nil)
 (define-key org-mode-map (kbd "C-S-<right>") nil)
@@ -766,3 +778,13 @@ list."
 ;; Jedi
 ;; (add-hook 'python-mode-hook 'jedi:setup)
 ;; (setq jedi:complete-on-dot t)
+(put 'upcase-region 'disabled nil)
+
+;; EPICS
+(add-to-list 'auto-mode-alist '("\\.db\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.dbd\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.cmd\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.template\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.substitutions\\'" . sh-mode))
+(add-to-list 'auto-mode-alist '("\\.st\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.stt\\'" . c++-mode))
