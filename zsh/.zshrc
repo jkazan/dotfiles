@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
   export ZSH="/home/jkazan/.oh-my-zsh"
@@ -102,18 +102,28 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Add to PATH: maven
+export PATH=$PATH:/opt/apache-maven-3.6.0/bin
+
+JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+M2_HOME="/opt/apache-maven-3.6.0"
+
+
+
 alias rpi_local='ssh -X pi@raspberrypi.local'
 alias rpi='ssh -l pi proxy50.rt3.io -p 37918'
+# pass = youknow
 # ssh -l pi proxy55.rt3.io -p 38497
 # sudo iwconfig wlan0 essid comhem_F00C83 key 8788B09B2D
 # sudo iwconfig wlp6s0 essid jkazan key puws1111
 
 
 # epics alias
-alias e3="bash /epics/test/base-7.0.1.1/require/3.0.2/bin/setE3Env.bash"
+# alias e3="bash /epics/test/base-7.0.1.1/require/3.0.2/bin/setE3Env.bash"
+alias e3="source /home/jkazan/e3-feb07/base-7.0.1.1/require/3.0.4/bin/setE3Env.bash"
 alias css="/opt/cs-studio/ESS\ CS-Studio"
-alias e3get="~/e3-7/caget_pvs.bash"
-alias iocsh="iocsh.bash"
+alias e3get="~/e3-feb07/e3/caget_pvs.bash"
+alias iocsh="/home/jkazan/e3-feb07/e3/e3-require/tools/iocsh.bash"
 
 # sw-vm
 alias swvm="ssh -X johanneskazantzidis@10.4.4.46"
@@ -122,7 +132,7 @@ alias swvm="ssh -X johanneskazantzidis@10.4.4.46"
 alias icsvd="ssh -X johanneskazantzidis@icsvd-app01.esss.lu.se"
 
 # Hermes
-alias hermes="python3 ~/hermes/hermes.py"
+alias hermes="source ~/Hermes/bin/activate && python3 ~/Hermes/hermes/hermes.py"
 
 # SC2
 alias sc2='env WINEPREFIX="/home/jkazan/.wine-hs-32" wine C:\\windows\\command\\start.exe /Unix /home/jkazan/.wine-hs-32/dosdevices/c:/users/Public/Desktop/StarCraft\ II.lnk'
