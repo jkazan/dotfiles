@@ -105,9 +105,8 @@ fi
 # Add to PATH: maven
 export PATH=$PATH:/opt/apache-maven-3.6.0/bin
 
-JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
 M2_HOME="/opt/apache-maven-3.6.0"
-
 
 
 alias rpi_local='ssh -X pi@raspberrypi.local'
@@ -138,3 +137,4 @@ alias hermes="source ~/Hermes/bin/activate && python3 ~/Hermes/hermes/hermes.py"
 alias sc2='env WINEPREFIX="/home/jkazan/.wine-hs-32" wine C:\\windows\\command\\start.exe /Unix /home/jkazan/.wine-hs-32/dosdevices/c:/users/Public/Desktop/StarCraft\ II.lnk'
 
 # export NVM_LAZY_LOAD=true
+alias ll='ls -al'
