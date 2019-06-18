@@ -46,7 +46,7 @@
      ("melpa" . "http://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (xresources-theme company-lua diffview matlab-mode ace-mc sr-speedbar 2048-game smex hlinum tabbar ace-jump-mode multiple-cursors yascroll idomenu fill-column-indicator ws-butler undo-tree zenburn-theme yasnippet auctex)))
+    (csv-mode yaml-mode xresources-theme company-lua diffview matlab-mode ace-mc sr-speedbar 2048-game smex hlinum tabbar ace-jump-mode multiple-cursors yascroll idomenu fill-column-indicator ws-butler undo-tree zenburn-theme yasnippet auctex)))
  '(reftex-toc-split-windows-fraction 0.21)
  '(reftex-toc-split-windows-horizontally t)
  '(scroll-bar-mode nil)
@@ -67,8 +67,8 @@
 ;; Alpha
 (set-frame-parameter (selected-frame) 'alpha '(85 . 85))
 (add-to-list 'default-frame-alist '(alpha . (85 . 85)))
- (set-frame-parameter (selected-frame) 'alpha '(85 . 75))
- (add-to-list 'default-frame-alist '(alpha . (85 . 75)))
+ (set-frame-parameter (selected-frame) 'alpha '(85 . 70))
+ (add-to-list 'default-frame-alist '(alpha . (85 . 70)))
 
 ;; (defun incrementAlpha ()
 ;;   (interactive)
@@ -199,32 +199,44 @@
 ;; xresources (to read from pywal output)
 ;; (require 'xresources-theme)
 
-;; Speed bar
-(require 'sr-speedbar)
-(setq speedbar-show-unknown-files t ; show all files
-      speedbar-use-images nil ; use text for buttons
-      sr-speedbar-right-side nil ; put on left side
-      sr-speedbar-width 35)
-(global-set-key [f9] (lambda()
-		       (interactive)
-		       (sr-speedbar-toggle)
-		       (visual-line-mode)
-		       (if (eq (cdr (assoc 'fullscreen (frame-parameters))) 'nil)
-			   (if (string= (buffer-name) "*SPEEDBAR*") (set-frame-width (selected-frame)
-			 135) (set-frame-width (selected-frame) 100)) )
-		       (other-window 1)
-		       ))
-(set-face-foreground 'speedbar-directory-face "#F0DFAF")
-(set-face-foreground 'speedbar-file-face "#DCDCCC")
-(set-face-foreground 'speedbar-button-face "#7F9F7F")
-(set-face-foreground 'speedbar-highlight-face "#000000")
-(set-face-background 'speedbar-highlight-face "#94BFF3")
-(set-face-foreground 'speedbar-selected-face "#CC9393")
+;; Align
+;; (defun foo ()
+;;   "Some function."
+;;   (interactive)
+;;   (do-some-stuff))
 
-(sr-speedbar-open)
-(with-current-buffer sr-speedbar-buffer-name
-  (setq window-size-fixed 'width))
-(sr-speedbar-close)
+(defun align-repeat (start end regexp)
+    "Repeat alignment with respect to
+     the given regular expression."
+    (interactive "r\nsAlign regexp: ")
+    (align-regexp start end "\\(,\\s-*\\)" 1 2 t))
+
+;; Speed bar
+;; (require 'sr-speedbar)
+;; (setq speedbar-show-unknown-files t ; show all files
+;;       speedbar-use-images nil ; use text for buttons
+;;       sr-speedbar-right-side nil ; put on left side
+;;       sr-speedbar-width 35)
+;; (global-set-key [f9] (lambda()
+;; 		       (interactive)
+;; 		       (sr-speedbar-toggle)
+;; 		       (visual-line-mode)
+;; 		       (if (eq (cdr (assoc 'fullscreen (frame-parameters))) 'nil)
+;; 			   (if (string= (buffer-name) "*SPEEDBAR*") (set-frame-width (selected-frame)
+;; 			 135) (set-frame-width (selected-frame) 100)) )
+;; 		       (other-window 1)
+;; 		       ))
+;; (set-face-foreground 'speedbar-directory-face "#F0DFAF")
+;; (set-face-foreground 'speedbar-file-face "#DCDCCC")
+;; (set-face-foreground 'speedbar-button-face "#7F9F7F")
+;; (set-face-foreground 'speedbar-highlight-face "#000000")
+;; (set-face-background 'speedbar-highlight-face "#94BFF3")
+;; (set-face-foreground 'speedbar-selected-face "#CC9393")
+
+;; (sr-speedbar-open)
+;; (with-current-buffer sr-speedbar-buffer-name
+;;   (setq window-size-fixed 'width))
+;; (sr-speedbar-close)
 
 ;; Tab bar
 (tabbar-mode 1)
@@ -776,8 +788,8 @@ list."
 
 ;;; Python
 ;; Jedi
-;; (add-hook 'python-mode-hook 'jedi:setup)
-;; (setq jedi:complete-on-dot t)
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)
 (put 'upcase-region 'disabled nil)
 
 ;; EPICS
@@ -788,3 +800,4 @@ list."
 (add-to-list 'auto-mode-alist '("\\.substitutions\\'" . sh-mode))
 (add-to-list 'auto-mode-alist '("\\.st\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.stt\\'" . c++-mode))
+(put 'downcase-region 'disabled nil)

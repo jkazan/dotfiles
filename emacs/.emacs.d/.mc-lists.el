@@ -11,6 +11,7 @@
         c-electric-brace
         c-electric-lt-gt
         c-electric-paren
+        c-electric-pound
         c-electric-semi&comma
         c-electric-slash
         c-electric-star
@@ -20,12 +21,18 @@
         ido-find-file
         ignore
         indent-for-tab-command
+        kmacro-end-or-call-macro
         mouse-set-region
         org-self-insert-command
+        py-electric-colon
         py-electric-comment
+        py-indent-or-complete
         shk-tabbar-next
         shk-tabbar-prev
         smex
+        tabbar-backward-group
+        yaml-electric-backspace
+        yaml-electric-dash-and-dot
         yas-expand
         ))
 
