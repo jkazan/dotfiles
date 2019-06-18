@@ -17,7 +17,7 @@ test $UID -eq 0 && user_color='red'
 PROMPT='%(?..%{$fg_bold[red]%}exit %?
 %{$reset_color%})'\
 '%{$FG[111]%}$(git_prompt_info)%{$reset_color%}'\
-'%(!.#.$) '
+'%(!.#.)'
 
 zle_highlight=(default:bold)
 

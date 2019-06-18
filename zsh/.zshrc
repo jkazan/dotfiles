@@ -119,10 +119,10 @@ alias rpi='ssh -l pi proxy50.rt3.io -p 37918'
 
 # epics alias
 # alias e3="bash /epics/test/base-7.0.1.1/require/3.0.2/bin/setE3Env.bash"
-alias e3="source /home/jkazan/e3-feb07/base-7.0.1.1/require/3.0.4/bin/setE3Env.bash"
+alias e3="source /home/jkazan/e3-apr3/base-3.15.6/require/3.0.5/bin/setE3Env.bash no_msg"
 alias css="/opt/cs-studio/ESS\ CS-Studio"
-alias e3get="~/e3-feb07/e3/caget_pvs.bash"
-alias iocsh="/home/jkazan/e3-feb07/e3/e3-require/tools/iocsh.bash"
+alias e3get="~/e3-mar14/e3/caget_pvs.bash"
+alias iocsh="/home/jkazan/e3-apr3/e3/e3-require/tools/iocsh.bash"
 
 # sw-vm
 alias swvm="ssh -X johanneskazantzidis@10.4.4.46"
@@ -138,3 +138,4 @@ alias sc2='env WINEPREFIX="/home/jkazan/.wine-hs-32" wine C:\\windows\\command\\
 
 # export NVM_LAZY_LOAD=true
 alias ll='ls -al'
+export PATH=$PATH:/home/jkazan/e3-mar14/base-7.0.1.1/bin/linux-x86_64/
