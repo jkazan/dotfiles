@@ -1,0 +1,16 @@
+[user]
+	email = johannes.kazantzidis@esss.se
+	name = jkazan
+[color]
+	ui = auto
+
+[core]
+    editor = emacs
+
+[alias]
+    cm = commit -m
+    st = status
+    co = checkout
+	cob = checkout -b
+    url = config --get remote.origin.url
+    ls = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
