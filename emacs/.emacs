@@ -46,7 +46,7 @@
      ("melpa" . "http://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (csv-mode yaml-mode xresources-theme company-lua diffview matlab-mode ace-mc sr-speedbar 2048-game smex hlinum tabbar ace-jump-mode multiple-cursors yascroll idomenu fill-column-indicator ws-butler undo-tree zenburn-theme yasnippet auctex)))
+    (jedi csv-mode yaml-mode xresources-theme company-lua diffview matlab-mode ace-mc sr-speedbar 2048-game smex hlinum tabbar ace-jump-mode multiple-cursors yascroll idomenu fill-column-indicator ws-butler undo-tree zenburn-theme yasnippet auctex)))
  '(reftex-toc-split-windows-fraction 0.21)
  '(reftex-toc-split-windows-horizontally t)
  '(scroll-bar-mode nil)
@@ -790,7 +790,7 @@ list."
 ;; Jedi
 (add-hook 'python-mode-hook 'jedi:setup)
 (setq jedi:complete-on-dot t)
-(put 'upcase-region 'disabled nil)
+;; (put 'upcase-region 'disabled nil)
 
 ;; EPICS
 (add-to-list 'auto-mode-alist '("\\.db\\'" . sh-mode))
