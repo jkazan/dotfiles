@@ -111,7 +111,7 @@ M2_HOME="/opt/apache-maven-3.6.0"
 
 alias rpi_local='ssh -X pi@raspberrypi.local'
 alias rpi='ssh -l pi proxy50.rt3.io -p 37918'
-# pass = youknow
+# pass = testavanligaochhassio
 # ssh -l pi proxy55.rt3.io -p 38497
 # sudo iwconfig wlan0 essid comhem_F00C83 key 8788B09B2D
 # sudo iwconfig wlp6s0 essid jkazan key puws1111
@@ -119,10 +119,10 @@ alias rpi='ssh -l pi proxy50.rt3.io -p 37918'
 
 # epics alias
 # alias e3="bash /epics/test/base-7.0.1.1/require/3.0.2/bin/setE3Env.bash"
-alias e3="source /home/jkazan/e3-apr3/base-3.15.6/require/3.0.5/bin/setE3Env.bash no_msg"
+alias e3="source /home/jkazan/e3-aug06/base-7.0.3/require/3.1.0/bin/setE3Env.bash no_msg"
 alias css="/opt/cs-studio/ESS\ CS-Studio"
-alias e3get="~/e3-mar14/e3/caget_pvs.bash"
-alias iocsh="/home/jkazan/e3-apr3/e3/e3-require/tools/iocsh.bash"
+alias e3get="~/e3-aug06/e3/caget_pvs.bash"
+alias iocsh="/home/jkazan/e3-aug06/e3/e3-require/tools/iocsh.bash"
 
 # sw-vm
 alias swvm="ssh -X johanneskazantzidis@10.4.4.46"
@@ -131,11 +131,22 @@ alias swvm="ssh -X johanneskazantzidis@10.4.4.46"
 alias icsvd="ssh -X johanneskazantzidis@icsvd-app01.esss.lu.se"
 
 # Hermes
-alias hermes="source ~/Hermes/bin/activate && python3 ~/Hermes/hermes/hermes.py"
+alias hermes="source ~/Hermes/bin/activate && python3 ~/Hermes/hermes/hermes/hermes.py"
 
 # SC2
-alias sc2='env WINEPREFIX="/home/jkazan/.wine-hs-32" wine C:\\windows\\command\\start.exe /Unix /home/jkazan/.wine-hs-32/dosdevices/c:/users/Public/Desktop/StarCraft\ II.lnk'
+# alias sc2='env WINEPREFIX="/home/jkazan/.wine-hs-32" wine C:\\windows\\command\\start.exe /Unix /home/jkazan/.wine-hs-32/dosdevices/c:/users/Public/Desktop/StarCraft\ II.lnk'
 
 # export NVM_LAZY_LOAD=true
-alias ll='ls -al'
-export PATH=$PATH:/home/jkazan/e3-mar14/base-7.0.1.1/bin/linux-x86_64/
+alias ll="ls -al"
+# export PATH=$PATH:/home/jkazan/e3-aug-06/base-7.0.3/bin/linux-x86_64/
+
+alias selenium="source ~/martinkwick/bin/activate"
+
+# Arduino
+alias arduino="~/arduino-1.8.9/arduino"
+# alias ardup="screen -S arduino_monitor -X quit && arduino --port /dev/ttyUSB* --upload"
+alias ardup="if screen -S arduino_monitor -X quit; then echo 'killing monitor'; fi && arduino --port /dev/ttyUSB* --upload"
+alias ardmon="screen -S arduino_monitor /dev/ttyUSB* 115200"
+
+# Invert screen
+alias invert="/usr/local/bin/xrandr-invert-colors"
