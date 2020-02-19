@@ -22,7 +22,9 @@
         ignore
         indent-for-tab-command
         kmacro-end-or-call-macro
+        markdown-outdent-or-delete
         mouse-set-region
+        org-cycle
         org-self-insert-command
         py-electric-colon
         py-electric-comment
@@ -31,6 +33,7 @@
         shk-tabbar-prev
         smex
         tabbar-backward-group
+        tabbar-forward-group
         yaml-electric-backspace
         yaml-electric-dash-and-dot
         yas-expand

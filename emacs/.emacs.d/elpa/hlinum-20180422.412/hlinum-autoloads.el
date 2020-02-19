@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
 
-;;;### (autoloads nil "hlinum" "hlinum.el" (22601 18139 0 0))
+;;;### (autoloads nil "hlinum" "hlinum.el" (23975 6406 899321 181000))
 ;;; Generated autoloads from hlinum.el
 
 (autoload 'hlinum-activate "hlinum" "\

@@ -4,7 +4,7 @@
 
 ;; Author: Tomoya Tanjo <ttanjo@gmail.com>
 ;; URL: https://github.com/tom-tan/hlinum-mode/
-;; Package-Version: 20160521.2112
+;; Package-Version: 20180422.412
 ;; Package-Requires: ((cl-lib "0.2"))
 ;; Keywords: convenience, extensions
 
@@ -70,7 +70,7 @@ If LINE is nil, highlight current line."
         (let* ((str (overlay-get ov 'before-string))
                (lstr (overlay-get ov 'linum-str))
                (nov (move-overlay ov pt pt)))
-          (add-text-properties 0 (string-width lstr)
+          (add-text-properties 0 (length lstr)
                                `(face ,face) lstr)
           (add-text-properties 0 1 `(display ((margin left-margin)
                                               ,lstr)) str)
@@ -92,7 +92,9 @@ If LINE is nil, highlight current line."
 
 (defun hlinum-after-scroll (win start)
   (when (eq (current-buffer) (window-buffer))
-    (hlinum-highlight-line)))
+    (if mark-active
+        (hlinum-highlight-region)
+      (hlinum-highlight-line))))
 
 ;;;###autoload
 (defun hlinum-activate ()

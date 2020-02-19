@@ -46,7 +46,7 @@
      ("melpa" . "http://melpa.org/packages/"))))
  '(package-selected-packages
    (quote
-    (jedi csv-mode yaml-mode xresources-theme company-lua diffview matlab-mode ace-mc sr-speedbar 2048-game smex hlinum tabbar ace-jump-mode multiple-cursors yascroll idomenu fill-column-indicator ws-butler undo-tree zenburn-theme yasnippet auctex)))
+    (nlinum-hl linum-mode 0xc arduino-mode markdown-mode jedi csv-mode yaml-mode xresources-theme company-lua diffview matlab-mode ace-mc sr-speedbar 2048-game smex tabbar ace-jump-mode multiple-cursors yascroll idomenu fill-column-indicator ws-butler undo-tree zenburn-theme yasnippet auctex blacken)))
  '(reftex-toc-split-windows-fraction 0.21)
  '(reftex-toc-split-windows-horizontally t)
  '(scroll-bar-mode nil)
@@ -151,8 +151,8 @@
 (global-set-key (kbd "M-n") 'forward-list) ;;Hitta klamrar, brackets etc.
 (global-set-key (kbd "M-p") 'backward-list)
 (global-set-key (kbd "M-t") 'transpose-words)
-(global-set-key (kbd "<f10>") 'linum-mode)
-(global-set-key (kbd "C-<f10>") 'global-linum-mode)
+;; (global-set-key (kbd "<f10>") 'linum-mode)
+;; (global-set-key (kbd "C-<f10>") 'global-linum-mode)
 (global-set-key [f11] 'toggle-frame-fullscreen)
 (global-set-key [f12] 'menu-bar-mode)
 (global-set-key (kbd "<f5>") (lambda ()
@@ -205,11 +205,10 @@
 ;;   (interactive)
 ;;   (do-some-stuff))
 
-(defun align-repeat (start end regexp)
-    "Repeat alignment with respect to
+(defun align-repeat ()
+  "Repeat alignment with respect to
      the given regular expression."
-    (interactive "r\nsAlign regexp: ")
-    (align-regexp start end "\\(,\\s-*\\)" 1 2 t))
+  (align-regexp 1 1 "\\(,\\s-*\\)" 1 2 t))
 
 ;; Speed bar
 ;; (require 'sr-speedbar)
@@ -532,8 +531,12 @@ That is, a string used to represent it on the tab bar."
 ;;     (left-char)))
 
 ;; Highlight current line
-(require 'hlinum)
-(hlinum-activate)
+;; (require 'hlinum)
+;; (hlinum-activate)
+
+;; Margin line numbering
+;; (require 'nlinum-hl)
+
 
 ;; smex
 (global-set-key (kbd "M-x") 'smex)
@@ -735,13 +738,18 @@ noexcept\\|nullptr\\|static_assert\\|thread_local\\|override\\|final\\)\\>"
   "Custom clocktable writer.
 Uses the default writer but shifts the first column right."
   (apply #'org-clocktable-write-default args)
-  (save-excursion
-    (forward-char) ;; move into the first table field
-    (org-table-move-column-right)
-    (org-table-move-column-right)
-    (org-table-move-column-right)
-    (org-table-move-column-right)
-    ))
+  (forward-char) ;; move into the first table field
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  (org-table-move-column-right)
+  )
 
 ;; Unbind key
 (define-key org-mode-map (kbd "C-S-<left>") nil)
@@ -801,3 +809,10 @@ list."
 (add-to-list 'auto-mode-alist '("\\.st\\'" . c++-mode))
 (add-to-list 'auto-mode-alist '("\\.stt\\'" . c++-mode))
 (put 'downcase-region 'disabled nil)
+
+;; ;;; Python blacken
+;; (require 'blacken)
+;; (add-hook 'python-mode-hook 'blacken-mode)
+
+(load-file "/home/jkazan/dotfiles/emacs/.emacs.d/scl-mode.el")
+(load-file "/home/jkazan/dotfiles/emacs/.emacs.d/scl2-mode.el")
