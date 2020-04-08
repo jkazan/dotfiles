@@ -1,6 +1,6 @@
-rofi.lines: 3
-rofi.columns: 1
-rofi.width: 18
+rofi.lines: 7
+rofi.columns: 2
+rofi.width: 35
 rofi.padding: 2
 rofi.scrollbar-width: 0
 rofi.font: DejaVu Sans Mono 12

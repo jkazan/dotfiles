@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # Set background
-exec_always --no-startup-id feh --bg-fill ~/Pictures/oahu_dark.jpg
+exec_always --no-startup-id feh --bg-fill ~/Pictures/mountains2.jpeg
 
 # Compton
 exec_always --no-startup-id compton # -i 0.6 --active-opacity 0.85
@@ -121,7 +121,7 @@ gaps inner 15
 gaps outer -10
 # smart_gaps off
 # smart_borders off #no_gaps
-floating_maximum_size 2000 x 1125
+floating_maximum_size 1920 x 1080
 mouse_warping output
 popup_during_fullscreen smart
  

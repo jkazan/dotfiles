@@ -7,6 +7,10 @@
 [core]
     editor = emacs
 
+[diff "pandoc"]
+   textconv=pandoc --to=markdown
+   prompt = false
+
 [alias]
     cm = commit -m
     st = status
@@ -14,3 +18,4 @@
 	cob = checkout -b
     url = config --get remote.origin.url
     ls = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
+    wdiff = diff --word-diff=color --unified=1
