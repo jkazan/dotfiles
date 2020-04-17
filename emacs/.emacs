@@ -184,12 +184,12 @@
 (global-set-key (kbd "C-<down>")  (lambda () (interactive) (scroll-up 5)) )
 (global-set-key (kbd "C-<up>")  (lambda () (interactive) (scroll-down 5)) )
 (global-set-key (kbd "C-M-r") 'isearch-forward-regexp)
-
-
+(global-set-key (kbd "C-x g") 'dumb-jump-go)
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
+
 
 ;; (global-set-key (kbd "M-v p") 'highlight-phrase)
 ;; (global-set-key (kbd "M-v r") 'highlight-regexp)
@@ -699,9 +699,9 @@ noexcept\\|nullptr\\|static_assert\\|thread_local\\|override\\|final\\)\\>"
  '(minimap-active-region-background ((t (:background "#510b0b"))))
  '(tabbar-separator ((t (:inherit tabbar-default)))))
 
-;;qt pro mode
-(require 'qt-pro-mode)
-(add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
+;; ;;qt pro mode
+;; (require 'qt-pro-mode)
+;; (add-to-list 'auto-mode-alist '("\\.pr[io]$" . qt-pro-mode))
 
 ;;; Auto-complete
 (require 'ac-c-headers)
