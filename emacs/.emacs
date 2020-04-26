@@ -64,8 +64,8 @@ M-b counsel-switch-buffer
 ;;; Recent files
 (use-package recentf
   :init
-  (setq recentf-max-saved-items 50)
-  (setq recentf-exclude '(".*-autoloads\\.el\\'"
+  (setq recentf-max-saved-items 50
+        recentf-exclude '(".*-autoloads\\.el\\'"
                           "[/\\]\\.emacs\\.d[/\\]elpa[/\\]"
                           "[/\\]\\.emacs\\.d[/\\]\\.cache[/\\]"
 			  "\\#.*\\#"
@@ -418,7 +418,7 @@ M-b counsel-switch-buffer
   (counsel-mode t)
   :bind
   ("C-S-o" . 'counsel-recentf)
-  ("C-i" . 'counsel-imenu)
+  ("C-m" . 'counsel-imenu)
   ("M-b" . 'counsel-switch-buffer))
 
 ;;; anzu
