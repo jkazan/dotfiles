@@ -1,0 +1,17 @@
+
+;; ----- smex-history -----
+(
+ lua-mode
+ package-list-packages
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+)
+
+;; ----- smex-data -----
+(
+ (package-list-packages . 1)
+ (lua-mode . 6)
+)

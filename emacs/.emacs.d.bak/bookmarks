@@ -1,0 +1,15 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("vertLine.m"
+ (filename . "c:/Users/sekazantzidj/Documents/birdeye/vertLine.m")
+ (front-context-string . "\n            abs")
+ (rear-context-string . "ime) && handles.")
+ (position . 3703))
+("composeGUI.m"
+ (filename . "c:/Users/sekazantzidj/Documents/birdeye/composeGUI.m")
+ (front-context-string . "function moveite")
+ (rear-context-string . "    \nend\n\nend\n\n\n")
+ (position . 12488))
+)

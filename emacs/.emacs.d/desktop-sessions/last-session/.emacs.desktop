@@ -1,0 +1,67 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Apr 26 15:59:29 2020
+;; Desktop file format version 208
+;; Emacs version 26.3
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (24229 37825 682898 179000) (desktop . "208") "jkazan@L480" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 85 . 70) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (lsp-ui-doc-buffer . "Unprintable entity") (frameset--id . "6BF1-008E-3CE8-B9CB") (frameset--mini t . t) (height . 106) (width . 118) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 1080) (pixel-height . 1902) (total-width . 120) (total-height . 106) (normal-height . 1.0) (normal-width . 1.0) (buffer "hjira.py" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 884) (start . 1))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring '("jira" "her"))
+(setq register-alist '((48 . "self.")))
+(setq file-name-history '("/home/jkazan/hermes-env/hermes/hermes/hermes.py" "/home/jkazan/hermes-env/hermes/hermes/hjira.py" "/home/jkazan/.zshrc" "/home/jkazan/hermes-env/hermes/hermes/jira.py" "/home/jkazan/hermes-env/" "~/.emacs" "~/hermes-env/hermes/hermes/jira.py" "~/hermes-env/hermes/hermes/hermes.py" "~/Downloads/waqar" "~/dotfiles/zsh/.zshrc" "~/.zshrc" "~/bashscripts/install.sh" "~/.emacs.d/bookmarks" "~/hermes-env/hermes/hermes/phoebus.install" "~/hermes-env/hermes/.gitignore" "~/hermes-env/lib64/python3.8/site-packages/pip/_internal/cache.py" "~/wetch/spotify-cover.sh" "~/.gitconfig" "~/dotfiles/rofi/config" "~/.config/rofi/config"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/jkazan/hermes-env/hermes/hermes/hjira.py"
+  "hjira.py"
+  'python-mode
+  '(eldoc-mode projectile-mode override-global-mode magit-file-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode smartparens-mode lsp-mode)
+  884
+  '(555 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24229 37648 215117 507000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (884))))
+
+(desktop-create-buffer 208
+  "/home/jkazan/hermes-env/hermes/hermes/hermes.py"
+  "hermes.py"
+  'python-mode
+  '(eldoc-mode projectile-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode smartparens-mode lsp-mode)
+  1
+  '(1140 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24229 37626 295029 847000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1548 157 109))))
+
+(desktop-create-buffer 208
+  "/home/jkazan/.emacs"
+  ".emacs"
+  'emacs-lisp-mode
+  '(eldoc-mode projectile-mode override-global-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode smartparens-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 24229 37509 71062 451000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/jkazan/test.org"
+  "test.org"
+  'org-mode
+  '(projectile-mode override-global-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((mark-ring nil)))
+

@@ -1,0 +1,52 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/jkazan/wetch/" . "conky-cards/")
+ ("/home/jkazan/" . "ffs/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/jkazan/ffs/"
+ "/home/jkazan/"
+ "/home/jkazan/wetch/conky-cards/"
+ "/home/jkazan/bashscripts/"
+ "/home/jkazan/wetch/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "spotify_cover.lua"
+ "load_rc"
+ "load.lua"
+ ".gitconfig"
+ "test.sh"
+ "misc_rc"
+ "launch_all.sh"
+ "filesystem_rc"
+ "time_rc"
+ "spotify_rc"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/jkazan/ffs/" (24220 30958 243999 689000) "../" "memory_rc" "mediaplayer_rc" "test.sh" "spotify_rc" "time_rc" "wget-log.3" "filesystem_rc" "README.md" "load.lua" "spotify_cover.lua" "launch_all.sh" "misc_rc" "mediaplayer.py" "./" "wget-log.2" "screenshots/" "system_rc" "processes_rc" "load_rc" "network_rc" "wget-log" "wget-log.1" "fortune_rc")
+
+ ("/home/jkazan/" (24220 29467 419616 401000) "snap/" "hermes-env/" ".bash_logout" ".ssh/" "../" "wetch/" ".bashrc" ".gitconfig" ".oh-my-zsh/" "Pictures/" ".ICEauthority" ".zsh_history" ".profile" "Downloads/" ".cache/" ".sudo_as_admin_successful" ".emacs.d/" "Templates/" ".tmux.conf" ".config/" "dotfiles/" ".icons/" ".pam_environment" ".local/" "Public/" ".zshrc" "./" "ffs/" ".gtkrc-2.0" ".cinnamon/" "Videos/" "bashscripts/" ".gnupg/" "Documents/" ".themes/" ".bash_history" ".emacs" ".zshrc.pre-oh-my-zsh" ".wget-hsts" ".zcompdump-L480-5.8" ".zcompdump" ".mozilla/" "old-con/" "Desktop/" "Music/" ".pki/")
+
+ ("/home/jkazan/wetch/" (24220 15503 542224 884000) "wget-log.8" "wetch.config" "../" "conky-cards/" "test.jpg" "spotify-artist.sh" "wetch" "luascript.lua.bak3" "wget-log.6" "test.sh" "fuck_off.sh" "wget-log.3" "slack-web.png" "LICENSE" "flags" ".git/" "luascript.lua" "bt.sh" "wetch.png" "README.md" "spotify-client.png" "wget-log.7" "wget-log.5" "spotify-cover.sh" "accuweather-icons/" "poiret-one/" "./" "spotify-title.sh" "install" "wget-log.2" "slack.sh" "luascript.lua.bak2" "install.sh" "nointernet.svg" "batnot.sh" ".gitignore" ".conkyrc.bkp" "wget-log" ".conkyrc2" "batlow.svg" "wget-log.1" ".test.jpg" "wget-log.9" ".conkyrc" "luascript.lua.bakoldest" "wget-log.4")
+
+ ("/home/jkazan/wetch/conky-cards/" (24220 26092 549863 532000) "../" "memory_rc" "mediaplayer_rc" "test.sh" "spotify_rc" "time_rc" "wget-log.3" ".git/" "filesystem_rc" "README.md" "load.lua" "spotify_cover.lua" "launch_all.sh" "misc_rc" "mediaplayer.py" "./" "wget-log.2" "screenshots/" "system_rc" "processes_rc" "load_rc" "network_rc" "wget-log" "wget-log.1" "fortune_rc")
+
+ ("/home/jkazan/bashscripts/" (24219 11195 585047 765000) "netflix.png" "../" "tile.sh" "startup_work.sh" "essvpn_l2tp.sh" "install.sh.save.1" "ess.png" "setup_tmux.sh" "fuck_off.sh" "shadow-snap-left.sh" "shadow-snap-right.sh" "brightness" ".git/" "#install.sh#" "./" "slack.sh" "closeall.sh" "install.sh.save" "xbrightness" "desktopApps.sh" "netflix-install.sh" "install.sh" "whatsapp.png" "jira.sh" "screenshot")
+
+ ("/home/jkazan/Music/" (24208 15359 321410 657000) "../" ".#spotify_test.sh" "./" "spotify_test.sh")
+
+ ("/home/jkazan/dotfiles/zsh/" (24206 52853 819092 31000) "../" "jkazan.zsh-theme" ".zshrc" "./")
+
+ ("/home/jkazan/dotfiles/" (24206 52853 819092 31000) "zsh/" "../" "emacs/" "compton/" "i3/" ".git/" "./" "ranger/" "rofi/" "tmux/" ".gitignore" "git/")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

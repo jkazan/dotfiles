@@ -1,15 +1,10 @@
-;;;; Emacs Bookmark Format Version 1 ;;;;
+;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("vertLine.m"
- (filename . "c:/Users/sekazantzidj/Documents/birdeye/vertLine.m")
- (front-context-string . "\n            abs")
- (rear-context-string . "ime) && handles.")
- (position . 3703))
-("composeGUI.m"
- (filename . "c:/Users/sekazantzidj/Documents/birdeye/composeGUI.m")
- (front-context-string . "function moveite")
- (rear-context-string . "    \nend\n\nend\n\n\n")
- (position . 12488))
+(("hermes.py"
+ (filename . "~/hermes-env/hermes/hermes/hermes.py")
+ (front-context-string . "    def dataRece")
+ (rear-context-string . "lp_text[cmd]))\n\n")
+ (position . 5751))
 )

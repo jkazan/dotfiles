@@ -1,0 +1,1 @@
+("~/wetch/" "~/hermes-env/hermes/" "~/dotfiles/" "~/bashscripts/")
