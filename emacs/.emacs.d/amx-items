@@ -1,13 +1,13 @@
 
 ;; ----- amx-history -----
 (
+ sh-mode
  load-file
+ emacs-lisp-mode
+ rsh
  counsel-imenu
  ace-window
  org-agenda
- treemacs-select-window
- treemacs-icons-dired-mode
- treemacs
 )
 
 ;; ----- amx-data -----
@@ -17,10 +17,10 @@
  (package-autoremove . 1)
  (lisp-mode . 1)
  (magit-blame . 1)
- (emacs-lisp-mode . 1)
+ (emacs-lisp-mode . 2)
  (centaur-tabs-counsel-switch-group . 1)
  (counsel-switch-buffer . 1)
- (load-file . 18)
+ (load-file . 21)
  (centaur-tabs-toggle-groups . 2)
  (treemacs . 1)
  (treemacs-icons-dired-mode . 4)
@@ -29,4 +29,6 @@
  (lsp-mode . 1)
  (ace-window . 1)
  (counsel-imenu . 1)
+ (rsh . 1)
+ (sh-mode . 3)
 )

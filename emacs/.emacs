@@ -29,8 +29,8 @@
                                   (- (+ fill-column 9) (window-width))))))))
 
 ;;; Alpha
-(set-frame-parameter (selected-frame) 'alpha '(85 . 70))
-(add-to-list 'default-frame-alist '(alpha . (85 . 70)))
+(set-frame-parameter (selected-frame) 'alpha '(95 . 70))
+(add-to-list 'default-frame-alist '(alpha . (95 . 70)))
 
 ;;; Dashboard
 (use-package dashboard
@@ -46,7 +46,7 @@ M-] move-text-down
 M-[ move-text-up
 C-= expand-region
 C-j pop-to-mark-command
-C-i counsel-imenu
+C-; counsel-imenu
 M-b counsel-switch-buffer
 " ;; Set the title
       dashboard-center-content t
@@ -88,15 +88,15 @@ M-b counsel-switch-buffer
   :demand
   :config
   (centaur-tabs-mode t)
-  (setq centaur-tabs-style "bar"
+  (setq centaur-tabs-style "alternate"
         ;; centaur-tabs-set-bar 'over
         ;; x-underline-at-descent-line t
         centaur-tabs-height 18
         centaur-tabs-set-icons t
         ;; centaur-tabs-plain-icons t
-        ;; centaur-tabs-gray-out-icons 'buffer
+        centaur-tabs-gray-out-icons 'buffer
         centaur-tabs-set-modified-marker t
-        centaur-tabs-modified-marker "·"
+        centaur-tabs-modified-marker ""
         centaur-tabs-set-close-button nil
 	;; centaur-tabs-cycle-scope 'groups
         )
@@ -108,8 +108,6 @@ M-b counsel-switch-buffer
   ("C-S-<left>" . centaur-tabs-backward-group)
   ("C-S-<right>" . centaur-tabs-forward-group)
   )
-
-
 
 ;;; Doom themes
 (use-package doom-themes
@@ -418,7 +416,7 @@ M-b counsel-switch-buffer
   (counsel-mode t)
   :bind
   ("C-S-o" . 'counsel-recentf)
-  ("C-m" . 'counsel-imenu)
+  ("C-;" . 'counsel-imenu)
   ("M-b" . 'counsel-switch-buffer))
 
 ;;; anzu

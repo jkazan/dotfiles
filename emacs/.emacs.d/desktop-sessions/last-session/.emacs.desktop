@@ -2,19 +2,19 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Apr 26 18:53:36 2020
+;; Created Sun Apr 26 21:23:35 2020
 ;; Desktop file format version 208
 ;; Emacs version 26.3
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24229 48272 481784 774000) (desktop . "208") "jkazan@L480" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 85 . 70) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (frameset--id . "4837-A011-0D63-035D") (frameset--mini t . t) (height . 60) (width . 86) (modeline . t) (unsplittable) (left . 554) (top + -8) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 790) (pixel-height . 1062) (total-width . 87) (total-height . 59) (normal-height . 1.0) (normal-width . 1.0) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1) (start . 1))))])
+(setq desktop-saved-frameset [frameset 1 (24229 57271 909429 350000) (desktop . "208") "jkazan@L480" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 95 . 70) (no-focus-on-map) (no-accept-focus) (fullscreen . fullheight) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (frameset--id . "5669-21E4-E43C-C76A") (frameset--mini t . t) (height . 60) (width . 104) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 960) (pixel-height . 1062) (total-width . 106) (total-height . 59) (normal-height . 1.0) (normal-width . 1.0) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 13383) (start . 12824))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
-(setq regexp-search-ring nil)
-(setq register-alist nil)
-(setq file-name-history '("~/dotfiles/emacs/.emacs" "~/.emacs" "~/hermes-env/hermes/hermes/hjira.py" "~/hermes-env/hermes/hermes/hermes.py" "~/dotfiles/zsh/.zshrc" "~/.zshrc" "~/hermes-env/bin/activate.csh" "~/Downloads/waqar" "~/bashscripts/install.sh" "~/.emacs.d/bookmarks" "~/hermes-env/hermes/hermes/phoebus.install" "~/hermes-env/hermes/.gitignore" "~/hermes-env/lib64/python3.8/site-packages/pip/_internal/cache.py" "~/wetch/spotify-cover.sh" "~/.gitconfig" "~/dotfiles/rofi/config" "~/.config/rofi/config"))
+(setq regexp-search-ring '("bar"))
+(setq register-alist '((48 . "bar")))
+(setq file-name-history '("~/wetch/ffs/load.lua" "~/wetch/ffs/load_rc" "~/wetch/ffs/spotify_cover.lua" "~/bashscripts/install.sh" "~/wetch/spotify-cover.sh" "~/dotfiles/emacs/.emacs" "~/.cache/wetch/current.jpeg" "~/.cache/wetch/current.png" "~/wetch/ffs/test.sh" "~/.emacs" "~/Downloads/waqar" "~/wetch/ffs/spotify_rc" "~/wetch/ffs/launch_all.sh" "~/wetch/ffs/misc_rc" "~/wetch/bt.sh" "~/wetch/ffs/time_rc" "~/hermes-env/hermes/hermes/hjira.py" "~/hermes-env/hermes/hermes/hermes.py" "~/dotfiles/zsh/.zshrc" "~/.zshrc" "~/hermes-env/bin/activate.csh" "~/.emacs.d/bookmarks" "~/hermes-env/hermes/hermes/phoebus.install" "~/hermes-env/hermes/.gitignore" "~/hermes-env/lib64/python3.8/site-packages/pip/_internal/cache.py" "~/.gitconfig" "~/dotfiles/rofi/config" "~/.config/rofi/config"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
@@ -22,12 +22,12 @@
   ".emacs"
   'emacs-lisp-mode
   '(eldoc-mode projectile-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode smartparens-mode)
-  1
-  '(nil nil)
+  13383
+  '(13062 nil)
   nil
   nil
-  '((buffer-display-time 24229 48270 455487 685000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring nil)))
+  '((buffer-display-time 24229 57199 521990 539000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (13052 2744 2465 2476 2476 2509 2619 2656 2657 2700 2465 2465 2465 2465 2465 2465))))
 
 (desktop-create-buffer 208
   "/home/jkazan/test.org"
@@ -38,6 +38,6 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((buffer-display-time 24229 57198 122529 371000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
   '((mark-ring nil)))
 
