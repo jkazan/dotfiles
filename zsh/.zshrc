@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:$HOME/bin/scripts:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/johannek/.oh-my-zsh"
+export ZSH="/home/johannek/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,7 +68,7 @@ ZSH_THEME="jkazan"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+    git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 # Axis -------------------------------------------------------------------------
 # Run tmux as default terminal
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-  exec tmux
+    exec tmux
 fi
 
 # Export
@@ -95,8 +95,20 @@ alias acap="source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-po
 alias kaka='echo -e $(curl -s https://vote.fredagskakan.se/thisweek) \
       | perl -p -e "s/.+?Kaka\":\"//;" -e "s/\".+//"'
 alias flash_camera="bash ~/bashscripts/axis_flash.sh"
-alias dockerprod="docker run -it --net=host --rm \
-      -v ~/workspace/:/workspace docker-prod.se.axis.com/sva/kpi-tool:1.2 bash"
+alias dockerprod="docker run --net=host \
+       --rm \
+       --privileged \
+       -v ~/workspace/tools:/kpi_workspace/tools \
+       -v ~/workspace/axis_object_detector:/kpi_workspace/axis_object_detector \
+       -v ~/workspace/annotations:/kpi_workspace/annotations \
+       -v ~/workspace/temp_vis:/kpi_workspace/temp_vis \
+       -v ~/workspace/kpi_toolchain:/kpi_workspace/kpi_toolchain \
+       -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+       -v /mnt/analyticsvideo:/analyticsvideo \
+       -v /n/slask/johannek:/slask/johannek \
+       -v ~/share:/share \
+       -it -e DISPLAY=$DISPLAY \
+       docker-prod.se.axis.com/sva/kpi-tool:1.2 bash"
 alias rebuild_aoa='echo "$(tput bold)sourcing sdk...$(tput sgr0)" && source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi
       echo "$(tput bold)going into workspace dir...$(tput sgr0)" && cd ~/workspace/
       echo "$(tput bold)cleaning axis_object_detector...$(tput sgr0)" && sudo rm -rf axis_object_detector/
@@ -104,14 +116,15 @@ alias rebuild_aoa='echo "$(tput bold)sourcing sdk...$(tput sgr0)" && source /opt
       echo "$(tput bold)going into axis_object_detector/ directory...$(tput sgr0)" && cd axis_object_detector/
       echo "$(tput bold)updating git submodule...$(tput sgr0)" && git submodule update --init
       echo "$(tput bold)building...$(tput sgr0)" && ./build.py'
+alias menu"="~/lunch-menus/lunch_menus.sh"
 # "\
-# echo "\nsourcing sdk...\n\n" && source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi \
-# echo "\ngoing into workspace dir...\n\n" && cd ~/workspace/ \
-# echo "\ncleaning axis_object_detector...\n\n" && sudo rm -rf axis_object_detector/
+    # echo "\nsourcing sdk...\n\n" && source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi \
+    # echo "\ngoing into workspace dir...\n\n" && cd ~/workspace/ \
+    # echo "\ncleaning axis_object_detector...\n\n" && sudo rm -rf axis_object_detector/
 # echo "\ncloning fresh aoa repo...\n\n" && git clone ssh://johannek@gittools.se.axis.com:29418/apps/acap/axis_object_detector \
-# echo "\ngoing into axis_object_detector/ directory...\n\n" && cd axis_object_detector \
-# echo "\nupdating git submodule...\n\n" && git submodule update --init \
-# echo "\nbuilding...\n\n" && ./build.py"
+    # echo "\ngoing into axis_object_detector/ directory...\n\n" && cd axis_object_detector \
+    # echo "\nupdating git submodule...\n\n" && git submodule update --init \
+    # echo "\nbuilding...\n\n" && ./build.py"
 
 # ------------------------------------------------------------------------------
 
@@ -124,9 +137,9 @@ alias rebuild_aoa='echo "$(tput bold)sourcing sdk...$(tput sgr0)" && source /opt
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='emacs25'
+    export EDITOR='emacs26'
 else
-  export EDITOR='emacs25'
+    export EDITOR='emacs26'
 fi
 
 # Compilation flags
@@ -155,6 +168,9 @@ alias rpi='ssh -l pi proxy50.rt3.io -p 37918'
 
 # Hermes
 alias hermes="source ~/hermes-env/bin/activate && python3 ~/hermes-env/hermes/hermes/hermes.py"
+
+# Emacs
+alias emacs="emacs26"
 
 # export NVM_LAZY_LOAD=true
 alias ll="ls -al"
