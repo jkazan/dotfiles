@@ -12,6 +12,9 @@
 ;;; Font size
 (set-face-attribute 'default nil :height 110)
 
+;;; Whitespace instead of tabs
+(setq-default indent-tabs-mode nil)
+
 ;;; Hide tool bar
 (tool-bar-mode 0)
 
@@ -29,8 +32,8 @@
                                   (- (+ fill-column 9) (window-width))))))))
 
 ;;; Alpha
-(set-frame-parameter (selected-frame) 'alpha '(95 . 70))
-(add-to-list 'default-frame-alist '(alpha . (95 . 70)))
+(set-frame-parameter (selected-frame) 'alpha '(95 70))
+(add-to-list 'default-frame-alist '(alpha . (95 70)))
 
 ;;; Dashboard
 (use-package dashboard
@@ -38,8 +41,7 @@
   :config
   (dashboard-setup-startup-hook))
 
-(setq initial-buffer-choice (lambda () (get-buffer "*dashboard*"))
-      dashboard-startup-banner "~/.emacs.d/jkazan.png"
+(setq dashboard-startup-banner "~/.emacs.d/jkazan.png"
       dashboard-banner-logo-title "
 C-S-t find-last-killed-file
 M-] move-text-down
@@ -48,7 +50,10 @@ C-= expand-region
 C-j pop-to-mark-command
 C-; counsel-imenu
 M-b counsel-switch-buffer
+M-p jumpt to opening paren
+M-n jumpt to closing paren
 " ;; Set the title
+      ;; initial-buffer-choice (lambda () (get-buffer "*dashboard*"))
       dashboard-center-content t
       dashboard-set-heading-icons t
       dashboard-set-file-icons t
@@ -59,7 +64,33 @@ M-b counsel-switch-buffer
                         ;; (registers . 5)
 			))
 
-(projectile-mode +1) ;; To enable projects in dashboard items
+(defun put-file-name-on-clipboard ()
+  "Put the current file name on the clipboard"
+  (interactive)
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name))))
+    (when filename
+      (with-temp-buffer
+        (insert filename)
+        (clipboard-kill-region (point-min) (point-max)))
+      (message filename))))
+
+;;; Projectile
+(use-package projectile :ensure t
+  :init
+  (setq projectile-svn-command "find . \\( -path '*/.svn*' -o -path '*/.git*' \\) -prune -o -type f -print0"
+        projectile-generic-command "find . \\( -path '*/.svn*' -o -path '*/.git*' \\) -prune -o -type f -print0"
+        projectile-git-command "find . \\( -path '*/.svn*' -o -path '*/.git*' \\) -prune -o -type f -print0"
+        projectile-require-project-root nil
+        projectile-enable-caching t
+        projectile-completion-system 'ivy)
+  :config
+  (define-key projectile-mode-map (kbd "C-x p") 'projectile-command-map)
+  (projectile-mode 1)
+  :bind
+  ("C-p" . projectile-find-file)
+  )
 
 ;;; Recent files
 (use-package recentf
@@ -87,6 +118,7 @@ M-b counsel-switch-buffer
 (use-package centaur-tabs
   :demand
   :config
+  
   (centaur-tabs-mode t)
   (setq centaur-tabs-style "alternate"
         ;; centaur-tabs-set-bar 'over
@@ -157,7 +189,7 @@ M-b counsel-switch-buffer
           (lambda()
             (local-unset-key (kbd "C-S-<left>"))    ;; unbind or group switch 
 	    (local-unset-key (kbd "C-S-<right>")))) ;; won't work in org-mode
-(add-hook 'auto-save-hook 'org-save-all-org-buffers)
+;; (add-hook 'auto-save-hook 'org-save-all-org-buffers)
 
 ;;; ibuffer
 (global-set-key [remap list-buffers] 'ibuffer)
@@ -262,7 +294,7 @@ M-b counsel-switch-buffer
   (let* ((default (and use-default (my-desktop-get-current-name)))
          (full-prompt (concat prompt (if default
                                          (concat " (default " default "): ")
-                                       ": "))))
+                                       ": "))))n
     (completing-read full-prompt (and (file-exists-p my-desktop-session-dir)
                                       (directory-files my-desktop-session-dir))
                      nil nil nil my-desktop-session-name-hist default)))
@@ -283,17 +315,30 @@ M-b counsel-switch-buffer
   :config
   (setq aw-ignored-buffers (delete 'treemacs-mode aw-ignored-buffers)
 	;; treemacs-is-never-other-window t
-	treemacs-width 23
+	treemacs-indentation 1
+	treemacs-width 35
 	treemacs-no-png-images t)
   (treemacs-resize-icons 16)
   (treemacs-filewatch-mode t)
+
   :bind
-  ("C-S-<prior>" . 'treemacs-select-window))
+  ("C-S-<prior>" . 'treemacs-select-window)
+  ("<f9>" . 'treemacs)
+  )
 
 (use-package treemacs-icons-dired
   :after treemacs dired
   :ensure t
   :config (treemacs-icons-dired-mode))
+
+(use-package treemacs-icons-dired
+  :after treemacs dired
+  :ensure t
+  :config (treemacs-icons-dired-mode))
+
+(use-package treemacs-magit
+  :after treemacs magit
+  :ensure t)
 
 ;;; smerge
 (setq smerge-command-prefix (kbd "C-c v"))
@@ -316,12 +361,12 @@ M-b counsel-switch-buffer
   ("M-[" . 'move-text-up))
 
 ;;; Smartparens
-(use-package smartparens-config
-  :init
-  (setq sp-autoinsert-pair t)
-  (setq sp-autoskip-closing-pair t)
-  :hook
-  (prog-mode . smartparens-mode))
+;; (use-package smartparens-config
+;;   :init
+;;   (setq sp-autoinsert-pair t)
+;;   (setq sp-autoskip-closing-pair t)
+;;   :hook
+;;   (prog-mode . smartparens-mode))
 
 ;;; Highlight matching parantheses
 (use-package paren
@@ -363,7 +408,9 @@ M-b counsel-switch-buffer
 (add-hook 'LaTeX-mode-hook 'fci-mode)
 
 ;;; Margin line numbering
-(global-display-line-numbers-mode)
+(global-linum-mode 1)
+(set-face-foreground 'linum "#666666")
+
 
 ;;; YASnippet
 (require 'yasnippet)
@@ -1262,17 +1309,48 @@ M-b counsel-switch-buffer
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
  '(custom-safe-themes
    (quote
-    ("1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" default)))
+    ("e1ecb0536abec692b5a5e845067d75273fe36f24d01210bf0aa5842f2a7e029f" "1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" default)))
+ '(jdee-db-active-breakpoint-face-colors (cons "#1B2229" "#51afef"))
+ '(jdee-db-requested-breakpoint-face-colors (cons "#1B2229" "#98be65"))
+ '(jdee-db-spec-breakpoint-face-colors (cons "#1B2229" "#3f444a"))
  '(menu-bar-mode nil)
- '(org-agenda-files (quote ("~/test.org")))
+ '(objed-cursor-color "#ff6c6b")
+ '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (treemacs-icons-dired expand-region smartparens move-text magit treemacs amx multiple-cursors anzu ace-jump-buffer ace-jump-mode ace-window ivy flycheck lsp-ui lsp-mode yasnippet fill-column-indicator undo-tree gams-ac doom-themes centaur-tabs use-package dashboard all-the-icons page-break-lines projectile)))
+    (counsel doom-modeline treemacs treemacs-icons-dired expand-region smartparens move-text magit amx multiple-cursors anzu ace-jump-buffer ace-jump-mode ace-window ivy flycheck lsp-ui lsp-mode yasnippet fill-column-indicator undo-tree gams-ac doom-themes centaur-tabs use-package dashboard all-the-icons page-break-lines projectile)))
+ '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
+ '(rustic-ansi-faces
+   ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
  '(scroll-bar-mode nil)
  '(size-indication-mode nil)
- '(tool-bar-mode nil))
+ '(tool-bar-mode nil)
+ '(vc-annotate-background "#282c34")
+ '(vc-annotate-color-map
+   (list
+    (cons 20 "#98be65")
+    (cons 40 "#b4be6c")
+    (cons 60 "#d0be73")
+    (cons 80 "#ECBE7B")
+    (cons 100 "#e6ab6a")
+    (cons 120 "#e09859")
+    (cons 140 "#da8548")
+    (cons 160 "#d38079")
+    (cons 180 "#cc7cab")
+    (cons 200 "#c678dd")
+    (cons 220 "#d974b7")
+    (cons 240 "#ec7091")
+    (cons 260 "#ff6c6b")
+    (cons 280 "#cf6162")
+    (cons 300 "#9f585a")
+    (cons 320 "#6f4e52")
+    (cons 340 "#5B6268")
+    (cons 360 "#5B6268")))
+ '(vc-annotate-very-old-color nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

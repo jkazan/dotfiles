@@ -6,9 +6,9 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "treemacs-icons-dired" "treemacs-icons-dired.el"
-;;;;;;  (0 0 0 0))
-;;; Generated autoloads from treemacs-icons-dired.el
+;;;### (autoloads nil "treemacs-icons-dired" "../../../../../.emacs.d/elpa/treemacs-icons-dired-20200421.1426/treemacs-icons-dired.el"
+;;;;;;  "4834ea18fb91e8864a18049b4f07093e")
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/treemacs-icons-dired-20200421.1426/treemacs-icons-dired.el
 
 (defvar treemacs-icons-dired-mode nil "\
 Non-nil if Treemacs-Icons-Dired mode is enabled.
@@ -24,8 +24,21 @@ or call the function `treemacs-icons-dired-mode'.")
 Display treemacs icons for each file in a dired buffer.
 
 \(fn &optional ARG)" t nil)
+
+;;;### (autoloads "actual autoloads are elsewhere" "treemacs-icons-dired"
+;;;;;;  "../../../../../.emacs.d/elpa/treemacs-icons-dired-20200421.1426/treemacs-icons-dired.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/treemacs-icons-dired-20200421.1426/treemacs-icons-dired.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-icons-dired" '("treemacs-icons-dired-")))
+
+;;;***
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/treemacs-icons-dired-20200421.1426/treemacs-icons-dired-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/treemacs-icons-dired-20200421.1426/treemacs-icons-dired.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

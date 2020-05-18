@@ -1,8 +1,8 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/bin/scripts:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/jkazan/.oh-my-zsh"
+  export ZSH="/home/johannek/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -73,6 +73,48 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+# Axis -------------------------------------------------------------------------
+# Run tmux as default terminal
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
+# Export
+export http_proxy=http://wwwproxy:3128
+export https_proxy=http://wwwproxy:3128
+export ftp_proxy=http://wwwproxy:3128
+
+# Unset export
+alias unset-proxy="unset http_proxy && unset https_proxy && unset ftp_proxy"
+
+# Source flash_camera_functions.zsh
+source ~/bin/scripts/zshcustom/flash_camera_functions.zsh
+
+# Aliases
+alias acap="source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi"
+alias kaka='echo -e $(curl -s https://vote.fredagskakan.se/thisweek) \
+      | perl -p -e "s/.+?Kaka\":\"//;" -e "s/\".+//"'
+alias flash_camera="bash ~/bashscripts/axis_flash.sh"
+alias dockerprod="docker run -it --net=host --rm \
+      -v ~/workspace/:/workspace docker-prod.se.axis.com/sva/kpi-tool:1.2 bash"
+alias rebuild_aoa='echo "$(tput bold)sourcing sdk...$(tput sgr0)" && source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi
+      echo "$(tput bold)going into workspace dir...$(tput sgr0)" && cd ~/workspace/
+      echo "$(tput bold)cleaning axis_object_detector...$(tput sgr0)" && sudo rm -rf axis_object_detector/
+      echo "$(tput bold)cloning fresh aoa repo...$(tput sgr0)" && git clone ssh://johannek@gittools.se.axis.com:29418/apps/acap/axis_object_detector
+      echo "$(tput bold)going into axis_object_detector/ directory...$(tput sgr0)" && cd axis_object_detector/
+      echo "$(tput bold)updating git submodule...$(tput sgr0)" && git submodule update --init
+      echo "$(tput bold)building...$(tput sgr0)" && ./build.py'
+# "\
+# echo "\nsourcing sdk...\n\n" && source /opt/axis/acapsdk/2.12.0/environment-setup-cortexa9hf-neon-poky-linux-gnueabi \
+# echo "\ngoing into workspace dir...\n\n" && cd ~/workspace/ \
+# echo "\ncleaning axis_object_detector...\n\n" && sudo rm -rf axis_object_detector/
+# echo "\ncloning fresh aoa repo...\n\n" && git clone ssh://johannek@gittools.se.axis.com:29418/apps/acap/axis_object_detector \
+# echo "\ngoing into axis_object_detector/ directory...\n\n" && cd axis_object_detector \
+# echo "\nupdating git submodule...\n\n" && git submodule update --init \
+# echo "\nbuilding...\n\n" && ./build.py"
+
+# ------------------------------------------------------------------------------
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -82,9 +124,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='emacs'
+  export EDITOR='emacs25'
 else
-  export EDITOR='emacs'
+  export EDITOR='emacs25'
 fi
 
 # Compilation flags
@@ -103,50 +145,19 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add to PATH: maven
-export PATH=$PATH:/opt/apache-maven-3.6.0/bin
-
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
-M2_HOME="/opt/apache-maven-3.6.0"
+# export PATH=$PATH:/opt/apache-maven-3.6.0/bin
+# export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/"
+# M2_HOME="/opt/apache-maven-3.6.0"
 
 
 alias rpi_local='ssh -X pi@raspberrypi.local'
 alias rpi='ssh -l pi proxy50.rt3.io -p 37918'
-# pass = testavanligaochhassio
-# ssh -l pi proxy55.rt3.io -p 38497
-# sudo iwconfig wlan0 essid comhem_F00C83 key 8788B09B2D
-# sudo iwconfig wlp6s0 essid jkazan key puws1111
-
-
-# epics alias
-# alias e3="bash /epics/test/base-7.0.1.1/require/3.0.2/bin/setE3Env.bash"
-alias e3="source /home/jkazan/e3-aug06/base-7.0.3/require/3.1.0/bin/setE3Env.bash no_msg"
-alias css="/opt/cs-studio/ESS\ CS-Studio"
-alias e3get="~/e3-aug06/e3/caget_pvs.bash"
-alias iocsh="/home/jkazan/e3-aug06/e3/e3-require/tools/iocsh.bash"
-
-# sw-vm
-alias swvm="ssh -X johanneskazantzidis@10.4.4.46"
-
-#icsvd
-alias icsvd="ssh -X johanneskazantzidis@icsvd-app01.esss.lu.se"
 
 # Hermes
-alias hermes="source ~/Hermes/bin/activate && python3 ~/Hermes/hermes/hermes/hermes.py"
-
-# SC2
-# alias sc2='env WINEPREFIX="/home/jkazan/.wine-hs-32" wine C:\\windows\\command\\start.exe /Unix /home/jkazan/.wine-hs-32/dosdevices/c:/users/Public/Desktop/StarCraft\ II.lnk'
+alias hermes="source ~/hermes-env/bin/activate && python3 ~/hermes-env/hermes/hermes/hermes.py"
 
 # export NVM_LAZY_LOAD=true
 alias ll="ls -al"
-# export PATH=$PATH:/home/jkazan/e3-aug-06/base-7.0.3/bin/linux-x86_64/
-
-alias selenium="source ~/martinkwick/bin/activate"
-
-# Arduino
-alias arduino="~/arduino-1.8.9/arduino"
-# alias ardup="screen -S arduino_monitor -X quit && arduino --port /dev/ttyUSB* --upload"
-alias ardup="if screen -S arduino_monitor -X quit; then echo 'killing monitor'; fi && arduino --port /dev/ttyUSB* --upload"
-alias ardmon="screen -S arduino_monitor /dev/ttyUSB* 115200"
 
 # Invert screen
 alias invert="/usr/local/bin/xrandr-invert-colors"

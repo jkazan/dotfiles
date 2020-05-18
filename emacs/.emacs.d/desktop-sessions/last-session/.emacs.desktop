@@ -2,42 +2,42 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Sun Apr 26 21:23:35 2020
+;; Created Mon May 18 08:34:25 2020
 ;; Desktop file format version 208
-;; Emacs version 26.3
+;; Emacs version 25.2.2
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24229 57271 909429 350000) (desktop . "208") "jkazan@L480" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 95 . 70) (no-focus-on-map) (no-accept-focus) (fullscreen . fullheight) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (frameset--id . "5669-21E4-E43C-C76A") (frameset--mini t . t) (height . 60) (width . 104) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 960) (pixel-height . 1062) (total-width . 106) (total-height . 59) (normal-height . 1.0) (normal-width . 1.0) (buffer ".emacs" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 13383) (start . 12824))))])
+(setq desktop-saved-frameset [frameset 1 (24258 11377 303609 628000) (desktop . "208") "johannek@lap5cg00815rc" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 95 70) (fullscreen) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (frameset--id . "0758-EB1C-D70B-F4F3") (frameset--mini t . t) (height . 75) (width . 86) (modeline . t) (minibuffer . t) (unsplittable) (left . 85) (top . 23) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 8) (min-width . 10) (min-height-ignore . 8) (min-width-ignore . 5) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 128) (min-pixel-width . 80) (min-pixel-height-ignore . 128) (min-pixel-width-ignore . 40) (min-pixel-height-safe . 32) (min-pixel-width-safe . 16)) vc (pixel-width . 704) (pixel-height . 1168) (total-width . 88) (total-height . 73) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 704) (pixel-height . 592) (total-width . 88) (total-height . 37) (normal-height . 0.5) (normal-width . 1.0) (buffer "*dashboard*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1378) (start . 467))) (leaf (last . t) (pixel-width . 704) (pixel-height . 576) (total-width . 88) (total-height . 36) (normal-height . 0.5) (normal-width . 1.0) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins 1) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 84) (start . 1)))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
-(setq regexp-search-ring '("bar"))
-(setq register-alist '((48 . "bar")))
-(setq file-name-history '("~/wetch/ffs/load.lua" "~/wetch/ffs/load_rc" "~/wetch/ffs/spotify_cover.lua" "~/bashscripts/install.sh" "~/wetch/spotify-cover.sh" "~/dotfiles/emacs/.emacs" "~/.cache/wetch/current.jpeg" "~/.cache/wetch/current.png" "~/wetch/ffs/test.sh" "~/.emacs" "~/Downloads/waqar" "~/wetch/ffs/spotify_rc" "~/wetch/ffs/launch_all.sh" "~/wetch/ffs/misc_rc" "~/wetch/bt.sh" "~/wetch/ffs/time_rc" "~/hermes-env/hermes/hermes/hjira.py" "~/hermes-env/hermes/hermes/hermes.py" "~/dotfiles/zsh/.zshrc" "~/.zshrc" "~/hermes-env/bin/activate.csh" "~/.emacs.d/bookmarks" "~/hermes-env/hermes/hermes/phoebus.install" "~/hermes-env/hermes/.gitignore" "~/hermes-env/lib64/python3.8/site-packages/pip/_internal/cache.py" "~/.gitconfig" "~/dotfiles/rofi/config" "~/.config/rofi/config"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/dotfiles/emacs/.emacs.d/bookmarks" "/h/johannek/visualizations/gendiff.py" "~/workspace/tools/kpigui/src/__init__.py" "~/workspace/tools/kpigui/execute_dataset.py" "~/dotfiles/emacs/.emacs" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset-old-fw/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-484+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:81c9d929567e9cc567f6e9e66933564c87b8bd04/dataset_result.json" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset-new-fw/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-454+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:304cdc2b5af774e882f086a0350fa636a96d719c/dataset_result.json" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset_2020-05-13_10:06:49/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-454+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:1dad3ba970d09452d906215797abc4ab98da203b/dataset_result.json" "~/hermes-env/hermes/hermes/hjira.py" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset_2020-05-13_10:12:23/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-454+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:1dad3ba970d09452d906215797abc4ab98da203b/problems.csv" "~/axis/performance-utils/tictoc/tictoc.py" "~/wetch/spotify_rc" "~/wetch/load_rc" "~/wetch/launch_all.sh" "~/wetch/luascript.lua.bak2" "~/wetch/load.lua" "~/wetch/spotify-cover.sh" "~/wetch/LICENSE" "~/wetch/ffs/misc_rc" "~/wetch/ffs/test.sh" "~/wetch/test.sh" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset_2020-05-13_15:47:24/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-492+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:1dad3ba970d09452d906215797abc4ab98da203b/problems.csv" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset_2020-05-13_10:12:23/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-454+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:1dad3ba970d09452d906215797abc4ab98da203b/dataset_result.json" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset_2020-05-13_15:47:24/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-492+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:1dad3ba970d09452d906215797abc4ab98da203b/dataset_result.json" "~/workspace/kpi_toolchain/baseline_results/dataset-result/dataset_2020-05-13_10:06:49/dataset_TECH-CTA-JOLLYCOLA-PRODUCTS-P3245VE_BUILD-454+jollycola:5852790801fc57c586232bbd0e366e4dae67216f:baseline_1.0:1dad3ba970d09452d906215797abc4ab98da203b/problems.csv" "~/wetch/ffs/spotify_cover.lua" "~/wetch/ffs/launch_all.sh" "~/wetch/ffs/network_rc" "~/wetch/ffs/load.lua" "~/wetch/ffs/load_rc" "~/wetch/ffs/time_rc" "~/axis/axis.docker" "~/dotfiles/zsh/.zshrc" "~/wetch/pingpong.sh" "~/lunch-menus/lunch_menus.sh" "~/.zhistory" "/mnt/analyticsvideo/.tmpfiles_for_visualizations/master/od/model_name.txt" "~/workspace/tools/kpigui/integration/test_formatting.sh" "~/workspace/tools/kpigui/integration/test.sh" "~/workspace/tools/kpigui/src/visualization/visualize_manifest.py" "~/workspace/tools/kpigui/src/visualization/__init__.py" "~/think-metrics/order_customer.csv" "~/workspace/tools/kpigui/plot_dataset.py" "/sudo:root@lap5cg00815rc:/home/johannek/bashscripts/setup_tmux.sh" "/sudo:root@lap5cg00815rc:/home/johannek/bashscripts/ess.png" "~/workspace/tools/tagging/tag_utils.py" "~/bashscripts/lunch.sh" "~/workspace/annotations/swaying_pine_and_grass_2/swaying_pine_and_grass_2.tag.json" "~/workspace/annotations/driveway_night_1/driveway_night_1.tag.json" "~/workspace/annotations/ACCC8EAD18AF_2019_11_18/ACCC8EAD18AF_2019_11_18.tag.json"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/jkazan/dotfiles/emacs/.emacs"
-  ".emacs"
-  'emacs-lisp-mode
-  '(eldoc-mode projectile-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode smartparens-mode)
-  13383
-  '(13062 nil)
-  nil
-  nil
-  '((buffer-display-time 24229 57199 521990 539000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (13052 2744 2465 2476 2476 2509 2619 2656 2657 2700 2465 2465 2465 2465 2465 2465))))
-
-(desktop-create-buffer 208
-  "/home/jkazan/test.org"
-  "test.org"
-  'org-mode
-  '(projectile-mode override-global-mode undo-tree-mode yas-minor-mode ivy-mode counsel-mode anzu-mode)
+  "/home/johannek/dotfiles/emacs/.emacs.d/bookmarks"
+  "bookmarks"
+  'fundamental-mode
+  '(override-global-mode undo-tree-mode linum-mode yas-minor-mode anzu-mode)
   1
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 24229 57198 122529 371000) (buffer-file-coding-system . undecided-unix) (truncate-lines . t))
+  '((buffer-file-coding-system . utf-8-emacs-unix))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/johannek/.emacs.d/recentf"
+  "recentf"
+  'fundamental-mode
+  '(override-global-mode)
+  1526
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-emacs))
   '((mark-ring nil)))
 

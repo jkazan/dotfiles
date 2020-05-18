@@ -1,0 +1,1 @@
+[cl-struct-lsp-session ("/home/johannek/axis/temptest" "/home/johannek/axis/motionguard" "/home/johannek/workspace/axis_object_detector") nil #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ()) #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ()) #s(hash-table size 65 test equal rehash-size 1.5 rehash-threshold 0.8 data ())]

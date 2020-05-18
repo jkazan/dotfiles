@@ -1,3 +1,5 @@
 * Default
+** think-metrics
+ - path :: ~/think-metrics
 ** hermes
- - path :: ~/hermes-env/hermes
+ - path :: ~/hermes-env/hermes/hermes

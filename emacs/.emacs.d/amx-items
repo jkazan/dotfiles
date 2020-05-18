@@ -1,34 +1,76 @@
 
 ;; ----- amx-history -----
 (
- sh-mode
+ undo-tree-visualize
+ whitespace-cleanup
+ put-file-name-on-clipboard
  load-file
- emacs-lisp-mode
- rsh
- counsel-imenu
- ace-window
- org-agenda
+ my-put-file-name-on-clipboard
+ dired-copy-filename-as-kill
+ end-of-buffer
 )
 
 ;; ----- amx-data -----
 (
- (package-install . 6)
- (package-list-packages . 1)
- (package-autoremove . 1)
+ (package-install . 9)
+ (package-list-packages . 8)
+ (package-autoremove . 4)
  (lisp-mode . 1)
- (magit-blame . 1)
- (emacs-lisp-mode . 2)
+ (magit-blame . 3)
+ (emacs-lisp-mode . 4)
  (centaur-tabs-counsel-switch-group . 1)
  (counsel-switch-buffer . 1)
- (load-file . 21)
+ (load-file . 46)
  (centaur-tabs-toggle-groups . 2)
- (treemacs . 1)
- (treemacs-icons-dired-mode . 4)
+ (treemacs . 5)
+ (treemacs-icons-dired-mode . 8)
  (treemacs-select-window . 1)
- (org-agenda . 2)
- (lsp-mode . 1)
+ (org-agenda . 4)
+ (lsp-mode . 3)
  (ace-window . 1)
  (counsel-imenu . 1)
  (rsh . 1)
- (sh-mode . 3)
+ (sh-mode . 18)
+ (package-initialize . 1)
+ (all-the-icons-insert . 1)
+ (load-library . 3)
+ (all-the-icons-insert-alltheicon . 1)
+ (font-lock-mode . 1)
+ (all-the-icons-install-fonts . 1)
+ (imenu . 2)
+ (treemacs-add-project . 1)
+ (package-delete . 3)
+ (treemacs-set-width . 2)
+ (treemacs-find-file . 3)
+ (find-name-dired . 5)
+ (makefile-mode . 4)
+ (global-display-line-numbers-mode . 1)
+ (customize-themes . 1)
+ (set-background-color . 5)
+ (cua-copy-region . 3)
+ (cua-paste . 3)
+ (newline . 153)
+ (treemacs-root-down . 1)
+ (treemacs-root-up . 1)
+ (treemacs-git-mode . 2)
+ (treemacs-fringe-indicator-mode . 2)
+ (projectile-grep . 1)
+ (projectile-find-file . 5)
+ (projectile-mode . 2)
+ (projectile-find-tag . 1)
+ (projectile-dired . 1)
+ (projectile-ibuffer . 1)
+ (smartparens-mode . 2)
+ (lsp . 1)
+ (whitespace-mode . 12)
+ (markdown . 1)
+ (markdown-mode . 1)
+ (html-mode . 1)
+ (undo-tree-visualize . 5)
+ (delete-trailing-whitespace . 1)
+ (whitespace-cleanup . 2)
+ (end-of-buffer . 1)
+ (dired-copy-filename-as-kill . 1)
+ (my-put-file-name-on-clipboard . 1)
+ (put-file-name-on-clipboard . 2)
 )
