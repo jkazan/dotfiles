@@ -1,1 +1,1 @@
-("~/dotfiles/" "~/workspace/tools/" "~/hermes-env/hermes/" "~/axis/performance-utils/" "~/wetch/" "~/lunch-menus/" "~/think-metrics/" "~/bashscripts/" "~/workspace/axis_object_detector/internal_libs/afw/" "~/workspace/axis_object_detector/")
+("~/axis/axis_object_detector/" "~/dotfiles/" "~/axis/tools-logging/tools/" "~/axis/tools-logging/tools/pyanalytics/" "~/axis/larod/" "~/wetch/" "~/axis/tools/pyanalytics/" "~/axis/tools/" "~/bashscripts/" "~/axis/performance-utils/")

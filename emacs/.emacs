@@ -43,13 +43,9 @@
 
 (setq dashboard-startup-banner "~/.emacs.d/jkazan.png"
       dashboard-banner-logo-title "
-C-S-t find-last-killed-file
 M-] move-text-down
 M-[ move-text-up
 C-= expand-region
-C-j pop-to-mark-command
-C-; counsel-imenu
-M-b counsel-switch-buffer
 M-p jumpt to opening paren
 M-n jumpt to closing paren
 " ;; Set the title
@@ -58,9 +54,9 @@ M-n jumpt to closing paren
       dashboard-set-heading-icons t
       dashboard-set-file-icons t
       dashboard-items '((recents  . 10);; Dashboard items
-                        (bookmarks . 5)
                         (projects . 5)
-                        (agenda . 5)
+                        ;; (bookmarks . 5)
+                        ;; (agenda . 5)
                         ;; (registers . 5)
 			))
 
@@ -189,7 +185,7 @@ M-n jumpt to closing paren
           (lambda()
             (local-unset-key (kbd "C-S-<left>"))    ;; unbind or group switch 
 	    (local-unset-key (kbd "C-S-<right>")))) ;; won't work in org-mode
-;; (add-hook 'auto-save-hook 'org-save-all-org-buffers)
+(add-hook 'auto-save-hook 'org-save-all-org-buffers)
 
 ;;; ibuffer
 (global-set-key [remap list-buffers] 'ibuffer)
@@ -419,11 +415,16 @@ M-n jumpt to closing paren
 			    (yas-minor-mode -1)))
 
 ;;; LSP
+(use-package lsp-python-ms
+  :ensure t
+  :hook (python-mode . (lambda ()
+                          (require 'lsp-python-ms)
+                          (lsp))))  ; or lsp-deferred
+
 (use-package lsp-mode
   :init
   (setq lsp-keymap-prefix "C-c l")
-  :hook ((python-mode . lsp)
-         (c++-mode . lsp)
+  :hook ((c++-mode . lsp)
          (c-mode . lsp)
 	 )
   :config
@@ -439,7 +440,7 @@ M-n jumpt to closing paren
 ;;; Ivy
 (use-package ivy
   :init
-  (setq ivy-use-virtual-buffers t)
+  ;; (setq ivy-use-virtual-buffers t)
   (setq ivy-count-format "(%d/%d) ")
   :config
   (ivy-mode t)
@@ -486,6 +487,21 @@ M-n jumpt to closing paren
 (global-set-key (kbd "C-<") 'mc/mark-next-like-this)
 (global-set-key (kbd "C->") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-M-<") 'mc/mark-all-like-this)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1322,7 +1338,7 @@ M-n jumpt to closing paren
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (counsel doom-modeline treemacs treemacs-icons-dired expand-region smartparens move-text magit amx multiple-cursors anzu ace-jump-buffer ace-jump-mode ace-window ivy flycheck lsp-ui lsp-mode yasnippet fill-column-indicator undo-tree gams-ac doom-themes centaur-tabs use-package dashboard all-the-icons page-break-lines projectile)))
+    (counsel lsp-python-ms doom-modeline treemacs treemacs-icons-dired expand-region smartparens move-text magit amx multiple-cursors anzu ace-jump-buffer ace-jump-mode ace-window ivy flycheck lsp-ui lsp-mode yasnippet fill-column-indicator undo-tree gams-ac doom-themes centaur-tabs use-package dashboard all-the-icons page-break-lines projectile)))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(rustic-ansi-faces
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])

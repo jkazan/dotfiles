@@ -2,9 +2,3 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("hermes.py"
- (filename . "~/hermes-env/hermes/hermes/hermes.py")
- (front-context-string . "    def dataRece")
- (rear-context-string . "lp_text[cmd]))\n\n")
- (position . 5751))
-)

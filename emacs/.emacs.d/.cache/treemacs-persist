@@ -1,5 +1,5 @@
 * Default
-** think-metrics
- - path :: ~/think-metrics
-** hermes
- - path :: ~/hermes-env/hermes/hermes
+** tools
+ - path :: ~/axis/tools
+** axis_object_detector
+ - path :: ~/axis/axis_object_detector

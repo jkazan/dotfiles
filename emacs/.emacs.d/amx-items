@@ -1,44 +1,44 @@
 
 ;; ----- amx-history -----
 (
+ treemacs-add-project
+ magit-blame
+ newline
  undo-tree-visualize
  whitespace-cleanup
+ whitespace-mode
  put-file-name-on-clipboard
- load-file
- my-put-file-name-on-clipboard
- dired-copy-filename-as-kill
- end-of-buffer
 )
 
 ;; ----- amx-data -----
 (
  (package-install . 9)
- (package-list-packages . 8)
+ (package-list-packages . 9)
  (package-autoremove . 4)
  (lisp-mode . 1)
- (magit-blame . 3)
+ (magit-blame . 8)
  (emacs-lisp-mode . 4)
  (centaur-tabs-counsel-switch-group . 1)
- (counsel-switch-buffer . 1)
- (load-file . 46)
+ (counsel-switch-buffer . 3)
+ (load-file . 50)
  (centaur-tabs-toggle-groups . 2)
  (treemacs . 5)
  (treemacs-icons-dired-mode . 8)
  (treemacs-select-window . 1)
  (org-agenda . 4)
- (lsp-mode . 3)
+ (lsp-mode . 4)
  (ace-window . 1)
  (counsel-imenu . 1)
  (rsh . 1)
- (sh-mode . 18)
+ (sh-mode . 24)
  (package-initialize . 1)
  (all-the-icons-insert . 1)
  (load-library . 3)
  (all-the-icons-insert-alltheicon . 1)
  (font-lock-mode . 1)
- (all-the-icons-install-fonts . 1)
+ (all-the-icons-install-fonts . 2)
  (imenu . 2)
- (treemacs-add-project . 1)
+ (treemacs-add-project . 2)
  (package-delete . 3)
  (treemacs-set-width . 2)
  (treemacs-find-file . 3)
@@ -48,8 +48,8 @@
  (customize-themes . 1)
  (set-background-color . 5)
  (cua-copy-region . 3)
- (cua-paste . 3)
- (newline . 153)
+ (cua-paste . 9)
+ (newline . 164)
  (treemacs-root-down . 1)
  (treemacs-root-up . 1)
  (treemacs-git-mode . 2)
@@ -61,16 +61,23 @@
  (projectile-dired . 1)
  (projectile-ibuffer . 1)
  (smartparens-mode . 2)
- (lsp . 1)
- (whitespace-mode . 12)
+ (lsp . 2)
+ (whitespace-mode . 20)
  (markdown . 1)
  (markdown-mode . 1)
  (html-mode . 1)
- (undo-tree-visualize . 5)
+ (undo-tree-visualize . 11)
  (delete-trailing-whitespace . 1)
- (whitespace-cleanup . 2)
- (end-of-buffer . 1)
+ (whitespace-cleanup . 9)
+ (end-of-buffer . 2)
  (dired-copy-filename-as-kill . 1)
  (my-put-file-name-on-clipboard . 1)
- (put-file-name-on-clipboard . 2)
+ (put-file-name-on-clipboard . 7)
+ (all-the-icons-insert-wicon . 1)
+ (bookmark-set . 1)
+ (bookmark-save . 1)
+ (counsel-mode . 2)
+ (find-function . 2)
+ (projectile-find-related-file . 1)
+ (counsel-ag . 1)
 )

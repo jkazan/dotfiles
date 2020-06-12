@@ -4,7 +4,9 @@
 (setq mc/cmds-to-run-for-all
       '(
         centaur-tabs-backward-tab
+        comment-or-uncomment-region
         counsel-M-x
+        indent-for-tab-command
         markdown-outdent-or-delete
         sh-assignment
         swiper
@@ -15,4 +17,5 @@
         c-electric-paren
         counsel-find-file
         counsel-recentf
+        delete-window
         ))
