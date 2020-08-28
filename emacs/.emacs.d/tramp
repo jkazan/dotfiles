@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <20/06/11 12:50:02 /home/johannek/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <20/07/14 09:19:31 /home/johannek/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -23,4 +23,8 @@
   ("uid-integer" 0)
   ("bzr" nil)
   ("git" "\\git")
-  ("hg" nil)))
+  ("hg" nil)
+  ("tmpdir" "/sudo:root@lap5cg00815rc:/tmp")
+  ("touch-t" t)
+  ("touch" "\\touch")
+  ("env-u-option" t)))

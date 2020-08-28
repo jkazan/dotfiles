@@ -6,11 +6,18 @@
                          (or (file-name-directory #$) (car load-path))))
 
 
-;;;### (autoloads nil "treemacs-magit" "treemacs-magit.el" (0 0 0
-;;;;;;  0))
-;;; Generated autoloads from treemacs-magit.el
+;;;### (autoloads "actual autoloads are elsewhere" "treemacs-magit"
+;;;;;;  "../../../../../.emacs.d/elpa/treemacs-magit-20200421.1426/treemacs-magit.el"
+;;;;;;  (0 0 0 0))
+;;; Generated autoloads from ../../../../../.emacs.d/elpa/treemacs-magit-20200421.1426/treemacs-magit.el
 
 (if (fboundp 'register-definition-prefixes) (register-definition-prefixes "treemacs-magit" '("treemacs-magit--")))
+
+;;;***
+
+;;;### (autoloads nil nil ("../../../../../.emacs.d/elpa/treemacs-magit-20200421.1426/treemacs-magit-autoloads.el"
+;;;;;;  "../../../../../.emacs.d/elpa/treemacs-magit-20200421.1426/treemacs-magit.el")
+;;;;;;  (0 0 0 0))
 
 ;;;***
 

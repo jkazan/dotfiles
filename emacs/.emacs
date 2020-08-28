@@ -5,7 +5,7 @@
 (require 'package)
 (package-initialize)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+             '("melpa" . "http://melpa.milkbox.net/packages") t)
 
 (package-initialize)
 
@@ -68,7 +68,7 @@ M-n jumpt to closing paren
                     (buffer-file-name))))
     (when filename
       (with-temp-buffer
-        (insert filename)
+        (insert filename) 
         (clipboard-kill-region (point-min) (point-max)))
       (message filename))))
 
@@ -91,7 +91,7 @@ M-n jumpt to closing paren
 ;;; Recent files
 (use-package recentf
   :init
-  (setq recentf-max-saved-items 50
+  (setq recentf-max-saved-items 100
         recentf-exclude '(".*-autoloads\\.el\\'"
                           "[/\\]\\.emacs\\.d[/\\]elpa[/\\]"
                           "[/\\]\\.emacs\\.d[/\\]\\.cache[/\\]"
@@ -183,9 +183,19 @@ M-n jumpt to closing paren
 ;;; Org-mode
 (add-hook 'org-mode-hook
           (lambda()
-            (local-unset-key (kbd "C-S-<left>"))    ;; unbind or group switch 
-	    (local-unset-key (kbd "C-S-<right>")))) ;; won't work in org-mode
+            (local-unset-key (kbd "S-<left>"))    ;; unbind or group switch 
+	    (local-unset-key (kbd "S-<right>")) ;; won't work in org-mode
+            (local-unset-key (kbd "S-<up>"))    ;; unbind or group switch 
+	    (local-unset-key (kbd "S-<down>")) ;; won't work in org-mode
+            (local-unset-key (kbd "M-S-<up>"))    ;; unbind or group switch 
+	    (local-unset-key (kbd "M-S-<down>")) ;; won't work in org-mode
+            (local-unset-key (kbd "M-<left>"))    ;; unbind or group switch 
+             (local-unset-key (kbd "M-<right>")) ;; won't work in org-mode
+            (local-unset-key (kbd "M-<up>"))    ;; unbind or group switch 
+	    (local-unset-key (kbd "M-<down>")))) ;; won't work in org-mode
 (add-hook 'auto-save-hook 'org-save-all-org-buffers)
+(setq org-support-shift-select t)
+
 
 ;;; ibuffer
 (global-set-key [remap list-buffers] 'ibuffer)
@@ -221,7 +231,7 @@ M-n jumpt to closing paren
       vc-make-backup-files t    ; backup versioned files
       )
 
-;;; Save place
+;;; Save place ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (use-package saveplace
   :init
   (setq save-place-file "~/.emacs.d/saveplace") ;; Keep ~/ clean
@@ -306,13 +316,15 @@ M-n jumpt to closing paren
 
 (add-hook 'kill-emacs-hook 'my-desktop-kill-emacs-hook)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;; Treemacs
 (use-package treemacs
   :config
   (setq aw-ignored-buffers (delete 'treemacs-mode aw-ignored-buffers)
 	;; treemacs-is-never-other-window t
 	treemacs-indentation 1
-	treemacs-width 35
+	treemacs-width 32
 	treemacs-no-png-images t)
   (treemacs-resize-icons 16)
   (treemacs-filewatch-mode t)
@@ -395,7 +407,7 @@ M-n jumpt to closing paren
 ;;; Fill Column Indicator
 (column-number-mode t)
 (require 'fill-column-indicator)
-(setq-default fci-rule-column 80)
+(setq-default fci-rule-column 88)
 (setq fci-handle-truncate-lines nil
       fci-rule-width 1
       fci-rule-color "#33599c")
@@ -407,25 +419,18 @@ M-n jumpt to closing paren
 (global-linum-mode 1)
 (set-face-foreground 'linum "#666666")
 
+;;; YASnippet 
+(use-package yasnippet
+  :config
+  (yas-global-mode 1)) 
 
-;;; YASnippet
-(require 'yasnippet)
-(yas-global-mode 1)
-(add-hook 'term-mode-hook (lambda()
-			    (yas-minor-mode -1)))
-
-;;; LSP
-(use-package lsp-python-ms
-  :ensure t
-  :hook (python-mode . (lambda ()
-                          (require 'lsp-python-ms)
-                          (lsp))))  ; or lsp-deferred
 
 (use-package lsp-mode
   :init
   (setq lsp-keymap-prefix "C-c l")
   :hook ((c++-mode . lsp)
          (c-mode . lsp)
+         (python-mode . lsp)
 	 )
   :config
   ;; (lsp-stdio-connection "~/.local/bin/pyls")
@@ -437,14 +442,53 @@ M-n jumpt to closing paren
 ;; /home/jkazan/.local/lib/python3.8/site-packages/pyls
   :commands lsp)
 
+;;; LSP
+;; (use-package lsp-python-ms
+;;   :ensure t
+;;   :hook (python-mode . (lambda ()
+;;                           (require 'lsp-python-ms)
+;;                           (lsp))))  ; or lsp-deferred
+
+;; ;;; LSP
+;; (use-package lsp-mode
+;;   :init
+;;   (setq lsp-keymap-prefix "C-c l")
+;;   :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+;;          (c++-mode . lsp)
+;;          (c-mode . lsp)
+;;          (python-mode . lsp)
+;;          ;; if you want which-key integration
+;;          ;; (lsp-mode . lsp-enable-which-key-integration)
+;;          )
+;;   :config
+;;   (setq lsp-enable-indentation nil)
+;;   (setq lsp-enable-on-type-formatting nil)
+;;   (setq lsp-enable-symbol-highlighting nil)
+;;   (setq lsp-diagnostic-package :none)
+;;   :commands lsp)
+
+;; (use-package ccls
+;;   :hook (c-mode . (lambda () (require 'ccls) (lsp))))
+
+;;; Server
+(use-package server
+  :config
+  (unless (server-running-p)
+    (server-start)))
+
+
 ;;; Ivy
 (use-package ivy
   :init
   ;; (setq ivy-use-virtual-buffers t)
-  (setq ivy-count-format "(%d/%d) ")
+  (setq ivy-count-format "(%d/%d) "
+        ivy-extra-directories () ; Do not show ./ and ../ in find-file
+        ivy-ignore-buffers '("\\*dashboard\\*" "\\*Messages\\*")) ; Exclude dashboard and messages buffers
   :config
   (ivy-mode t)
   :bind ("C-f" . 'swiper))
+
+
 
 (defun dabbrev-complation-at-point ()
   (dabbrev--reset-global-variables)
@@ -467,20 +511,31 @@ M-n jumpt to closing paren
   ("C-;" . 'counsel-imenu)
   ("M-b" . 'counsel-switch-buffer))
 
+; Do not open dir when hitting RET on dir
+(with-eval-after-load 'counsel
+  (let ((done (where-is-internal #'ivy-done     ivy-minibuffer-map t))
+        (alt  (where-is-internal #'ivy-alt-done ivy-minibuffer-map t)))
+    (define-key counsel-find-file-map done #'ivy-alt-done)
+    (define-key counsel-find-file-map alt  #'ivy-done)))
+
+
 ;;; anzu
 (use-package anzu
   :config
   (global-anzu-mode +1))
+
 
 ;;; imenu
 (use-package imenu
   :config
   (setq imenu-after-jump-hook 'recenter))
 
+
 ;;; Amx
 (use-package amx
   :config
   (amx-mode))
+
 
 ;; Multiple-cursors
 (require 'multiple-cursors)
@@ -489,13 +544,20 @@ M-n jumpt to closing paren
 (global-set-key (kbd "C-M-<") 'mc/mark-all-like-this)
 
 
+;;; C++
+(add-hook 'c++-mode-hook (lambda () 
+     (setq-local fill-column 120)
+     (setq-local fci-rule-column 120)
+     ))
 
 
-
-
-
-
-
+;;; Dired
+(setq dired-omit-files
+      (rx (or (seq bol (? ".") "#")
+              (seq bol "." eol)
+              (seq bol ".." eol)
+              (seq bol ".cache" eol)
+              )))
 
 
 
@@ -1101,8 +1163,12 @@ M-n jumpt to closing paren
 
 
 
-;; ;;; C++
-;; (require 'cc-mode)
+;;; C++
+;; (add-hook 'c++-mode-hook (lambda () 
+;;      (setq-local fill-column 120)
+;;      (setq-local fci-rule-column 120)
+;;      ))
+
 ;; (setq c-default-style "java")
 ;;                                         ;(define-key c-mode-base-map
 ;;                                         ;(kbd "RET")
@@ -1338,7 +1404,7 @@ M-n jumpt to closing paren
  '(org-agenda-files nil)
  '(package-selected-packages
    (quote
-    (counsel lsp-python-ms doom-modeline treemacs treemacs-icons-dired expand-region smartparens move-text magit amx multiple-cursors anzu ace-jump-buffer ace-jump-mode ace-window ivy flycheck lsp-ui lsp-mode yasnippet fill-column-indicator undo-tree gams-ac doom-themes centaur-tabs use-package dashboard all-the-icons page-break-lines projectile)))
+    (lua-mode yasnippet yasnippet-snippets treemacs-magit side-notes ccls counsel lsp-python-ms doom-modeline treemacs treemacs-icons-dired expand-region smartparens move-text magit amx multiple-cursors anzu ace-jump-buffer ace-jump-mode ace-window ivy flycheck lsp-ui lsp-mode fill-column-indicator undo-tree gams-ac doom-themes centaur-tabs use-package dashboard all-the-icons page-break-lines projectile)))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(rustic-ansi-faces
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
@@ -1390,6 +1456,7 @@ M-n jumpt to closing paren
 (global-set-key (kbd "C-s") 'save-buffer)
 (global-set-key (kbd "C-S-s") 'write-file)
 (global-set-key (kbd "C-o") 'find-file)
+(global-set-key (kbd "M-f") 'find-name-dired)
 (global-set-key (kbd "C-S-f") 'isearch-forward)
 (define-key isearch-mode-map "\C-f" 'isearch-repeat-forward)
 (global-set-key (kbd "C-M-w") 'ispell-word)

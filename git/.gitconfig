@@ -1,9 +1,8 @@
 [user]
-	email = johannes.kazantzidis@esss.se
-	name = jkazan
+    email = johannes.kazantzidis@axis.com
+    name = Johannes Kazantzidis
 [color]
-	ui = auto
-
+    ui = auto
 [core]
     editor = emacs
 
@@ -15,7 +14,11 @@
     cm = commit -m
     st = status
     co = checkout
-	cob = checkout -b
+    cob = checkout -b
     url = config --get remote.origin.url
     ls = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
     wdiff = diff --word-diff=color --unified=1
+    gerritreview = "!f(){ branch=${1-master}; git push origin HEAD:refs/for/$branch; };f"
+    gerritwip = "!f(){ branch=${1-master}; git push origin HEAD:refs/for/$branch%wip; };f"
+    gerritdraft = "!f(){ branch=${1-master}; git push origin HEAD:refs/for/$branch%draft; };f"
+    squashbranch = "!f(){ git reset --soft ${1} && git commit --edit -m\"$(git log --format=%B --reverse HEAD..HEAD@{1})\"; };f"

@@ -6,8 +6,11 @@
         centaur-tabs-backward-tab
         comment-or-uncomment-region
         counsel-M-x
+        counsel-switch-buffer
+        cua-paste
         indent-for-tab-command
         markdown-outdent-or-delete
+        org-self-insert-command
         sh-assignment
         swiper
         ))
@@ -18,4 +21,6 @@
         counsel-find-file
         counsel-recentf
         delete-window
+        kmacro-end-or-call-macro
+        next-error
         ))

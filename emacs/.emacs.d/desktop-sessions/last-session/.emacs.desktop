@@ -2,102 +2,138 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu Jun 11 15:16:58 2020
+;; Created Fri Aug 28 10:42:08 2020
 ;; Desktop file format version 208
 ;; Emacs version 26.3
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (24290 11978 305952 393000) (desktop . "208") "johannek@lap5cg00815rc" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 95 70) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (frameset--id . "5DE7-A828-D69F-F3B1") (frameset--mini t . t) (height . 142) (width . 158) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 63) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 1440) (pixel-height . 2539) (total-width . 160) (total-height . 141) (normal-height . 1.0) (normal-width . 1.0) (buffer "kpi.sh" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 2543) (start . 2226))))])
+(setq desktop-saved-frameset [frameset 1 (24392 50016 542354 829000) (desktop . "208") "johannek@lap5cg00815rc" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-PfEd-DejaVu Sans Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#bbc2cf") (background-color . "#282c34") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha 95 70) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#51afef") (sticky) (environment) (powerline-cache) (frameset--id . "03B5-994C-8095-39D9") (frameset--mini t . t) (height . 142) (width . 158) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 7) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 72) (min-pixel-width-ignore . 63) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 1440) (pixel-height . 2539) (total-width . 160) (total-height . 141) (normal-height . 1.0) (normal-width . 1.0) (buffer "common.sh" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins 3) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 3168) (start . 54))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
 (setq search-ring nil)
-(setq regexp-search-ring '("print" "ffmp" "fps" "setup" "A7" "CLAS" "from_json" "get_detection"))
-(setq register-alist '((48 . "alias dockerprod=\"docker run --net=host \\\n       --rm \\\n       --privileged \\\n       -v ~/axis/tools-logging/tools:/kpi_workspace/tools \\\n       -v ~/axis/axis_object_detector:/kpi_workspace/axis_object_detector \\\n       -v /media/johannek/lacie/axis:/kpi_workspace/lacie \\\n       -v /tmp/.X11-unix:/tmp/.X11-unix:ro \\\n       -v /mnt/analyticsvideo:/kpi_workspace/analyticsvideo \\\n       -v ~/share:/kpi_workspace/share \\\n       -v /n/slask/johannek:/kpi_workspace/slask \\\n       -it -e DISPLAY=$DISPLAY \\\n       docker-prod.se.axis.com/sva/kpi-tool:1.2 bash\"\n\n# from kpigui folder (points to a version of pyanalytics):\ncd /kpi_workspace/tools/kpigui\npython3.7 -m pip install -r requirements.txt --user\ncd /kpi_workspace/tools/pyanalytics\npython3.7 -m pip install --editable '.[dev]'\ncd ..\n")))
-(setq file-name-history '("/home/johannek/axis/tools-logging/tools/kpigui/kpi_classes.py" "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/utils/__init__.py" "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/detection_classes.py" "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/object_detection.py" "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/batch.py" "~/axis/lowlight.txt" "~/dotfiles/tmux/.tmux.conf" "~/.tmux.conf" "~/.emacs.d/session.10289b49c4b3fef266159116510277179600000029570054" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/object_detection.py" "~/axis/tools-logging/tools/kpigui/execute_dataset.py" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/utils/__init__.py" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/batch.py" "~/axis/tools-logging/tools/kpigui/src/execute_toolchain.py" "~/axis/2020-05-03_goals.txt" "~/axis/tools-logging/tools/kpigui/README.md" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/README.md" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/visualize.py" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/preprocess/__init__.py" "~/axis/tools-logging/tools/kpigui/src/pykpi/trigger_based_performance.py" "~/axis/tools/kpigui/execute_dataset.py" "~/axis/tools-logging/tools/kpigui/src/scene_set.py" "~/axis/kpi.sh" "~/axis/tools/scripts/kpidiff/kpidiff.py" "~/axis/tools/pyanalytics/pyanalytics/utils/__init__.py" "~/axis/tools-logging/tools/pyanalytics/pyanalytics/__init__.py" "~/axis/tools/pyanalytics/pyanalytics/pyod/batch.py" "~/dotfiles/.tmux.conf" "~/axis/tools/kpigui/README.md" "~/axis/tools/scripts/clip_extract/clip_extract" "~/axis/tools/kpigui/src/execute_toolchain.py" "~/axis/tools/pyanalytics/pyanalytics/preprocess/__init__.py" "~/axis/tools/pyanalytics/pyanalytics/preprocess/common.py" "~/axis/tools/kpigui/src/visualize_video.py" "~/axis/tools/kpigui/src/visualization/visualize_manifest.py" "~/wetch/pingpong.sh" "~/axis/tools/kpigui/src/__init__.py" "/h/johannek/visualizations/manifest.json" "/h/johannek/visualizations/fw0407/problems.csv" "~/axis/tools/kpigui/src/scene_set_manifest.py" "/h/johannek/visualizations/fw0407/dataset_result.json" "~/axis/tools/pyanalytics/README.md" "~/axis/tools/kpigui/dataset_manifests/baseline.json" "~/manifester.py" "~/axis/tools/kpigui/src/scene_set.py" "~/dotfiles/emacs/.emacs" "~/wetch/misc_rc" "~/axis/tools/kpigui/src/video_file.py" "~/dotfiles/zsh/.zshrc" "/sudo:root@lap5cg00815rc:/etc/samba/smb.conf" "~/axis/axis.docker" "~/wetch/load_rc" "~/wetch/load.lua" "~/.zshrc" "/sudo:root@lap5cg00815rc:/etc/samba/local_shares.conf"))
+(setq regexp-search-ring '("playabl" "USER" "20191211_235939_77D5" "20200810_100909_AC38" "run_guard" "\\(Failed\\).*?\\(to\\)"))
+(setq register-alist '((48 . "    echo \"Enter dataset path\"")))
+(setq file-name-history '("/home/johannek/axis/tools/scripts/jplay/jplay.py" "/home/johannek/axis/tools/scripts/jplay/test.py" "/media/johannek/lacie/axis/animals_20200824/animals.json" "/home/johannek/axis/tools/kpigui/src/execute_toolchain.py" "~/axis/tools/kpigui/src/pykpi/run_guard.py" "~/axis/tools/scripts/jplay/gallery.py" "/media/johannek/lacie/axis/issues/manifest.json" "~/axis/tools/scripts/jplay/jplay.py" "~/axis/scripts/user_scripts/johannek/common.sh" "~/axis/tools/scripts/jplay/README.md" "~/axis/tools/scripts/jplay/requirements.txt" "~/axis/tools/kpigui/src/pykpi/generate_guard.py" "~/aplay/imgdata.py" "~/axis/tools/scripts/kpidiff/kpidiff.py" "~/aplay/README.md" "~/aplay/gallery.py" "~/axis/tools/kpigui/src/execute_toolchain.py" "~/axis/tools/kpigui/src/scene_set_manifest.py" "~/axis/tools/kpigui/execute_dataset.py" "~/axis/scripts/user_scripts/johannek/local_vars" "~/axis/tools/pyanalytics/pyanalytics/__init__.py" "~/wetch/network.lua" "~/wetch/spotify_cover.lua" "~/axis/tools/scripts/jplay/imgdata.py" "~/axis/tools/scripts/jplay/jimage.py" "~/axis/kpi.md" "/media/johannek/lacie/axis/dark_scenes/manifest.json" "~/axis/tools/scripts/jplay/drawstyle.py" "~/aplay/jstyle.py" "~/aplay/jplay.py" "~/axis/auto_annotation/filter_videos/filter_videos.py" "~/axis/auto_annotation/filter_videos/common.py" "~/axis/release.md" "~/axis/tools/kpigui/src/tracker/estimate_observation_noise.py" "~/aplay/jimage.py" "~/dotfiles/zsh/.zshrc" "~/bashscripts/lunch_menus.sh" "~/lunch-menus/lunch_menus.sh" "~/axis/tools/kpigui/dataset_manifests/tpu_subset.json" "/n/axis_releases/camera/applications/AxisObjectDetector/1_0/1_0_5_FINAL_temporary_dir/FINAL/aoa_release_notes.txt" "~/aplay/temp.py" "~/axis/tools-logging/tools/scripts/kpidiff/kpidiff.py" "~/old_tools/scripts/kpidiff/kpidiff.py" "~/axis/axis_object_detector/internal_libs/fw/tracker/src/object_track.cpp" "~/bashscripts/ffmpegize.sh" "~/axis/2020-05-03_goals.txt" "~/dotfiles/emacs/.emacs" "~/Downloads/waqar" "~/axis/tools/scripts/verify_anno/verify_anno.py" "~/axis/tracker.md" "~/axis/todo.org" "~/bashscripts/brightness" "~/bashscripts/kaka.sh" "~/wetch/spotify_rc" "~/axis/tools/pyanalytics/pyanalytics/utils/libscene/scene.py" "~/axis/tools/pyanalytics/pyanalytics/utils/libscene/scene_manager.py" "~/axis/tools/kpigui/src/pykpi/generate_gt_from_scenario.py" "~/axis/tools/kpigui/kpi_classes.py" "~/axis/tools/pyanalytics/pyanalytics/pyod/detection_classes.py" "~/axis/tools/pyanalytics/pyanalytics/pyod/object_detection.py" "~/wetch/time_rc" "~/wetch/pingpong.sh" "~/axis/tools/pyanalytics/pyanalytics/utils/libscene/frame.py" "~/axis/tools/pyanalytics/pyanalytics/utils/__init__.py" "~/axis/tools/pyanalytics/pyanalytics/pyod/__init__.py" "~/axis/tools/pyanalytics/pyanalytics/pyod/batch.py" "~/axis/tools/kpigui/src/pykpi/__init__.py" "/media/johannek/lacie/axis/annotations/ACCC8EE6B958_2020_01_07/20200107_052719_8B58.xml" "/media/johannek/lacie/axis/annotations/ACCC8EC64075_2019_12_02/20191202_051513_0BB6.xml" "/media/johannek/lacie/axis/annotations/traffic_day_q17/traffic_day_q1785_180905_1517.xml" "/media/johannek/lacie/axis/annotations/ACCC8EAD21C2_2020_01_12/20200112_132912_5D74.xml" "/media/johannek/lacie/axis/annotations/ACCC8EAD1773_2020_01_09/20200109_093332_EAA0.xml" "~/bashscripts/camera.sh" "~/axis/axis_object_detector/resources/models/model.json" "~/axis/axis_object_detector/internal_libs/fw/channel_adapters/nn/src/nn_model_config.cpp" "~/axis/axis_object_detector/code/vod_classification_configuration_policy.cpp" "~/axis/axis_object_detector/code/nn_classification_configuration_policy.cpp" "~/axis/tools/kpigui/src/tpu_batch.py" "~/axis/tools/kpigui/src/pykpi/per_track_metrics/alarms_per_track.py" "/media/johannek/lacie/axis/cached_nickemma/manifest.json" "/media/johannek/lacie/axis/cached_home_videos/manifest.json" "/media/johannek/lacie/axis/cached_home_videos/od/object_detections_baseball-hat-entering.json" "/media/johannek/lacie/axis/cached_dubai/dubai-clips/20200719_140356_E9EF_anno.xml" "/media/johannek/lacie/axis/cached_dubai/manifest.json" "/media/johannek/lacie/axis/cached_tpu_subset_alpha=2.2/gt_guard/20191118_131031_B876.xml" "/media/johannek/lacie/axis/cached_hbg_parking/manifest.json" "/media/johannek/lacie/axis/cached_dubai/od/object_detections_20200719_140356_E9EF_anno.json" "/media/johannek/lacie/axis/cached_dubai/mote/fixed.xml" "/media/johannek/lacie/axis/cached_gt/manifest.json" "~/axis/axis_object_detector/README.md" "~/axis/axis_object_detector/code/default_config/default_config.hpp" "~/axis/axis_object_detector/code/default_config/default_config.cpp" "~/axis/axis_object_detector/code/main.cpp" "~/axis/axenv/lib/python3.8/site-packages/mpv.py" "~/axis/tools-logging/tools/kpigui/execute_dataset.py" "~/axis/flash_cameras.md" "/media/johannek/lacie/axis/cached_tpu_subset_alpha=2.2/visualization/problems.csv" "/media/johannek/lacie/axis/cached_tpu_subset_alpha=2.2/visualization/dataset_result.json" "/media/johannek/lacie/axis/compared_tpu_subset_alpha=1_vs_alpha=2.2/alpha1vs2.2.json" "~/axis/axis_object_detector/tpu-recipes.mk"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/johannek/axis/kpi.sh"
-  "kpi.sh"
+  "/home/johannek/axis/scripts/user_scripts/johannek/common.sh"
+  "common.sh"
   'sh-mode
-  '(override-global-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  2543
-  '(2543 nil)
+  '(override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  3168
+  '(2749 nil)
   nil
   nil
-  '((buffer-display-time 24290 11940 212597 85000) (buffer-file-coding-system . utf-8-unix))
-  '((mark-ring (2543 4145 4145 5557 5513 5307 4255 4961 3658 3675 3236 2565 4894 4961 4937 5054))))
+  '((buffer-display-time 24392 40523 749607 708000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (2778 2754 2454 2472 2472 2449 2449 2454 2244 2266 2266 2294 2254 2234 2234 2169))))
 
 (desktop-create-buffer 208
-  "/home/johannek/axis/tools-logging/tools/kpigui/kpi_classes.py"
-  "kpi_classes.py"
+  "/home/johannek/axis/tools/scripts/jplay/jplay.py"
+  "jplay.py"
   'python-mode
-  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  1065
-  '(1065 nil)
+  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  14446
+  '(14075 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24290 11938 632003 772000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (1 1065 1065))))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24392 40521 256178 807000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (13633 14201 14201 14164 14154 14128 14201 14201 14063 14128 14075 14075 14063 14063 14005 14446))))
 
 (desktop-create-buffer 208
-  "/home/johannek/axis/tools-logging/tools/kpigui/execute_dataset.py"
-  "execute_dataset.py"
-  'python-mode
-  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  1
-  '(28 nil)
+  "/home/johannek/lunch-menus/lunch_menus.sh"
+  "lunch_menus.sh"
+  'sh-mode
+  '(override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  2054
+  '(1944 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24290 11937 613546 543000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (6758 6170))))
+  '((buffer-display-time 24392 40520 863782 843000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (1953))))
 
 (desktop-create-buffer 208
-  "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/detection_classes.py"
-  "detection_classes.py"
-  'python-mode
-  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  658
-  '(619 nil)
+  "/media/johannek/lacie/axis/animals_20200824/animals.json"
+  "animals.json"
+  'js-mode
+  '(override-global-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  1100
+  '(1174 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24290 4978 260312 781000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (658 1373 658))))
+  '((buffer-display-time 24391 48108 516307 923000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1122 1 1100))))
 
 (desktop-create-buffer 208
-  "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/utils/__init__.py"
-  "__init__.py"
-  'python-mode
-  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  15876
-  '(15876 nil)
+  "/home/johannek/aplay/README.md"
+  "README.md"
+  'markdown-mode
+  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  32
+  '(1 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24290 4468 47930 612000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (15947 4045 2519 1 15947))))
-
-(desktop-create-buffer 208
-  "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/object_detection.py"
-  "object_detection.py"
-  'python-mode
-  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  4718
-  '(4718 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24290 4316 331370 652000) (buffer-file-coding-system . undecided-unix))
-  '((mark-ring (476 530 7100 7100 6288 455 1 7100 4114 4112 3134 298 3134 7107 7100 7104))))
-
-(desktop-create-buffer 208
-  "/home/johannek/axis/tools-logging/tools/pyanalytics/pyanalytics/pyod/batch.py"
-  "batch.py"
-  'python-mode
-  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode projectile-mode ivy-mode counsel-mode anzu-mode)
-  2117
-  '(2117 nil)
-  nil
-  nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24290 3213 591125 752000) (buffer-file-coding-system . undecided-unix))
+  '((tab-width . 4) (buffer-display-time 24391 48108 518347 130000) (buffer-file-coding-system . undecided-unix))
   '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/johannek/axis/tools/scripts/jplay/README.md"
+  "README.md"
+  'markdown-mode
+  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  2616
+  '(338 nil)
+  nil
+  nil
+  '((tab-width . 4) (buffer-display-time 24391 41110 871847 861000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (394 373 4110 405 409 405 405 4109 3210 1 4678 567 504 476 405 2616))))
+
+(desktop-create-buffer 208
+  "/home/johannek/axis/tools/scripts/jplay/test.py"
+  "test.py"
+  'python-mode
+  '(eldoc-mode override-global-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  425
+  '(1 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24391 38929 270582 373000) (buffer-file-coding-system . utf-8-unix))
+  '((mark-ring (425))))
+
+(desktop-create-buffer 208
+  "/media/johannek/lacie/axis/issues/manifest.json"
+  "manifest.json"
+  'js-mode
+  '(override-global-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  1001
+  '(555 nil)
+  nil
+  nil
+  '((buffer-display-time 24390 24956 209320 193000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1001 1001 1001))))
+
+(desktop-create-buffer 208
+  "/home/johannek/axis/tools/kpigui/src/execute_toolchain.py"
+  "execute_toolchain.py"
+  'python-mode
+  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  8920
+  '(6104 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24390 22382 581402 627000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (6199 6056 6199 6199 6199 6199 6199 6199 6199 6036 6056 6199 6199 5336 5336 8920))))
+
+(desktop-create-buffer 208
+  "/home/johannek/axis/tools/kpigui/src/pykpi/run_guard.py"
+  "run_guard.py"
+  'python-mode
+  '(eldoc-mode override-global-mode auto-revert-mode magit-file-mode undo-tree-mode linum-mode yas-minor-mode ivy-mode counsel-mode anzu-mode projectile-mode)
+  1346
+  '(1298 nil)
+  nil
+  nil
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 24390 19315 888588 286000) (buffer-file-coding-system . undecided-unix))
+  '((mark-ring (1520 1399 1399 1298 1399 1522 1915 1915))))
 
